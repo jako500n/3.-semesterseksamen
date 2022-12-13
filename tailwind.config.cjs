@@ -50,7 +50,7 @@ module.exports = {
       },
     },
     fontSize: {
-      //
+      // Ved styling skriver man eksempelvis text-H3_mobile
 
       // Fonthieraki til desktop
       H1_desktop: [
