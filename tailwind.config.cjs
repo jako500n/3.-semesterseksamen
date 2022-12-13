@@ -2,6 +2,99 @@
 module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
+    colors: {
+      // Når farverne bruges til styling, skriver man eksempelvis xx-pink-700, da bindestregen automatisk tilføjes
+      pink: {
+        100: "#FEF8FB",
+        200: "#FCEAF3",
+        300: "#F9D4E6",
+        400: "#F7C6DE",
+        500: "#F5B8D6",
+        600: "#EC78B1",
+        700: "#E54392",
+        800: "#D81E79",
+        900: "#951553",
+      },
+      sienna: {
+        100: "#FFA673",
+        200: "#FF7A2D",
+        300: "#DB5000",
+        400: "#BB4400",
+        500: "#A03A00",
+        600: "#853000",
+        700: "#6E2800",
+        800: "#5B2100",
+        900: "#4C1B00",
+      },
+      black: {
+        100: "#666666",
+        200: "#5A5A5A",
+        300: "#4D4D4D",
+        400: "#404040",
+        500: "#333333",
+        600: "#262626",
+        700: "#1A1A1A",
+        800: "#0D0D0D",
+        900: "#000000",
+      },
+      white: {
+        100: "#FFFFFF",
+        200: "#F2F2F2",
+        300: "#E6E6E6",
+        400: "#D9D9D9",
+        500: "#CCCCCC",
+        600: "#C0C0C0",
+        700: "#B3B3B3",
+        800: "#A6A6A6",
+        900: "#999999",
+      },
+    },
+    fontSize: {
+      //
+
+      // Fonthieraki til desktop
+      H1_desktop: [
+        "4.768rem",
+        { letterSpacing: "0.08rem", fontWeight: "light" },
+      ],
+      H2_desktop: [
+        "3.052rem",
+        { letterSpacing: "0.08rem", fontWeight: "light" },
+      ],
+      H3_desktop: [
+        "2.441rem",
+        { letterSpacing: "0.08rem", fontWeight: "medium" },
+      ],
+      menulinks_desktop: [
+        "1.953rem",
+        { letterSpacing: "0.05rem", fontWeight: "book" },
+      ],
+      body_base: ["1rem", { letterSpacing: "0.10rem", fontWeight: "regular" }],
+      body_semibold: [
+        "1rem",
+        { letterSpacing: "0.10rem", fontWeight: "semibold" },
+      ],
+      body_italic: ["1rem", { letterSpacing: "0.10rem", fontWeight: "italic" }],
+      body_xs: ["0.8rem", { letterSpacing: "0.10rem", fontWeight: "regular" }],
+
+      // Fonthieraki til mobile
+      H1_mobile: [
+        "3.052rem",
+        { letterSpacing: "0.08rem", fontWeight: "light" },
+      ],
+      H2_mobile: [
+        "1.953rem",
+        { letterSpacing: "0.08rem", fontWeight: "light" },
+      ],
+      H3_mobile: [
+        "1.563rem",
+        { letterSpacing: "0.08rem", fontWeight: "medium" },
+      ],
+      menulinks_mobile: [
+        "1.563rem",
+        { letterSpacing: "0.08rem", fontWeight: "book" },
+      ],
+    },
     extend: {},
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
