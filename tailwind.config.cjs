@@ -55,6 +55,16 @@ module.exports = {
       // tokens til components
       footer: "#FCEAF3",
       copyColor: "#5B2100",
+      // Primary button
+      PrimaryButton: "#D81E79",
+      PrimaryButtonHover: "#951553",
+      PrimaryButtonTextColor: "#FFFFFF",
+      PrimaryButtonHoverTextColor: "#FEF8FB",
+      PrimaryButtonBorder: "#F5B8D6",
+
+      // Secondary button
+      SecondaryButton: "#F5B8D6",
+      SecondaryButtonHover: "#FCEAF3",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
