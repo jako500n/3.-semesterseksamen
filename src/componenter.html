@@ -8,9 +8,9 @@
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
     <main class="mx-auto">
-      <h1>Komponenter</h1>
+      <h1 class="text-H1_desktop">Komponenter</h1>
 
-      <h2>Knapper</h2>
+      <h2 class="text-H2_desktop">Knapper Mobil</h2>
       <div class="mb-10">
         <!-- Almindelige knapper mobil -->
         <h3>Almindelige knapper mobil</h3>
@@ -70,8 +70,11 @@
             <option value="Default">Default</option>
           </select>
         </div>
-
         <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <h2>Knapper Web</h2>
         <!-- Almindelige knapper Web -->
         <h3>Almindelige knapper Web</h3>
         <div class="mb-10">
@@ -91,12 +94,42 @@
             Default
           </button>
         </div>
-
-        <!--  -->
-        <!--  -->
-        <!--  -->
         <!-- Dropdown knapper mobil -->
-        <h3>Dropdown knapper</h3>
+        <h3>Dropdown knapper web</h3>
+        <!-- Dropdown knapper mobil -->
+        <div class="mb-10">
+          <!-- Primary dropdown -->
+          <p>Primary dropdown</p>
+          <select
+            class="max-w-xs rounded-KnapperRadius border-none bg-PrimaryButton px-6 py-2 text-knaptekst_desktop text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+            name="Default"
+            id="Default"
+            x-model="Default"
+            form="Default"
+            x-on:change="$nextTick(() => {Default()});"
+          >
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+          </select>
+          <!--  -->
+          <!-- Secondary dropdown -->
+          <p>Secondary dropdown</p>
+          <select
+            class="max-w-xs rounded-KnapperRadius border-none bg-SecondaryButton px-6 py-2 text-knaptekst_desktop text-SecondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-SecondaryButtonHover hover:drop-shadow-CardHoverShadow focus:border-SecondaryButtonBorder focus:ring-4 focus:ring-SecondaryButtonBorder"
+            name="Default"
+            id="Default"
+            x-model="Default"
+            form="Default"
+            x-on:change="$nextTick(() => {Default()});"
+          >
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+          </select>
+        </div>
       </div>
 
       <!-- Forms -->
