@@ -48,6 +48,9 @@ module.exports = {
         800: "#A6A6A6",
         900: "#999999",
       },
+
+      footer: "#FCEAF3",
+      copyColor: "#5B2100",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
@@ -55,27 +58,38 @@ module.exports = {
       // Fonthieraki til desktop
       H1_desktop: [
         "4.768rem",
-        { letterSpacing: "0.08rem", fontWeight: "light" },
+        { letterSpacing: "0.08rem", fontWeight: "100", lineHeight: "103.9px" },
       ],
       H2_desktop: [
         "3.052rem",
-        { letterSpacing: "0.08rem", fontWeight: "light" },
+        {
+          letterSpacing: "0.08rem",
+          fontWeight: "light",
+          lineHeight: "66.5px",
+        },
       ],
       H3_desktop: [
         "2.441rem",
-        { letterSpacing: "0.08rem", fontWeight: "medium" },
+        {
+          letterSpacing: "0.08rem",
+          fontWeight: "medium",
+          lineHeight: "53.2px",
+        },
       ],
       menulinks_desktop: [
         "1.953rem",
-        { letterSpacing: "0.05rem", fontWeight: "book" },
+        { letterSpacing: "0.05rem", fontWeight: "book", lineHeight: "42.6px" },
       ],
-      body_base: ["1rem", { letterSpacing: "0.10rem", fontWeight: "regular" }],
+      body_base: ["1rem", { letterSpacing: "0.10rem", lineHeight: "30px" }],
       body_semibold: [
         "1rem",
-        { letterSpacing: "0.10rem", fontWeight: "semibold" },
+        { letterSpacing: "0.10rem", fontWeight: "600", lineHeight: "30px" },
       ],
-      body_italic: ["1rem", { letterSpacing: "0.10rem", fontWeight: "italic" }],
-      body_xs: ["0.8rem", { letterSpacing: "0.10rem", fontWeight: "regular" }],
+      body_xs: ["0.8rem", { letterSpacing: "0.10rem", lineHeight: "30px" }],
+      knaptekst_desktop: [
+        "1.66rem",
+        { letterSpacing: "0.10rem", lineHeight: "34px" },
+      ],
 
       // Fonthieraki til mobile
       H1_mobile: [
@@ -93,6 +107,10 @@ module.exports = {
       menulinks_mobile: [
         "1.563rem",
         { letterSpacing: "0.08rem", fontWeight: "book" },
+      ],
+      knaptekst_mobile: [
+        "1.188rem",
+        { letterSpacing: "0.10rem", lineHeight: "24.4px" },
       ],
     },
     extend: {},

@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 400;
   src: local(""), url("../fonts/FuturaCyrillicBook.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ 
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* bitter-regular - latin */
@@ -46,4 +46,21 @@
   font-weight: 500;
   src: local(""), url("../fonts/FuturaCyrillicMedium.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: "Bitter", serif;
+}
+
+.footer_div,
+main {
+  width: 88%;
+}
+
+.hover_underline:hover {
+  text-decoration: underline;
 }
