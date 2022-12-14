@@ -12,21 +12,53 @@
       <!-- Primary button mobile -->
       <h1>Komponenter</h1>
       <h2>Knapper</h2>
-      <h3>Knapper</h3>
+      <h3>Almindelige knapper mobil</h3>
+      <!-- Primary button mobil -->
+      <p>Primary knapper</p>
       <button
         class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
       >
         Default
       </button>
 
-      <!-- Primary button web -->
+      <!-- Secondary button mobil -->
+      <p>Secondary knaper</p>
+      <button
+        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+      >
+        Default
+      </button>
 
-      <h3>Dropdown</h3>
+      <h3>Dropdown knapper</h3>
+      <p>Primary dropdown</p>
+      <select
+        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+        name="Default"
+        id="Default"
+        x-model="Default"
+        form="Default"
+        x-on:change="$nextTick(() => {Default()});"
+      >
+        <option value="Default">Default</option>
+        <option value="Default">Default</option>
+        <option value="Default">Default</option>
+        <option value="Default">Default</option>
+      </select>
 
-      <!-- Secondary button mobile-->
-      <button class="">Default</button>
-      <!-- Secondary button web-->
-      <button class="">Default</button>
+      <p>Primary dropdown</p>
+      <select
+        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+        name="Default"
+        id="Default"
+        x-model="Default"
+        form="Default"
+        x-on:change="$nextTick(() => {Default()});"
+      >
+        <option value="Default">Default</option>
+        <option value="Default">Default</option>
+        <option value="Default">Default</option>
+        <option value="Default">Default</option>
+      </select>
 
       <!-- Forms -->
       <h2>Forms</h2>
