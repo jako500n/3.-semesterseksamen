@@ -8,57 +8,96 @@
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
     <main class="mx-auto">
-      <!-- Knapper -->
-      <!-- Primary button mobile -->
       <h1>Komponenter</h1>
+
       <h2>Knapper</h2>
-      <h3>Almindelige knapper mobil</h3>
-      <!-- Primary button mobil -->
-      <p>Primary knapper</p>
-      <button
-        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
-      >
-        Default
-      </button>
+      <div class="mb-10">
+        <!-- Almindelige knapper mobil -->
+        <h3>Almindelige knapper mobil</h3>
+        <div class="mb-10">
+          <!-- Primary button mobil -->
+          <p>Primary knapper</p>
+          <button
+            class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+          >
+            Default
+          </button>
+          <!--  -->
+          <!-- Secondary button mobil -->
+          <p>Secondary knapper</p>
+          <button
+            class="max-w-xs rounded-KnapperRadius bg-SecondaryButton px-4 py-1 text-knaptekst_mobile text-SecondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-SecondaryButtonHover hover:drop-shadow-CardHoverShadow focus:border-SecondaryButtonBorder focus:ring-4 focus:ring-SecondaryButtonBorder"
+          >
+            Default
+          </button>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+        </div>
 
-      <!-- Secondary button mobil -->
-      <p>Secondary knaper</p>
-      <button
-        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
-      >
-        Default
-      </button>
+        <h3>Dropdown knapper mobil</h3>
+        <!-- Dropdown knapper mobil -->
+        <div class="mb-10">
+          <!-- Primary dropdown -->
+          <p>Primary dropdown</p>
+          <select
+            class="max-w-xs rounded-KnapperRadius border-none bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+            name="Default"
+            id="Default"
+            x-model="Default"
+            form="Default"
+            x-on:change="$nextTick(() => {Default()});"
+          >
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+          </select>
+          <!--  -->
+          <!-- Secondary dropdown -->
+          <p>Secondary dropdown</p>
+          <select
+            class="max-w-xs appearance-none rounded-KnapperRadius border-none bg-SecondaryButton py-1 px-14 text-knaptekst_mobile text-SecondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-SecondaryButtonHover hover:drop-shadow-CardHoverShadow focus:border-SecondaryButtonBorder focus:ring-4 focus:ring-SecondaryButtonBorder"
+            name="Default"
+            id="Default"
+            x-model="Default"
+            form="Default"
+            x-on:change="$nextTick(() => {Default()});"
+          >
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+            <option value="Default">Default</option>
+          </select>
+        </div>
 
-      <h3>Dropdown knapper</h3>
-      <p>Primary dropdown</p>
-      <select
-        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
-        name="Default"
-        id="Default"
-        x-model="Default"
-        form="Default"
-        x-on:change="$nextTick(() => {Default()});"
-      >
-        <option value="Default">Default</option>
-        <option value="Default">Default</option>
-        <option value="Default">Default</option>
-        <option value="Default">Default</option>
-      </select>
+        <!--  -->
+        <!-- Almindelige knapper Web -->
+        <h3>Almindelige knapper Web</h3>
+        <div class="mb-10">
+          <!-- Primary button mobil -->
+          <p>Primary knapper</p>
+          <button
+            class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-6 py-2 text-knaptekst_desktop text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
+          >
+            Default
+          </button>
+          <!--  -->
+          <!-- Secondary button mobil -->
+          <p>Secondary knapper</p>
+          <button
+            class="max-w-xs rounded-KnapperRadius bg-SecondaryButton px-6 py-2 text-knaptekst_desktop text-SecondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-SecondaryButtonHover hover:drop-shadow-CardHoverShadow focus:border-SecondaryButtonBorder focus:ring-4 focus:ring-SecondaryButtonBorder"
+          >
+            Default
+          </button>
+        </div>
 
-      <p>Primary dropdown</p>
-      <select
-        class="max-w-xs rounded-KnapperRadius bg-PrimaryButton px-4 py-1 text-knaptekst_mobile text-PrimaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-PrimaryButtonHover hover:text-PrimaryButtonHoverTextColor hover:drop-shadow-CardHoverShadow focus:border-PrimaryButtonBorder focus:ring-4 focus:ring-PrimaryButtonBorder"
-        name="Default"
-        id="Default"
-        x-model="Default"
-        form="Default"
-        x-on:change="$nextTick(() => {Default()});"
-      >
-        <option value="Default">Default</option>
-        <option value="Default">Default</option>
-        <option value="Default">Default</option>
-        <option value="Default">Default</option>
-      </select>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!-- Dropdown knapper mobil -->
+        <h3>Dropdown knapper</h3>
+      </div>
 
       <!-- Forms -->
       <h2>Forms</h2>

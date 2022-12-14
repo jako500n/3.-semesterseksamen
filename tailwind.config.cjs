@@ -65,6 +65,8 @@ module.exports = {
       // Secondary button
       SecondaryButton: "#F5B8D6",
       SecondaryButtonHover: "#FCEAF3",
+      SecondaryButtonTextColor: "#6E2800",
+      SecondaryButtonBorder: "#6E2800",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
@@ -130,11 +132,11 @@ module.exports = {
 
     // Komponenter i Web og mobil
     dropShadow: {
-      knapShadow: "4px 4px 4px #0D0D0D",
-      knapHoverShadow: "5px 5px 5px #0D0D0D",
-      BillederShadow: "2px 2px 4px #0D0D0D",
-      CardShadow: "4px 4px 4px #0D0D0D",
-      CardHoverShadow: "4px 4px 4px #0D0D0D",
+      knapShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
+      knapHoverShadow: "5px 5px 5px rgba(13, 13, 13, 0.25)",
+      BillederShadow: "2px 2px 4px rgba(13, 13, 13, 0.25)",
+      CardShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
+      CardHoverShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
     },
 
     borderRadius: {
