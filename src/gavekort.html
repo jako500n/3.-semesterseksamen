@@ -11,60 +11,73 @@
     <main class="mx-auto"></main>
 
     <footer
-      class="flex items-center justify-evenly border-t-4 border-sienna-500 bg-footer pb-12 pt-11 text-body_xs"
+      class="border-t-4 border-sienna-500 bg-footer pb-12 pt-11 text-body_xs"
     >
-      <div class="footer_div mx-auto justify-around gap-12 sm:flex">
-        <div class="">
-          <p class="cursor-default text-body_semibold">Navigation</p>
-          <ul>
-            <li class="hover_underline"><a href="#">Home</a></li>
-            <li class="hover_underline"><a href="#">Shop</a></li>
-            <li class="hover_underline"><a hr ef="#">Design selv</a></li>
-            <li class="hover_underline"><a href="#">Gavekort</a></li>
-            <li class="hover_underline"><a href="#">Om os</a></li>
-          </ul>
+      <div class="footer_div mx-auto grid-cols-2 justify-evenly sm:grid">
+        <div class="justify-around sm:flex">
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Navigation</p>
+            <ul>
+              <li class="hover_underline"><a href="#">Home</a></li>
+              <li class="hover_underline"><a href="#">Shop</a></li>
+              <li class="hover_underline"><a hr ef="#">Design selv</a></li>
+              <li class="hover_underline"><a href="#">Gavekort</a></li>
+              <li class="hover_underline"><a href="#">Om os</a></li>
+            </ul>
+          </div>
+
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Information</p>
+            <ul>
+              <li class="hover_underline"><a href="#">FAQ</a></li>
+              <li class="hover_underline">
+                <a href="#">Forsendelses- og returpolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Handelsbetingelser</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Cookie- og privatlivspolitik</a>
+              </li>
+              <li class="hover_underline"><a href="#">Kontakt</a></li>
+              <li class="hover_underline"><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p class="cursor-default text-body_semibold">Information</p>
-          <ul>
-            <li class="hover_underline"><a href="#">FAQ</a></li>
-            <li class="hover_underline">
-              <a href="#">Forsendelses- og returpolitik</a>
-            </li>
-            <li class="hover_underline"><a href="#">Handelsbetingelser</a></li>
-            <li class="hover_underline">
-              <a href="#">Cookie- og privatlivspolitik</a>
-            </li>
-            <li class="hover_underline"><a href="#">Kontakt</a></li>
-            <li class="hover_underline"><a href="#">Sitemap</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="cursor-default text-body_semibold">Butikken</p>
-          <ul>
-            <li class="hover_underline"><a href="#">Åbningstider</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="cursor-default text-body_semibold">Sociale medier</p>
-          <ul class="flex gap-8">
-            <li>
-              <a
-                href="https://www.instagram.com/julienielsdotterjewellery/"
-                target="_blank"
-                ><img src="/img/insta.svg" alt="Instagram-ikon"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/julienielsdotterjewellery"
-                target="_blank"
-                ><img src="/img/facebook.svg" alt="FaceBook-ikon"
-              /></a>
-            </li>
-          </ul>
+
+        <div class="flex justify-around">
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Butikken</p>
+            <ul>
+              <li class="hover_underline"><a href="#">Åbningstider</a></li>
+            </ul>
+          </div>
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Sociale medier</p>
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="https://www.instagram.com/julienielsdotterjewellery/"
+                  target="_blank"
+                  ><img src="/svg/instagram.svg" alt="Instagram-ikon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/julienielsdotterjewellery"
+                  target="_blank"
+                  ><img src="/svg/facebook.svg" alt="FaceBook-ikon"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="justify-center pt-16 text-center sm:flex">
+        <p class="text-body_xs">Copyright © 2022 | julienielsdotter.com</p>
+        <p>|Tlf. 30 32 52 07</p>
+      </div>
+      <p class="text-center">CVR 12 34 56 78</p>
     </footer>
     <script type="module" src="./main.js"></script>
   </body>
