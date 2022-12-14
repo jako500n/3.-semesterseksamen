@@ -118,8 +118,13 @@ module.exports = {
       ],
     },
 
+    // Komponenter i Web og mobil
     dropShadow: {
       knapShadow: "4px 4px 4px #0D0D0D",
+      knapHoverShadow: "5px 5px 5px #0D0D0D",
+      BillederShadow: "2px 2px 4px #0D0D0D",
+      CardShadow: "4px 4px 4px #0D0D0D",
+      CardHoverShadow: "4px 4px 4px #0D0D0D",
     },
 
     extend: {},
