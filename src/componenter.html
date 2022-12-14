@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,34 +40,39 @@
         <div class="mb-10">
           <!-- Primary dropdown -->
           <p>Primary dropdown</p>
+          <!-- <label for="DefaultDropdown" class=""></label> -->
           <select
-            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton px-3 py-1 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
             name="Default"
-            id="Default"
+            id="DefaultDropdown"
             x-model="Default"
             form="Default"
             x-on:change="$nextTick(() => {Default()});"
           >
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
+            <option selected>Default/Kategori</option>
+            <option value="1">Default</option>
+            <option value="2">Default</option>
+            <option value="3">Default</option>
+            <option value="4">Default</option>
           </select>
+
           <!--  -->
           <!-- Secondary dropdown -->
           <p>Secondary dropdown</p>
+          <!-- <label for="DefaultDropdown" class=""></label> -->
           <select
-            class="max-w-xs rounded-knapperRadius border-none bg-secondaryButton py-1 px-3 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
             name="Default"
-            id="Default"
+            id="DefaultDropdown"
             x-model="Default"
             form="Default"
             x-on:change="$nextTick(() => {Default()});"
           >
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
+            <option selected>Default/Kategori</option>
+            <option value="1">Default</option>
+            <option value="2">Default</option>
+            <option value="3">Default</option>
+            <option value="4">Default</option>
           </select>
         </div>
         <!--  -->
@@ -100,34 +105,38 @@
         <div class="mb-10">
           <!-- Primary dropdown -->
           <p>Primary dropdown</p>
+          <!-- <label for="DefaultDropdown" class=""></label> -->
           <select
-            class="hover:drop-shadow-knapHoverShado max-w-xs rounded-knapperRadius border-none bg-primaryButton px-6 py-2 text-knaptekst_desktop text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst_desktop text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
             name="Default"
-            id="Default"
+            id="DefaultDropdown"
             x-model="Default"
             form="Default"
             x-on:change="$nextTick(() => {Default()});"
           >
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
+            <option selected>Default/Kategori</option>
+            <option value="1">Default</option>
+            <option value="2">Default</option>
+            <option value="3">Default</option>
+            <option value="4">Default</option>
           </select>
           <!--  -->
           <!-- Secondary dropdown -->
           <p>Secondary dropdown</p>
+          <!-- <label for="DefaultDropdown" class=""></label> -->
           <select
-            class="max-w-xs rounded-knapperRadius border-none bg-secondaryButton px-6 py-2 text-knaptekst_desktop text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst_desktop text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
             name="Default"
-            id="Default"
+            id="DefaultDropdown"
             x-model="Default"
             form="Default"
             x-on:change="$nextTick(() => {Default()});"
           >
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
-            <option value="Default">Default</option>
+            <option selected>Default/Kategori</option>
+            <option value="1">Default</option>
+            <option value="2">Default</option>
+            <option value="3">Default</option>
+            <option value="4">Default</option>
           </select>
         </div>
       </div>
@@ -166,6 +175,76 @@
               <p class="text-body_xs">*Default</p>
             </div>
           </form>
+        </div>
+      </div>
+
+      <h2 class="text-H2_desktop">Cards</h2>
+      <div class="mb-10">
+        <div class="mb-10 flex flex-row gap-10">
+          <div
+            class="basis-full rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
+          >
+            <img
+              class="rounded-t-billederRadius"
+              src="/img/7-PearlHoop.webp"
+              alt=""
+            />
+            <div class="grid grid-cols-2 align-baseline">
+              <div class="p-5">
+                <p class="text-body_semibold">Default</p>
+                <div class="inline-flex gap-2">
+                  <p class="text-body_base">DKK</p>
+                  <p class="text-body_base">Default</p>
+                </div>
+              </div>
+              <div class="align-baseline">
+                <p>Farver</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="basis-full bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
+          >
+            <div class="grid grid-cols-2 align-baseline">
+              <div class="p-5">
+                <p class="text-body_semibold">Default</p>
+                <div class="inline-flex gap-2">
+                  <p class="text-body_base">DKK</p>
+                  <p class="text-body_base">Default</p>
+                </div>
+              </div>
+              <div class="align-baseline">
+                <p>Farver</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="basis-full bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
+          >
+            <div class="grid grid-cols-2 align-baseline">
+              <div class="p-5">
+                <p class="text-body_semibold">Default</p>
+                <div class="inline-flex gap-2">
+                  <p class="text-body_base">DKK</p>
+                  <p class="text-body_base">Default</p>
+                </div>
+              </div>
+              <div class="align-baseline">
+                <p>Farver</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-10">
+          <h3>Card web</h3>
+          <div>
+            <p class="text-body_semibold">Default</p>
+            <div class="inline-flex">
+              <p class="text-body_base">DKK</p>
+              <p class="text-body_base">Default</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
