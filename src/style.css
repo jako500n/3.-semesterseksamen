@@ -56,7 +56,16 @@ body {
   font-family: "Bitter", serif;
 }
 
-p {
+h1,
+h2 {
+  font-family: "Futura Light", sans-serif;
+}
+
+h3 {
+  font-family: "Futura Medium", sans-serif;
+}
+
+.vedikkeendnu {
   font-family: "Futura Book", sans-serif;
 }
 
