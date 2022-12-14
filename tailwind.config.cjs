@@ -117,6 +117,11 @@ module.exports = {
         { letterSpacing: "0.10rem", lineHeight: "24.4px" },
       ],
     },
+
+    dropShadow: {
+      knapShadow: "4px 4px 4px #0D0D0D",
+    },
+
     extend: {},
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

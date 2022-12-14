@@ -69,6 +69,10 @@ h3 {
   font-family: "Futura Book", sans-serif;
 }
 
+button {
+  font-family: "Futura Bold", sans-serif;
+}
+
 .footer_div,
 main {
   width: 88%;
