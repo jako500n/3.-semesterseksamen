@@ -76,6 +76,8 @@ module.exports = {
       // Forms
       formBorder: "#5B2100",
       fromPlaceholderTextColor: "#666666",
+      formBgColor: "#FEF8FB",
+      formFocusBorder: "#D81E79",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
