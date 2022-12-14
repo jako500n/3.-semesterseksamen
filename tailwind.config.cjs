@@ -65,6 +65,8 @@ module.exports = {
       // Secondary button
       SecondaryButton: "#F5B8D6",
       SecondaryButtonHover: "#FCEAF3",
+      SecondaryButtonTextColor: "#6E2800",
+      SecondaryButtonBorder: "#6E2800",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
