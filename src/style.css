@@ -30,11 +30,15 @@ body {
   font-family: "Bitter", serif;
 }
 
+p {
+  max-width: 60ch;
+}
+
 h1,
 h2 {
-  font-family: futura-pt, sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 300;
-  font-style: normal;
+  font-style: light;
 }
 
 h3 {
@@ -50,6 +54,12 @@ h3 {
 }
 
 button {
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+select {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
