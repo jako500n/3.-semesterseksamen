@@ -60,6 +60,10 @@ main {
   width: 88%;
 }
 
+.test {
+  font-size: 2rem;
+}
+
 .hover_underline:hover {
   text-decoration: underline;
 }
