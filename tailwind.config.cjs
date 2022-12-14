@@ -48,7 +48,11 @@ module.exports = {
         800: "#A6A6A6",
         900: "#999999",
       },
+      check: {
+        green: "#2a5f38",
+      },
 
+      // tokens til components
       footer: "#FCEAF3",
       copyColor: "#5B2100",
     },

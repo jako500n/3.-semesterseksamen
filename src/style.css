@@ -56,6 +56,10 @@ body {
   font-family: "Bitter", serif;
 }
 
+p {
+  font-family: "Futura Book", sans-serif;
+}
+
 .footer_div,
 main {
   width: 88%;
