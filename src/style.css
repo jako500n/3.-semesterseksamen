@@ -21,32 +21,6 @@
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/bitter-v32-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* futura pt-light - latin */
-@font-face {
-  font-family: "Futura Light";
-  font-style: thin;
-  font-weight: 300;
-  src: local(""), url("../fonts/FuturaCyrillicLight.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* bitter-600 - latin */
-@font-face {
-  font-family: "Futura Book";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/FuturaCyrillicBook.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* bitter-regular - latin */
-@font-face {
-  font-family: "Futura Medium";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/FuturaCyrillicMedium.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 html {
   font-size: 17px;
@@ -58,19 +32,27 @@ body {
 
 h1,
 h2 {
-  font-family: "Futura Light", sans-serif;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 h3 {
-  font-family: "Futura Medium", sans-serif;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.vedikkeendnu {
-  font-family: "Futura Book", sans-serif;
+.nav a {
+  font-family: futura-pt-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {
-  font-family: "Futura Bold", sans-serif;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .footer_div,
