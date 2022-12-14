@@ -127,6 +127,13 @@ module.exports = {
       CardHoverShadow: "4px 4px 4px #0D0D0D",
     },
 
+    borderRadius: {
+      BillederRadius: "5px",
+      CardsRadius: "5px",
+      KnapperRadius: "12px",
+      FormsRadius: "10px",
+    },
+
     extend: {},
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
