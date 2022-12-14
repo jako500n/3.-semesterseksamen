@@ -56,17 +56,21 @@ module.exports = {
       footer: "#FCEAF3",
       copyColor: "#5B2100",
       // Primary button
-      PrimaryButton: "#D81E79",
-      PrimaryButtonHover: "#951553",
-      PrimaryButtonTextColor: "#FFFFFF",
-      PrimaryButtonHoverTextColor: "#FEF8FB",
-      PrimaryButtonBorder: "#F5B8D6",
+      primaryButton: "#D81E79",
+      primaryButtonHover: "#951553",
+      primaryButtonTextColor: "#FFFFFF",
+      primaryButtonHoverTextColor: "#FEF8FB",
+      primaryButtonBorder: "#F5B8D6",
 
       // Secondary button
-      SecondaryButton: "#F5B8D6",
-      SecondaryButtonHover: "#FCEAF3",
-      SecondaryButtonTextColor: "#6E2800",
-      SecondaryButtonBorder: "#6E2800",
+      secondaryButton: "#F5B8D6",
+      secondaryButtonHover: "#FCEAF3",
+      secondaryButtonTextColor: "#6E2800",
+      secondaryButtonBorder: "#6E2800",
+
+      // Forms
+      formBorder: "#5B2100",
+      fromPlaceholderTextColor: "#666666",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
@@ -134,16 +138,16 @@ module.exports = {
     dropShadow: {
       knapShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
       knapHoverShadow: "5px 5px 5px rgba(13, 13, 13, 0.25)",
-      BillederShadow: "2px 2px 4px rgba(13, 13, 13, 0.25)",
-      CardShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
-      CardHoverShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
+      billederShadow: "2px 2px 4px rgba(13, 13, 13, 0.25)",
+      cardShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
+      cardHoverShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
     },
 
     borderRadius: {
-      BillederRadius: "5px",
-      CardsRadius: "5px",
-      KnapperRadius: "12px",
-      FormsRadius: "10px",
+      billederRadius: "5px",
+      cardsRadius: "5px",
+      knapperRadius: "12px",
+      formRadius: "10px",
     },
 
     extend: {},
