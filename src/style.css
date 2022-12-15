@@ -22,6 +22,7 @@
       url("../fonts/bitter-v32-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Alt har Bitter som font, indtil andet er defineret */
 body {
   font-family: "Bitter", serif;
 }
@@ -30,6 +31,12 @@ p {
   max-width: 60ch;
 }
 
+.footer_div,
+main {
+  width: 88%;
+}
+
+/* Font families til elementer */
 h1,
 h2 {
   font-family: "futura-pt", sans-serif;
@@ -43,12 +50,26 @@ h3 {
   font-style: normal;
 }
 
+button {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+select {
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 nav a {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+/* --------------------------^------------------------------ */
 
+/* Animation til hover på menulinks */
 nav .a_underline::before {
   content: "";
   position: absolute;
@@ -67,24 +88,9 @@ nav .a_underline:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+/* --------------------------^------------------------------ */
 
-button {
-  font-family: "futura-pt-bold", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-select {
-  font-family: futura-pt-bold, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.footer_div,
-main {
-  width: 88%;
-}
-
+/* Hover til cards så tekster skiftes ud */
 .hover_underline:hover {
   text-decoration: underline;
 }
@@ -103,3 +109,4 @@ article:hover .after {
   display: inline;
   transition: 300ms ease-in;
 }
+/* --------------------------^------------------------------ */
