@@ -60,6 +60,7 @@ module.exports = {
       // tokens til components
       footer: "#FCEAF3",
       copyColor: "#5B2100",
+      menuBackgroundColor: "#FEF8FB",
       // Primary button
       primaryButton: "#D81E79",
       primaryButtonHover: "#951553",
@@ -121,7 +122,7 @@ module.exports = {
       // Fonthieraki til mobile
       H1_mobile: [
         "3.052rem",
-        { letterSpacing: "0.08rem", fontWeight: "light", lineHeight: "55.5px" },
+        { letterSpacing: "0.08rem", fontWeight: "light" },
       ],
       H2_mobile: [
         "1.953rem",
@@ -154,7 +155,14 @@ module.exports = {
       formRadius: "10px",
     },
 
-    extend: {},
+    extend: {
+      padding: {
+        small: "0.625rem",
+        medium: "1.563rem",
+        large: "3.75rem",
+        xLarge: "8.125rem",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
