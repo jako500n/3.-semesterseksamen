@@ -61,6 +61,7 @@ module.exports = {
       footer: "#FCEAF3",
       copyColor: "#5B2100",
       menuBackgroundColor: "#FEF8FB",
+      iconColor: "#5B2100",
       // Primary button
       primaryButton: "#D81E79",
       primaryButtonHover: "#951553",
