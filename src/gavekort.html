@@ -8,31 +8,103 @@
     <link rel="stylesheet" href="https://use.typekit.net/kae7xyj.css" />
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
+    <!-- Header -->
+    <header class="bg-menuBackgroundColor sticky top-0 z-10">
+      <nav class="border- flex justify-between border-b-2 px-6 py-4">
+        <div>
+          <a href="index.html"
+            ><img
+              class="w-28"
+              src="/img/logoPink900UdenSkygge.png"
+              alt="Logo - til forsiden"
+          /></a>
+        </div>
+
+        <div class="flex items-center gap-8">
+          <div class="menu_click cursor-pointer space-y-2 self-center">
+            <div class="bg-black h-0.5 w-8"></div>
+            <div class="bg-black h-0.5 w-8"></div>
+            <div class="bg-black h-0.5 w-8"></div>
+          </div>
+          <div
+            class="menu_punkter bg-groen fixed top-0 right-0 z-10 hidden h-screen w-screen overflow-x-hidden"
+          >
+            <div class="mr-4 mt-1 flex justify-end">
+              <button class="menu_luk text-4xl text-hvid py-4 px-6">x</button>
+            </div>
+            <a class="flex justify-center" href="index.html"
+              ><img
+                class="w-1/2 items-center align-middle sm:w-1/12"
+                src="img/logoer/vildskud.svg"
+            /></a>
+
+            <ul class="text-base text-hvid w-full flex-col pt-6 text-center">
+              <li class="sm:text-3xl w-full py-4 sm:py-6">
+                <a
+                  class="hover:text-main cursor-pointer transition ease-in"
+                  href="program.html"
+                  >Program</a
+                >
+              </li>
+              <li class="sm:text-3xl w-full cursor-pointer py-4 sm:py-6">
+                <a
+                  class="hover:text-main cursor-pointer transition ease-in"
+                  href="frivillige.html"
+                  >Frivillige</a
+                >
+              </li>
+              <li class="sm:text-3xl w-full cursor-pointer py-4 sm:py-6">
+                <a
+                  class="hover:text-main cursor-pointer transition ease-in"
+                  href="opencall.html"
+                  >Open Call</a
+                >
+              </li>
+              <li class="sm:text-3xl w-full cursor-pointer py-4 sm:py-6">
+                <a
+                  class="hover:text-main cursor-pointer transition ease-in"
+                  href="om.html"
+                  >Om Vildskud</a
+                >
+              </li>
+              <li class="sm:text-3xl w-full cursor-pointer py-4 sm:py-6">
+                <a
+                  class="hover:text-main cursor-pointer transition ease-in"
+                  href="billet.html"
+                  >Billetter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main class="mx-auto">
-      
       <section>
         <div>
-          <h1 class="text-H1_mobile text-sienna-500 pb-medium pt-large">Gavekort</h1>
-          <p class="pb-small">Køb et gavekort til unikke håndlavede smykker. 
-            Du kan få et gavekort tilsendt fysisk i et lækkert 
-            guldkort med din egen personlige hilsen. Står du derimod 
-            og mangler det her og nu, kan du få sendt direkte til din e-mail.</p>
+          <h1 class="pb-medium pt-large text-H1_mobile text-sienna-500">
+            Gavekort
+          </h1>
+          <p class="pb-small">
+            Køb et gavekort til unikke håndlavede smykker. Du kan få et gavekort
+            tilsendt fysisk i et lækkert guldkort med din egen personlige
+            hilsen. Står du derimod og mangler det her og nu, kan du få sendt
+            direkte til din e-mail.
+          </p>
           <p class="pb-large">
-            Dette er perfekt mulighed for at give din kære et 
-            fremtidigt speciallavet smykke, eller hvis du syntes 
-            de skal udvælge det selv.Gavekortet kan også gives som et 
-            tilskud til et smykke, som skal købes i fremtiden. 
+            Dette er perfekt mulighed for at give din kære et fremtidigt
+            speciallavet smykke, eller hvis du syntes de skal udvælge det
+            selv.Gavekortet kan også gives som et tilskud til et smykke, som
+            skal købes i fremtiden.
           </p>
           <p class="pb-medium">
-            Der er et minimums beløb på DKK 100, men derfra vælger 
-            selv hvor mange penge, som skal være på gavekortet. 
-            Du vælger beløbet og tilføjer det til kurven.
+            Der er et minimums beløb på DKK 100, men derfra vælger selv hvor
+            mange penge, som skal være på gavekortet. Du vælger beløbet og
+            tilføjer det til kurven.
           </p>
 
-          <p class="text-body_semibold pb-small">
-            OBS. minimum 100 DKK
-          </p>
-
+          <p class="pb-small text-body_semibold">OBS. minimum 100 DKK</p>
 
           <form>
             <div class="pb-medium">
@@ -47,7 +119,6 @@
             </div>
           </form>
 
-
           <button
             class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
           >
@@ -56,13 +127,13 @@
         </div>
 
         <div>
-          <img class="drop-shadow-billederShadow pt-large pb-xLarge" src="/img/gavekort.webp" alt="Billede af gavekort">
+          <img
+            class="pt-large pb-xLarge drop-shadow-billederShadow"
+            src="/img/gavekort.webp"
+            alt="Billede af gavekort"
+          />
         </div>
       </section>
-
-
-
-
     </main>
 
     <footer
