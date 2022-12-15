@@ -52,10 +52,10 @@ module.exports = {
         green: "#2a5f38",
       },
 
-      // color h1 og h2
-
+      // tekstfarver
       color_h1: "#A03A00",
       color_h2: "#A03A00",
+      overskriftColor: "#A03A00",
 
       // tokens til components
       footer: "#FCEAF3",
