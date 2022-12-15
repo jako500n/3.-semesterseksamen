@@ -60,6 +60,8 @@ module.exports = {
       // tokens til components
       footer: "#FCEAF3",
       copyColor: "#5B2100",
+      menuBackgroundColor: "#FEF8FB",
+      iconColor: "#5B2100",
       // Primary button
       primaryButton: "#D81E79",
       primaryButtonHover: "#951553",
@@ -78,6 +80,9 @@ module.exports = {
       fromPlaceholderTextColor: "#666666",
       formBgColor: "#FEF8FB",
       formFocusBorder: "#D81E79",
+
+      // Cards
+      cardsBgColor: "#FFFFFF",
     },
     fontSize: {
       // Ved styling skriver man eksempelvis text-H3_mobile
@@ -113,15 +118,12 @@ module.exports = {
         { letterSpacing: "0.10rem", fontWeight: "600", lineHeight: "30px" },
       ],
       body_xs: ["0.8rem", { letterSpacing: "0.10rem", lineHeight: "30px" }],
-      knaptekst_desktop: [
-        "1.66rem",
-        { letterSpacing: "0.10rem", lineHeight: "34px" },
-      ],
+      knaptekst_desktop: ["1.66rem", { lineHeight: "34px" }],
 
       // Fonthieraki til mobile
       H1_mobile: [
         "3.052rem",
-        { letterSpacing: "0.08rem", fontWeight: "light" },
+        { letterSpacing: "0.08rem", fontWeight: "light", lineHeight: "55.6px" },
       ],
       H2_mobile: [
         "1.953rem",
@@ -135,10 +137,7 @@ module.exports = {
         "1.563rem",
         { letterSpacing: "0.08rem", fontWeight: "book" },
       ],
-      knaptekst_mobile: [
-        "1.188rem",
-        { letterSpacing: "0.10rem", lineHeight: "24.4px" },
-      ],
+      knaptekst_mobile: ["1.188rem", { lineHeight: "24.4px" }],
     },
 
     // Komponenter i Web og mobil
@@ -147,7 +146,7 @@ module.exports = {
       knapHoverShadow: "5px 5px 5px rgba(13, 13, 13, 0.25)",
       billederShadow: "2px 2px 4px rgba(13, 13, 13, 0.25)",
       cardShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
-      cardHoverShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
+      cardHoverShadow: "5px 5px 5px rgba(13, 13, 13, 0.25)",
     },
 
     borderRadius: {
@@ -157,7 +156,14 @@ module.exports = {
       formRadius: "10px",
     },
 
-    extend: {},
+    extend: {
+      padding: {
+        small: "0.625rem",
+        medium: "1.563rem",
+        large: "3.75rem",
+        xLarge: "8.125rem",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
