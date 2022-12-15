@@ -122,7 +122,7 @@ module.exports = {
       // Fonthieraki til mobile
       H1_mobile: [
         "3.052rem",
-        { letterSpacing: "0.08rem", fontWeight: "light" },
+        { letterSpacing: "0.08rem", fontWeight: "light", lineHeight: "55.6px" },
       ],
       H2_mobile: [
         "1.953rem",
