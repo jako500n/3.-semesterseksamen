@@ -160,6 +160,23 @@
             </div>
           </form>
         </div>
+
+        <div class="mb-10">
+          <h3>Form text i høj</h3>
+          <!-- Form til tekst -->
+          <form class="">
+            <div class="">
+              <label class="" for="Default"> Default </label>
+              <input
+                class="block w-full rounded-formRadius border-formBorder bg-formBgColor pb-96 text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder md:pb-60"
+                id="Default"
+                type="text"
+                placeholder="Default"
+              />
+              <p class="text-body_xs">*Default</p>
+            </div>
+          </form>
+        </div>
         <div class="mb-10">
           <h3>Form number</h3>
           <!-- Form til tekst -->
@@ -184,16 +201,18 @@
           <!--  -->
           <!--  -->
           <!-- Selve cartet -->
-          <div
-            class="basis-full rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
+          <article
+            class="group basis-full rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
           >
             <img
               class="rounded-t-billederRadius"
               src="/img/7-PearlHoop.webp"
               alt=""
             />
-            <div class="p-6">
-              <p class="text-body_semibold">Default</p>
+            <div class="p-6 group-hover:bg-pink-500">
+              <p class="text-body_semibold">
+                <span class="hover:hidden">Default</span>
+              </p>
               <div class="flex">
                 <div class="inline-flex gap-2">
                   <p class="text-body_base">DKK</p>
@@ -219,11 +238,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
           <!--  -->
           <!--  -->
           <!-- Selve cartet -->
-          <div
+          <article
             class="basis-full rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
           >
             <img
@@ -258,11 +277,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
           <!--  -->
           <!--  -->
           <!-- Selve cartet -->
-          <div
+          <article
             class="basis-full rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow hover:drop-shadow-cardHoverShadow"
           >
             <img
@@ -297,7 +316,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </main>
