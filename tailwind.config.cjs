@@ -90,7 +90,7 @@ module.exports = {
       // Fonthieraki til desktop
       H1_desktop: [
         "3.815rem",
-        { letterSpacing: "0.08rem", fontWeight: "100", lineHeight: "103.9px" },
+        { letterSpacing: "0.08rem", fontWeight: "100", lineHeight: "79.9px" },
       ],
       H2_desktop: [
         "3.052rem",
