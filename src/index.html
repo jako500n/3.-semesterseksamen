@@ -10,16 +10,19 @@
   <body class="bg-pink-100 text-body_base text-copyColor">
     <main class="mx-auto">
       <!-- section 1 -->
-      <section class="lg:grid grid-cols-2">
-        <div class="pt-large pb-medium lg:w-96 lg:order-1 place-self-center">
+      <section class="grid-cols-2 lg:grid">
+        <div class="place-self-center pt-large pb-medium lg:order-1 lg:w-96">
           <img
             src="/img/stregtegning1.svg"
             alt="stregtegning af julie niels dotter"
           />
         </div>
         <div>
-          <h1 class="text-center text-H1_mobile text-sienna-500 lg:pt-xLarge lg:text-H1_desktop">
-            JULIE NIELSDOTTER <br> <span class="text-H2_mobile lg:text-H2_desktop">JEWELLERY</span>
+          <h1
+            class="text-center text-H1_mobile text-sienna-500 lg:pt-xLarge lg:text-H1_desktop"
+          >
+            JULIE NIELSDOTTER <br />
+            <span class="text-H2_mobile lg:text-H2_desktop">JEWELLERY</span>
           </h1>
           <!-- <h2 class="text-center text-H2_mobile text-sienna-500 pb-medium">JEWELLERY</h2> -->
           <p class="pb-large pt-medium">
@@ -29,7 +32,9 @@
             af ferskvandsperler, guld og diamanter.
           </p>
           <br />
-          <p class="pb-large">Gå på opdagelse i smykkeuniverset og lad dig inspirere.</p>
+          <p class="pb-large">
+            Gå på opdagelse i smykkeuniverset og lad dig inspirere.
+          </p>
           <button
             class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
           >
@@ -39,61 +44,69 @@
       </section>
 
       <!-- lille pil -->
-      <div class="pt-large flex justify-center items-center">
-        <img class="w-10 hidden sm:block drop-shadow-knapShadow" src="/img/arrowdown.png" alt="scroll ned og se mere pil">
+      <div class="flex items-center justify-center pt-large">
+        <img
+          class="hidden w-10 drop-shadow-knapShadow sm:block"
+          src="/img/arrowdown.png"
+          alt="scroll ned og se mere pil"
+        />
       </div>
 
       <!-- section 2 -->
       <section class="pt-xLarge pb-xLarge">
         <article class="">
-        <div class="grid grid-cols-2 gap-2">
-          <div
-            class="relative grid rounded-billederRadius bg-[url('/img/earring.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-          >
-            <button
-              class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+          <div class="grid grid-cols-2 gap-2">
+            <div
+              class="relative grid rounded-billederRadius bg-[url('/img/earring.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
             >
-              Se øreringe
-            </button>
-          </div>
+              <button
+                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+              >
+                Se øreringe
+              </button>
+            </div>
 
-          <div
-            class="relative grid rounded-billederRadius bg-[url('/img/ring.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-          >
-            <button
-              class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            <div
+              class="relative grid rounded-billederRadius bg-[url('/img/ring.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
             >
-              Se ringe
-            </button>
-          </div>
+              <button
+                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+              >
+                Se ringe
+              </button>
+            </div>
 
-          <div
-            class="relative grid rounded-billederRadius bg-[url('/img/necklace.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-          >
-            <button
-              class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            <div
+              class="relative grid rounded-billederRadius bg-[url('/img/necklace.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
             >
-              Se halskæder
-            </button>
-          </div>
+              <button
+                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+              >
+                Se halskæder
+              </button>
+            </div>
 
-          <div
-            class="relative grid rounded-billederRadius bg-[url('/img/bracelet.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-          >
-            <button
-              class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            <div
+              class="relative grid rounded-billederRadius bg-[url('/img/bracelet.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
             >
-              Se armbånd
-            </button>
+              <button
+                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+              >
+                Se armbånd
+              </button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
       </section>
 
       <!-- section 3 -->
-      <section class="lg:grid grid-cols-2">
+      <section class="grid-cols-2 lg:grid">
         <div>
-          <h2 class="text-H2_mobile text-sienna-500 pb-medium lg:text-H2_desktop">Vær med i processen</h2>
+          <h2
+            class="pb-medium text-H2_mobile text-sienna-500 lg:text-H2_desktop"
+          >
+            Vær med i processen
+          </h2>
           <p class="pb-medium">
             Nogen gange finder man et smykke, man elsker, men farven på smykket,
             var bare ikke lige den farve, man drømte om. Hos Julie Nielsdotter
@@ -109,7 +122,7 @@
             Specialdesign
           </button>
         </div>
-        <div class="pt-medium pb-xLarge lg:w-96 place-self-center">
+        <div class="place-self-center pt-medium pb-xLarge lg:w-96">
           <img
             src="/img/stregtegning2.svg"
             alt="Stregtegning af julie Nielsdotter"
@@ -119,35 +132,41 @@
 
       <!-- section 4 -->
       <section class="bg-[url('/img/perlemorbg.webp')] py-20">
-        <article class="lg:grid grid-cols-2">
-        <div class="pb-large">
-          <img
-            class="rounded-billederRadius drop-shadow-billederShadow"
-            src="/img/gavekort.webp"
-            alt="billede af gavekort"
-          />
-        </div>
-        <div
-          class="rounded-billederRadius bg-pink-200 drop-shadow-billederShadow"
-        >
-          <h2 class="text-H2_mobile text-sienna-500 pt-medium pb-medium lg:text-H2_desktop">Giv et gavekort</h2>
-          <p class="pb-medium">Ved du heller ikke, hvad du skal give i gave?</p>
-          <p class="pb-medium">
-            Køb et gavekort til unikke håndlavede smykker. Du kan få et gavekort
-            tilsendt fysisk i et lækkert guldkort med din egen personlige
-            hilsen. Står du derimod og mangler det her og nu, kan du få sendt
-            direkte til din e-mail.
-          </p>
-
-          <div class="pb-medium">
-          <button
-            class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+        <article class="grid-cols-2 lg:grid">
+          <div class="pb-large">
+            <img
+              class="rounded-billederRadius drop-shadow-billederShadow"
+              src="/img/gavekort.webp"
+              alt="billede af gavekort"
+            />
+          </div>
+          <div
+            class="rounded-billederRadius bg-pink-200 drop-shadow-billederShadow"
           >
-            Køb gavekort
-          </button>
-        </div>
-        </div>
-      </article>
+            <h2
+              class="pt-medium pb-medium text-H2_mobile text-sienna-500 lg:text-H2_desktop"
+            >
+              Giv et gavekort
+            </h2>
+            <p class="pb-medium">
+              Ved du heller ikke, hvad du skal give i gave?
+            </p>
+            <p class="pb-medium">
+              Køb et gavekort til unikke håndlavede smykker. Du kan få et
+              gavekort tilsendt fysisk i et lækkert guldkort med din egen
+              personlige hilsen. Står du derimod og mangler det her og nu, kan
+              du få sendt direkte til din e-mail.
+            </p>
+
+            <div class="pb-medium">
+              <button
+                class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+              >
+                Køb gavekort
+              </button>
+            </div>
+          </div>
+        </article>
       </section>
 
       <div class="grid grid-flow-row py-24">
