@@ -13,8 +13,10 @@
       
       
         <section>
-        <div>
-        <h2 class="text-H1_mobile text-sienna-500 pb-medium pt-large">Sæt dit eget Præg</h2>
+        <h2 class="lg:text-H1_desktop text-H1_mobile text-sienna-500 pb-medium pt-large">Sæt dit eget Præg</h2>
+        <div class="lg:grid grid-cols-5 gap-20">
+        <div class="col-span-3">
+        
         <p class="pb-small">Hos Julie Nielsdotter Jewellery kan der bestilles 
             speciallavede, personlige smykker, så du kan få 
             lige præcis det smykke, som du drømmer om.</p>
@@ -55,13 +57,13 @@
             </div>
           </form>
           
-          <form>
-            <div class="pb-medium">
-              <label class="" for="Default"> Besked </label>
+          <form class="pb-medium">
+            <div class="">
+              <label class="" for="Default"> Besked* </label>
               <input
-                class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
+                class="block w-full rounded-formRadius border-formBorder bg-formBgColor pb-96 text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder md:pb-60"
                 id="Default"
-                type="number"
+                type="text"
                 placeholder="Skriv din besked her..."
               />
               <p class="text-body_xs"></p>
@@ -77,9 +79,10 @@
           <p class="text-body_semibold pt-medium">OBS. Hvis du bestiller et speciallavet smykke, er der ikke mulighed for returnering.</p>
         </div>
 
-        <div class="pt-medium pb-xLarge">
-            <img class="drop-shadow-billederShadow" src="/img/earrings_specialdesignet.webp" alt="Billede af runde øreringe">
+        <div class="pt-medium pb-xLarge col-span-2">
+            <img class="drop-shadow-billederShadow w-full" src="/img/earrings_specialdesignet.webp" alt="Billede af runde øreringe">
         </div>
+    </div>
 
     </section>
 
