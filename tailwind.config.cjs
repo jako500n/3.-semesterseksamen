@@ -79,7 +79,7 @@ module.exports = {
       formBorder: "#5B2100",
       fromPlaceholderTextColor: "#666666",
       formBgColor: "#FEF8FB",
-      formFocusBorder: "#D81E79",
+      formFocusBorder: "#5B2100",
 
       // Cards
       cardsBgColor: "#FFFFFF",
