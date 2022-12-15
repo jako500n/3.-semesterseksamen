@@ -22,10 +22,6 @@
       url("../fonts/bitter-v32-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-html {
-  font-size: 17px;
-}
-
 body {
   font-family: "Bitter", serif;
 }
@@ -76,4 +72,23 @@ main {
 
 .hover_underline:hover {
   text-decoration: underline;
+}
+
+article {
+  transition: 300ms ease-in;
+}
+
+article .after {
+  display: none;
+  transition: 300ms ease-in;
+}
+
+article:hover .before {
+  display: none;
+  transition: 300ms ease-in;
+}
+
+article:hover .after {
+  display: inline;
+  transition: 300ms ease-in;
 }
