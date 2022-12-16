@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
+    <title>Julie Nielsdotter</title>
+    <script type="module" crossorigin src="./assets/main.169b1247.js"></script>
+    <link rel="stylesheet" href="./assets/main.83644f65.css">
+  </head>
+  <body class="bg-pink-100 text-body_base text-copyColor">
+    <!-- Header -->
+    <header class="sticky top-0 z-10 bg-menuBackgroundColor">
+      <nav
+        class="flex items-center justify-between border-b-2 border-sienna-500 px-6 py-4 text-menulinks_mobile text-overskriftColor"
+      >
+        <div>
+          <a href="index.html"
+            ><img
+              class="w-20"
+              src="./img/julienielsdotter_logo-8.png"
+              alt="Logo - til forsiden"
+          /></a>
+        </div>
+
+        <div class="hidden sm:block">
+          <ul class="flex flex-col gap-10 sm:flex-row">
+            <li class="py-4">
+              <a class="a_underline relative" href="index.html">Forside</a>
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="shop.html">Shop</a>
+            </li>
+            <li class="py-4">
+              <a class="a_chosen relative" href="design_selv.html"
+                >Design selv</a
+              >
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="gavekort.html">Gavekort</a>
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="om_julie.html">Om Julie</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Ikoner til søg og kurv -->
+        <div class="hidden sm:block">
+          <ul class="flex gap-5">
+            <li class="">
+              <img src="./svg/soeg.svg" alt="Søg på siden" />
+            </li>
+            <li class="">
+              <a class="" href="indkoebskurv.html"
+                ><img src="./svg/kurv.svg" alt="Til kurven"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Menu i mobil -->
+        <div
+          class="menu_punkter fixed top-0 right-0 z-10 hidden h-full w-screen bg-pink-100"
+        >
+          <!-- Ikon til luk i burger -->
+          <div class="flex justify-end pr-6 pt-10">
+            <img
+              class="menu_luk cursor-pointer"
+              src="./svg/close.svg"
+              alt="Luk menu"
+            />
+          </div>
+
+          <!-- Menupunkter mobil -->
+          <ul class="flex w-full flex-col pt-6 text-center sm:flex-row">
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="index.html">Forside</a>
+            </li>
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="shop.html">Shop</a>
+            </li>
+            <li class="py-4">
+              <a class="a_chosen relative" href="design_selv.html"
+                >Design selv</a
+              >
+            </li>
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="gavekort.html">Gavekort</a>
+            </li>
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="om_julie.html">Om Julie</a>
+            </li>
+            <div class="flex justify-center gap-8">
+              <li class="py-4">
+                <img src="./svg/soeg.svg" alt="Søg på siden" />
+              </li>
+              <li class="py-4">
+                <a class="" href="indkoebskurv.html"
+                  ><img src="./svg/kurv.svg" alt="Til kurven"
+                /></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- Ikon til burger menu -->
+        <div class="flex items-center gap-8 sm:hidden">
+          <img
+            class="menu_click w-8 cursor-pointer"
+            src="./svg/burger.svg"
+            alt="Ikon til menu"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- Header slut -->
+
+    <main>
+      <section>
+        <h2
+          class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
+        >
+          Sæt dit eget Præg
+        </h2>
+        <div class="grid-cols-5 gap-20 lg:grid">
+          <div class="col-span-3">
+            <p class="pb-small">
+              Hos Julie Nielsdotter Jewellery kan der bestilles speciallavede,
+              personlige smykker, så du kan få lige præcis det smykke, som du
+              drømmer om.
+            </p>
+
+            <p class="pb-medium">
+              Julie er uddannet guldsmed og hun har derfor evnerne til at lave
+              et smykke så det passer præcis til dig. Vælg din egen farve, sten
+              eller materiale, og få smykket lige præcis som du vil
+            </p>
+
+            <p class="pb-medium">
+              Skriv dine ideer til dit smykke til os, og vi svare hurtigst
+              muligt.
+            </p>
+
+            <p class="pb-medium text-body_semibold">Indtast dine oplysninger</p>
+
+            <form>
+              <div class="pb-medium">
+                <label class="" for="Default"> Fulde navn* </label>
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
+                  id="Default"
+                  type="number"
+                  placeholder="Sisse Falcke"
+                />
+                <p class="text-body_xs"></p>
+              </div>
+            </form>
+
+            <form>
+              <div class="pb-medium">
+                <label class="" for="Default"> E-mail* </label>
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
+                  id="Default"
+                  type="number"
+                  placeholder="Sisse-falcke@gmail.com"
+                />
+                <p class="text-body_xs"></p>
+              </div>
+            </form>
+
+            <form class="pb-medium">
+              <div class="">
+                <label class="" for="Default"> Besked* </label>
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor pb-96 text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder md:pb-60"
+                  id="Default"
+                  type="text"
+                  placeholder="Skriv din besked her..."
+                />
+                <p class="text-body_xs"></p>
+              </div>
+            </form>
+
+            <button
+              class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+            >
+              Send besked
+            </button>
+
+            <p class="pt-medium text-body_semibold">
+              OBS. Hvis du bestiller et speciallavet smykke, er der ikke
+              mulighed for returnering.
+            </p>
+          </div>
+
+          <div class="col-span-2 pt-medium pb-xLarge">
+            <img
+              class="w-full drop-shadow-billederShadow"
+              src="./img/earrings_specialdesignet.webp"
+              alt="Billede af runde øreringe"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="border-t-4 border-sienna-500 bg-footer pt-11 pb-4 text-body_xs"
+    >
+      <div class="footer_div mx-auto grid-cols-2 justify-evenly sm:grid">
+        <div class="justify-around sm:flex">
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Navigation</p>
+            <ul>
+              <li class="hover_underline"><a href="index.html">Forside</a></li>
+              <li class="hover_underline"><a href="shop.html">Shop</a></li>
+              <li class="hover_underline">
+                <a href="design_selv.html">Design selv</a>
+              </li>
+              <li class="hover_underline">
+                <a href="gavekort.html">Gavekort</a>
+              </li>
+              <li class="hover_underline"><a href="om_julie.html">Om os</a></li>
+            </ul>
+          </div>
+
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Information</p>
+            <ul>
+              <li class="hover_underline"><a href="#">FAQ</a></li>
+              <li class="hover_underline">
+                <a href="#">Forsendelses- og returpolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Handelsbetingelser</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Cookie- og privatlivspolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="om_julie.html  ">Kontakt</a>
+              </li>
+              <li class="hover_underline"><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex justify-around">
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Butikken</p>
+            <ul>
+              <li class="hover_underline"><a href="#">Åbningstider</a></li>
+            </ul>
+          </div>
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Sociale medier</p>
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="https://www.instagram.com/julienielsdotterjewellery/"
+                  target="_blank"
+                  ><img src="./svg/instagram.svg" alt="Instagram-ikon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/julienielsdotterjewellery"
+                  target="_blank"
+                  ><img src="./svg/facebook.svg" alt="FaceBook-ikon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="justify-center pt-16 text-center sm:flex">
+        <p class="text-body_xs">Copyright © 2022 | julienielsdotter.com</p>
+        <p>| Tlf. 30 32 52 07</p>
+      </div>
+      <div class="justify-center sm:flex">
+        <p class="text-center">CVR 12 34 56 78</p>
+      </div>
+    </footer>
+    <!-- Footer slut -->
+    
+  </body>
+</html>
