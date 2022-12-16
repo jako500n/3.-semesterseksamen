@@ -14,68 +14,98 @@
         >
           Indkøbskurv
         </h1>
-        <div class="rounded-formRadius bg-pink-500 p-4 drop-shadow-cardShadow">
-          <div class="inline-flex gap-3">
-            <img
-              class="h-16 w-16 rounded-billederRadius drop-shadow-billederShadow"
-              src="/img/roundMilkywayRing.webp"
-              alt=""
-            />
+        <div class="grid-cols-2 pb-xLarge lg:grid lg:gap-20">
+          <div
+            class="mb-large rounded-formRadius bg-pink-500 p-4 drop-shadow-cardShadow"
+          >
+            <div class="inline-flex gap-3">
+              <img
+                class="h-16 w-16 rounded-billederRadius drop-shadow-billederShadow"
+                src="/img/roundMilkywayRing.webp"
+                alt=""
+              />
+              <div>
+                <p class="text- text-body_semibold">Round milkyway ring</p>
+                <div class="inline-flex gap-2">
+                  <p>DKK</p>
+                  <p>4.400,00</p>
+                </div>
+              </div>
+            </div>
             <div>
-              <p class="text- text-body_semibold">Round milkyway ring</p>
-              <div class="inline-flex gap-2">
-                <p>DKK</p>
-                <p>4.400,00</p>
+              <div class="text-body_xs">
+                <div class="grid grid-cols-2">
+                  <p>Størrelse:</p>
+                  <p class="ml-auto">52</p>
+                </div>
+                <div class="grid grid-cols-2">
+                  <p>Materiale:</p>
+                  <p class="ml-auto">8kt guld</p>
+                </div>
+                <div class="grid grid-cols-2">
+                  <p>Sten:</p>
+                  <p class="ml-auto">4mm 0,25ct</p>
+                </div>
+                <div class="grid grid-cols-2">
+                  <p>Farve:</p>
+                  <img
+                    class="before ml-auto h-5 w-5"
+                    src="/svg/orange.svg"
+                    alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div class="text-body_base">
-              <p>Størrelse:</p>
-              <p>Materiale:</p>
-              <p>Sten:</p>
-              <p>Farve:</p>
+          <div class="pb-large">
+            <div class="mb-large">
+              <div class="mb-medium grid grid-cols-2">
+                <p>Subtotal</p>
+                <div class="ml-auto inline-flex gap-2">
+                  <p>DKK</p>
+                  <p>4.400,00</p>
+                </div>
+              </div>
+              <div class="mb-medium grid grid-cols-2">
+                <p>Afhent/afsendt</p>
+                <div class="ml-auto inline-flex gap-2">
+                  <p>DKK</p>
+                  <p>...</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2">
+                <p>Moms</p>
+                <div class="ml-auto inline-flex gap-2">
+                  <p>DKK</p>
+                  <p>200,00</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1">
+              <div class="grid grid-cols-2 pb-medium">
+                <p>Total</p>
+                <div class="ml-auto inline-flex gap-2">
+                  <p>DKK</p>
+                  <p
+                    id="belob"
+                    class="text-menulinks_mobile lg:text-menulinks_desktop"
+                  >
+                    4.400,00
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+              >
+                Gå til betaling
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="inline-flex gap-20">
-          <p>Subtotal</p>
-          <div class="inline-flex gap-2">
-            <p>DKK</p>
-            <p>4.400,00</p>
-          </div>
-        </div>
-        <div class="inline-flex gap-20">
-          <p>Afhent/afsendt</p>
-          <div class="inline-flex gap-2">
-            <p>DKK</p>
-            <p>...</p>
-          </div>
-        </div>
-        <div class="inline-flex gap-20">
-          <p>Moms</p>
-          <div class="inline-flex gap-2">
-            <p>DKK</p>
-            <p>200,00</p>
-          </div>
-        </div>
-      </section>
-      <section class="grid grid-cols-1">
-        <p>Total</p>
-        <div class="inline-flex gap-2">
-          <p>DKK</p>
-          <p id="belob" class="text-menulinks_mobile lg:text-menulinks_desktop">
-            4.400,00
-          </p>
-        </div>
-        <button
-          class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
-        >
-          Gå til betaling
-        </button>
-      </section>
+
+      <section class="grid grid-cols-1"></section>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
