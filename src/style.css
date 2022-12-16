@@ -88,6 +88,18 @@ nav .a_underline:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+
+/* Den valgte html-side har respektivt a-element med denne class for fast underline */
+nav .a_chosen::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #a03a00;
+  bottom: 0;
+  left: 0;
+}
 /* --------------------------^------------------------------ */
 
 /* Hover til cards så tekster skiftes ud */
