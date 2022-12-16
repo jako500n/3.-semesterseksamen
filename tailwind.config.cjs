@@ -162,6 +162,12 @@ module.exports = {
         large: "3.75rem",
         xLarge: "8.125rem",
       },
+      margin: {
+        small: "0.625rem",
+        medium: "1.563rem",
+        large: "3.75rem",
+        xLarge: "8.125rem",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
