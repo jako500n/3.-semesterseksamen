@@ -112,12 +112,12 @@ module.exports = {
         "1.953rem",
         { letterSpacing: "0.05rem", fontWeight: "book", lineHeight: "42.6px" },
       ],
-      body_base: ["1rem", { letterSpacing: "0.07rem", lineHeight: "28px" }],
+      body_base: ["1rem", { letterSpacing: "0.05rem", lineHeight: "27px" }],
       body_semibold: [
         "1rem",
-        { letterSpacing: "0.07rem", fontWeight: "600", lineHeight: "28px" },
+        { letterSpacing: "0.05rem", fontWeight: "600", lineHeight: "27px" },
       ],
-      body_xs: ["0.8rem", { letterSpacing: "0.07rem", lineHeight: "28px" }],
+      body_xs: ["0.8rem", { letterSpacing: "0.05rem", lineHeight: "27px" }],
       knaptekst_desktop: ["1.66rem", { lineHeight: "34px" }],
 
       // Fonthieraki til mobile
@@ -135,7 +135,7 @@ module.exports = {
       ],
       menulinks_mobile: [
         "1.563rem",
-        { letterSpacing: "0.08rem", fontWeight: "book" },
+        { letterSpacing: "0.05rem", fontWeight: "book" },
       ],
       knaptekst_mobile: ["1.188rem", { lineHeight: "24.4px" }],
     },
