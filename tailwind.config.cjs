@@ -118,7 +118,6 @@ module.exports = {
         { letterSpacing: "0.05rem", fontWeight: "600", lineHeight: "27px" },
       ],
       body_xs: ["0.8rem", { letterSpacing: "0.05rem", lineHeight: "27px" }],
-      knaptekst_desktop: ["1.66rem", { lineHeight: "34px" }],
 
       // Fonthieraki til mobile
       H1_mobile: [
@@ -137,7 +136,7 @@ module.exports = {
         "1.563rem",
         { letterSpacing: "0.05rem", fontWeight: "book" },
       ],
-      knaptekst_mobile: ["1.188rem", { lineHeight: "24.4px" }],
+      knaptekst: ["1.188rem", { lineHeight: "24.4px" }],
     },
 
     // Komponenter i Web og mobil
