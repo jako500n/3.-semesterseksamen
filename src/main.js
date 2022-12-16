@@ -1,4 +1,7 @@
 import "./style.css";
+import Alpine from "alpinejs";
+window.Alpine = Alpine;
+Alpine.start();
 
 // MENU
 const menu_click = document.querySelector(".menu_click");
