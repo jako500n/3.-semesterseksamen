@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indkøbskurv</title>
+  </head>
+  <body class="bg-pink-200 text-body_base text-copyColor">
+    <main>
+      <section class="pb-large">
+        <h1
+          class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
+        >
+          Indkøbskurv
+        </h1>
+        <div class="rounded-formRadius bg-pink-500 p-4 drop-shadow-cardShadow">
+          <div class="inline-flex gap-3">
+            <img
+              class="h-16 w-16 rounded-billederRadius drop-shadow-billederShadow"
+              src="/img/roundMilkywayRing.webp"
+              alt=""
+            />
+            <div>
+              <p class="text- text-body_semibold">Round milkyway ring</p>
+              <div class="inline-flex gap-2">
+                <p>DKK</p>
+                <p>4.400,00</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-body_base">
+              <p>Størrelse:</p>
+              <p>Materiale:</p>
+              <p>Sten:</p>
+              <p>Farve:</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="inline-flex gap-20">
+          <p>Subtotal</p>
+          <div class="inline-flex gap-2">
+            <p>DKK</p>
+            <p>4.400,00</p>
+          </div>
+        </div>
+        <div class="inline-flex gap-20">
+          <p>Afhent/afsendt</p>
+          <div class="inline-flex gap-2">
+            <p>DKK</p>
+            <p>...</p>
+          </div>
+        </div>
+        <div class="inline-flex gap-20">
+          <p>Moms</p>
+          <div class="inline-flex gap-2">
+            <p>DKK</p>
+            <p>200,00</p>
+          </div>
+        </div>
+      </section>
+      <section class="grid grid-cols-1">
+        <p>Total</p>
+        <div class="inline-flex gap-2">
+          <p>DKK</p>
+          <p id="belob" class="text-menulinks_mobile lg:text-menulinks_desktop">
+            4.400,00
+          </p>
+        </div>
+        <button
+          class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+        >
+          Gå til betaling
+        </button>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
