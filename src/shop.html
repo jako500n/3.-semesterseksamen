@@ -120,11 +120,28 @@
       <section
         class=""
         id="step"
-        x-data="{materiale: 'allematerialer', sten: 'allesten', kategori: henturlparam(), skjulteprodukter : 0 }"
+        x-data="{materiale: 'allematerialer', sten: 'allesten', kategori: henturlparam(), skjultekategorier : 0 }"
       >
         <div class="">
           <!-- Styling af filterknapperne på form-->
           <form id="filtre" class="col grid-col grid gap-10 md:flex">
+            <div class="">
+              <label for="kategori"></label>
+              <select
+                class=""
+                name="kategori"
+                id="kategori"
+                x-model="kategori"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenkategorier() });"
+              >
+                <option value="allekategorier">Alle</option>
+                <option value="bracelet">Armbånd</option>
+                <option value="necklace">Halskæder</option>
+                <option value="ring">Ringe</option>
+                <option value="earring">Øreringe</option>
+              </select>
+            </div>
             <div class="">
               <label for="materiale"></label>
               <select
@@ -133,7 +150,7 @@
                 id="materiale"
                 x-model="materiale"
                 form="filtre"
-                x-on:change="$nextTick(() => { ingenprodukter() });"
+                x-on:change="$nextTick(() => { ingenkategorier() });"
               >
                 <option value="allematerialer">Materiale</option>
                 <option value="8ktguld">8 kt guld</option>
@@ -152,29 +169,13 @@
                 id="sten"
                 x-model="sten"
                 form="filtre"
-                x-on:change="$nextTick(() => { ingenprodukter() });"
+                x-on:change="$nextTick(() => { ingenkategorier() });"
               >
                 <option value="allesten">Sten</option>
                 <option value="diamanter">Diamanter</option>
                 <option value="safir">Safir</option>
                 <option value="perler">Perler</option>
-              </select>
-            </div>
-            <div class="">
-              <label for="kategori"></label>
-              <select
-                class=""
-                name="kategori"
-                id="kategori"
-                x-model="kategori"
-                form="filtre"
-                x-on:change="$nextTick(() => { ingenprodukter() });"
-              >
-                <option value="allekategorier">Alle</option>
-                <option value="bracelet">Armbånd</option>
-                <option value="necklace">Halskæder</option>
-                <option value="ring">Ringe</option>
-                <option value="earring">Øreringe</option>
+                <option value="none">Ingen sten</option>
               </select>
             </div>
           </form>
@@ -185,16 +186,16 @@
         >
           <!-- card 1 -->
           <article
-            id="Test1"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '8ktguld', 'solv'].includes(materiale) && ['allesten', 'diamanter', 'safir', 'perler'].includes(sten) && ['allekategorier', 'necklace'].includes(kategori) ) }"
+            id="roundMilkywayRing"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '14ktguld'].includes(materiale) && ['allesten', 'diamanter', 'safir'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/roundMilkywayRing.webp"
-                alt=""
+                alt="Billede af produktet round milkyway ring"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
@@ -234,26 +235,29 @@
 
           <!-- card 2 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="amuletBracelet"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld', 'solv'].includes(materiale) && ['allesten', 'none'].includes(sten) && ['allekategorier', 'bracelet'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/amuletBracelet.webp"
-                alt=""
+                alt="Billede af produktet amulet bracelet"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Amulet bracelet</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">3.500,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -280,9 +284,9 @@
 
           <!-- card 3 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="lupinDiamondNecklace"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', 'solv', '8ktguld', 'guldbelagt'].includes(materiale) && ['allesten', 'diamanter'].includes(sten) && ['allekategorier', 'necklace'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
@@ -293,13 +297,16 @@
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Lupin diamond necklace</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">8.500,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -326,26 +333,29 @@
 
           <!-- card 4 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="largePearlHoops"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '14ktguld', '18ktguld'].includes(materiale) && ['allesten', 'perler'].includes(sten) && ['allekategorier', 'earing'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/largePearlHoops.webp"
-                alt=""
+                alt="Billede af produktet large pearl hoops"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Large pearl hoops</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">6.300,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -372,26 +382,29 @@
 
           <!-- card 5 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="miniInitailAmulet"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '14ktguld', 'guldbelagt'].includes(materiale) && ['allesten', 'none'].includes(sten) && ['allekategorier', 'necklace'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/miniInitailAmulet.webp"
-                alt=""
+                alt="Billede af produktet mini initial amulet"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Mini initial amulet</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">3.350,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -418,26 +431,29 @@
 
           <!-- card 6 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="pinkMorganiteCocktailRing"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'safir'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/pinkMorganiteCocktailRing.webp"
-                alt=""
+                alt="Billede af produktet pink morganite cocktailring"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Pink morganite cocktailring</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">25.000,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -464,26 +480,29 @@
 
           <!-- card 7 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="planetMiniBracelet"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '18ktguld', 'solv'].includes(materiale) && ['allesten', 'diamanter'].includes(sten) && ['allekategorier', 'bracelet'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/planetMiniBracelet.webp"
-                alt=""
+                alt="Billede af produktet planet mini bracelet"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Planet mini bracelet</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">4.900,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -510,26 +529,29 @@
 
           <!-- card 8 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="planetNecklace3Diamond"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', 'guldbelagt', 'solv'].includes(materiale) && ['allesten', 'diamanter'].includes(sten) && ['allekategorier', 'necklace'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/planetNecklace3Diamond.webp"
-                alt=""
+                alt="Billede af produktet planet necklace 3 diamond"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Planet necklace 3 diamond</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">1.400,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -556,26 +578,29 @@
 
           <!-- card 9 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="planetRing5"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '14ktguld', 'guldbelagt' , 'solv'].includes(materiale) && ['allesten', 'diamanter'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/planetRing5.webp"
-                alt=""
+                alt="Billede af produktet planetn ring 5"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Planet ring 5</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">22.500,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -602,26 +627,29 @@
 
           <!-- card 10 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="planetStud1"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', 'solv', '8ktguld'].includes(materiale) && ['allesten', 'safir'].includes(sten) && ['allekategorier', 'earring'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/planetStud1.webp"
-                alt=""
+                alt="Billede af produktet planet stud 1"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">Planet stud 1</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">4.900,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -648,26 +676,29 @@
 
           <!-- card 11 -->
           <article
-            id="Test2"
-            class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
-            :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld'].includes(materiale) && ['allesten', 'diamanter', 'perler'].includes(sten) && ['allekategorier', 'ring'].includes(kategori) ) }"
+            id="7-PearlHoop"
+            class="kategori basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
+            :class="{'hidden': !(['allematerialer', '18ktguld', '14ktguld'].includes(materiale) && ['allesten', 'perler'].includes(sten) && ['allekategorier', 'earring'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="/img/7-PearlHoop.webp"
-                alt=""
+                alt="Billede af produktet 7-pearl hoop"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
-                  <span class="before">Default</span>
+                  <span class="before">7-pearl hoops</span>
                   <span class="after">Fås i</span>
                 </p>
                 <div class="flex">
                   <div class="inline-flex gap-2">
-                    <p class="after text-body_base">bla bla bla</p>
+                    <p class="after text-body_base">
+                      14,8 kt. guld m. ferskvandsperler
+                    </p>
                     <p class="before text-body_base">DKK</p>
+                    <p class="before text-body_base">17.500,00</p>
                   </div>
 
                   <div class="ml-auto inline-flex gap-2">
@@ -692,7 +723,7 @@
             </a>
           </article>
 
-          <p id="ingenprodukter" class="hidden">
+          <p id="ingenkategorier" class="hidden">
             Ingen produkter - prøv et nyt tid og sted:-)
           </p>
         </section>
@@ -787,16 +818,6 @@
           kategorifraurl = urlParams.get("kategori");
         }
         return kategorifraurl;
-      }
-
-      function ingenprodukter() {
-        const skjulteprodukter =
-          document.querySelectorAll(".produkter.hidden").length;
-        if (skjulteprodukter === 7) {
-          document.querySelector("#ingenprodukter").classList.remove("hidden");
-        } else {
-          document.querySelector("#ingenprodukter").classList.add("hidden");
-        }
       }
     </script>
 
