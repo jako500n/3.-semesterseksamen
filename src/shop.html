@@ -127,11 +127,11 @@
         id="step"
         x-data="{materiale: 'allematerialer', sten: 'allesten', kategori: henturlparam(), skjultekategorier : 0 }"
       >
-        <div class="">
+        <div class="flex justify-center pb-large">
           <!-- Styling af filterknapperne på form-->
           <form id="filtre" class="col grid-col grid gap-10 md:flex">
-            <div class="">
-              <label for="kategori"></label>
+            <div class="grid grid-cols-1">
+              <label for="kategori">Kategori</label>
               <select
                 class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
                 name="kategori"
@@ -147,8 +147,8 @@
                 <option value="earring">Øreringe</option>
               </select>
             </div>
-            <div class="">
-              <label for="materiale"></label>
+            <div class="grid grid-cols-1">
+              <label for="materiale">Materiale</label>
               <select
                 class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
                 name="materiale"
@@ -157,7 +157,7 @@
                 form="filtre"
                 x-on:change="$nextTick(() => { ingenkategorier() });"
               >
-                <option value="allematerialer">Materiale</option>
+                <option value="allematerialer">Alle materiale</option>
                 <option value="8ktguld">8 kt guld</option>
                 <option value="14ktguld">14 kt guld</option>
                 <option value="18ktguld">18 kt guld</option>
@@ -166,8 +166,8 @@
               </select>
             </div>
 
-            <div class="">
-              <label for="sten"></label>
+            <div class="grid grid-cols-1">
+              <label for="sten">Sten</label>
               <select
                 class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
                 name="sten"
@@ -176,7 +176,7 @@
                 form="filtre"
                 x-on:change="$nextTick(() => { ingenkategorier() });"
               >
-                <option value="allesten">Sten</option>
+                <option value="allesten">Alle sten</option>
                 <option value="diamanter">Diamanter</option>
                 <option value="safir">Safir</option>
                 <option value="perler">Perler</option>
@@ -186,7 +186,7 @@
           </form>
         </div>
 
-        <section
+        <div
           class="kategorier mb-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3"
         >
           <!-- card 1 -->
@@ -731,7 +731,7 @@
           <p id="ingenkategorier" class="hidden">
             Ingen produkter - prøv et nyt tid og sted:-)
           </p>
-        </section>
+        </div>
       </section>
     </main>
 
@@ -774,7 +774,7 @@
               </li>
               <li class="hover_underline"><a href="#">Sitemap</a></li>
               <li class="hover_underline">
-                <a href="komponenter.html">komponenter</a>
+                <a href="komponenter.html">Komponenter</a>
               </li>
             </ul>
           </div>
