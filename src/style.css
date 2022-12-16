@@ -34,6 +34,7 @@ p {
 .footer_div,
 main {
   width: 88%;
+  margin: 0 auto;
 }
 
 /* Font families til elementer */
@@ -122,3 +123,7 @@ article:hover .after {
   transition: 300ms ease-in;
 }
 /* --------------------------^------------------------------ */
+
+.zoom_on:hover {
+  transform: scale(1.1);
+}

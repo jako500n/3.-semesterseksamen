@@ -115,95 +115,103 @@
     </header>
     <!-- Header slut -->
 
-    <main class="mx-auto">
+    <main>
       <!-- section 1 -->
-      <section class="grid-cols-2 lg:grid">
-        <div class="place-self-center pt-large pb-medium lg:order-1 lg:w-96">
+      <section class="items-center justify-center sm:flex">
+        <div class="pt-large pb-medium sm:order-1">
           <img
+            class="w-full max-w-sm"
             src="/img/stregtegning1.svg"
             alt="stregtegning af julie niels dotter"
           />
         </div>
-        <div>
+        <div class="max-w-lg basis-full">
           <h1
-            class="text-center text-H1_mobile text-sienna-500 lg:pt-xLarge lg:text-H1_desktop"
+            class="text-center text-H1_mobile text-sienna-500 sm:pt-large sm:text-H1_desktop"
           >
             JULIE NIELSDOTTER <br />
-            <span class="text-H2_mobile lg:text-H2_desktop">JEWELLERY</span>
+            <span class="text-H2_mobile sm:text-H2_desktop">JEWELLERY</span>
           </h1>
-          <!-- <h2 class="text-center text-H2_mobile text-sienna-500 pb-medium">JEWELLERY</h2> -->
-          <p class="pb-large pt-medium">
+          <p class="pb-small pt-small">
             Sætter du en ære i håndlavet designsmykker af høj kvalitet i et
             tidløst og klassisk design? Er du også vild med pastelfarver? Så er
             du kommet til det helt rigtige sted. Her finder du et unikt udvalg
             af ferskvandsperler, guld og diamanter.
           </p>
           <br />
-          <p class="pb-large">
+          <p class="pb-medium">
             Gå på opdagelse i smykkeuniverset og lad dig inspirere.
           </p>
-          <button
-            class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-          >
-            Shop smykker
-          </button>
+          <div class="items-center justify-center sm:flex">
+            <button
+              class="max-w-xs rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+            >
+              Shop smykker
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- lille pil -->
-      <div class="flex items-center justify-center pt-large">
+      <div class="flex items-center justify-center pt-medium">
         <img
           class="hidden w-10 drop-shadow-knapShadow sm:block"
-          src="/img/arrowdown.png"
+          src="/svg/pilned.svg"
           alt="scroll ned og se mere pil"
         />
       </div>
 
       <!-- section 2 -->
-      <section class="pt-xLarge pb-xLarge">
-        <article class="">
-          <div class="grid grid-cols-2 gap-2">
+      <section class="pt-large pb-xLarge">
+        <div class="grid grid-cols-2 gap-2 sm:grid-cols-2 md:grid-cols-4">
+          <div class="overflow-hidden rounded-billederRadius">
             <div
-              class="relative grid rounded-billederRadius bg-[url('/img/earring.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
+              class="group flex h-[15rem] w-full max-w-lg cursor-pointer items-center justify-center bg-[url('/img/earring.webp')] bg-cover bg-center pb-6 shadow drop-shadow-billederShadow transition ease-in hover:scale-105 hover:drop-shadow-cardHoverShadow md:h-[18rem] lg:h-[25rem]"
             >
               <button
-                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                class="self-end rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder group-hover:-translate-y-full"
               >
-                Se øreringe
-              </button>
-            </div>
-
-            <div
-              class="relative grid rounded-billederRadius bg-[url('/img/ring.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-            >
-              <button
-                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-              >
-                Se ringe
-              </button>
-            </div>
-
-            <div
-              class="relative grid rounded-billederRadius bg-[url('/img/necklace.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-            >
-              <button
-                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-              >
-                Se halskæder
-              </button>
-            </div>
-
-            <div
-              class="relative grid rounded-billederRadius bg-[url('/img/bracelet.webp')] bg-cover py-20 shadow drop-shadow-billederShadow"
-            >
-              <button
-                class="insert-x-0 absolute bottom-2 max-w-xs place-self-center rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-              >
-                Se armbånd
+                <a href="shop.html">Se øreringe</a>
               </button>
             </div>
           </div>
-        </article>
+
+          <div class="overflow-hidden rounded-billederRadius">
+            <div
+              class="group flex h-[15rem] max-w-lg items-center justify-center rounded-billederRadius bg-[url('/img/ring.webp')] bg-cover bg-center pb-6 shadow drop-shadow-billederShadow transition ease-in hover:scale-105 hover:drop-shadow-cardHoverShadow md:h-[18rem] lg:h-[25rem]"
+            >
+              <button
+                class="self-end rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder group-hover:-translate-y-full"
+              >
+                <a href="shop.html">Se ringe</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-hidden rounded-billederRadius">
+            <div
+              class="group flex h-[15rem] max-w-lg items-center justify-center rounded-billederRadius bg-[url('/img/necklace.webp')] bg-cover bg-center pb-6 shadow drop-shadow-billederShadow transition ease-in hover:scale-105 hover:drop-shadow-cardHoverShadow md:h-[18rem] lg:h-[25rem]"
+            >
+              <button
+                class="self-end rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder group-hover:-translate-y-full"
+              >
+                <a href="shop.html">Se halskæder</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="overflow-hidden rounded-billederRadius">
+            <div
+              class="group flex h-[15rem] max-w-lg items-center justify-center rounded-billederRadius bg-[url('/img/bracelet.webp')] bg-cover bg-center pb-6 shadow drop-shadow-billederShadow transition ease-in hover:scale-105 hover:drop-shadow-cardHoverShadow md:h-[18rem] lg:h-[25rem]"
+            >
+              <button
+                class="self-end rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder group-hover:-translate-y-full"
+              >
+                <a href="shop.html">Se armbånd</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- section 3 -->
