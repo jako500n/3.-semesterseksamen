@@ -114,142 +114,183 @@
       </nav>
     </header>
 
-    <main class="mx-auto">
-      <h1
-        class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
-      >
-        Round milkyway ring
-      </h1>
-      <section class="grid lg:grid-cols-2">
+    <main class="">
+      <section class="pb-large">
+        <h1
+          class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
+        >
+          Round milkyway ring
+        </h1>
         <div class="grid-cols-2 lg:grid lg:gap-20">
+          <div class="grid grid-cols-3 xl:grid-cols-9 xl:grid-rows-4">
+            <img
+              class="col-start-1 col-end-4 mb-small h-96 w-96 rounded-billederRadius drop-shadow-billederShadow xl:col-start-1 xl:col-end-7 xl:row-start-1 xl:row-end-4"
+              src="/img/roundMilkywayRing.webp"
+              alt="Billede af round milkyway ring"
+            />
+
+            <img
+              class="h-30 col-start-1 col-end-2 w-32 rounded-billederRadius drop-shadow-billederShadow xl:col-start-7 xl:col-end-9 xl:row-start-1 xl:row-end-2"
+              src="/img/roundMilkywayRing.webp"
+              alt="Billede af round milkyway ring"
+            />
+            <img
+              class="h-30 col-span-1 col-start-2 col-end-3 w-32 rounded-billederRadius drop-shadow-billederShadow xl:col-start-7 xl:col-end-9 xl:row-start-2 xl:row-end-3"
+              src="/img/roundMilkywayRing.webp"
+              alt="Billede af round milkyway ring"
+            />
+            <img
+              class="h-30 col-span-1 col-start-3 col-end-4 w-32 rounded-billederRadius drop-shadow-billederShadow xl:col-start-7 xl:col-end-9 xl:row-start-3 xl:row-end-4"
+              src="/img/roundMilkywayRing.webp"
+              alt="Billede af round milkyway ring"
+            />
+          </div>
+          <div>
+            <p class="pb-medium pt-medium lg:pt-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div>
+              <p class="pb-small text-body_semibold">Vælg størrelse</p>
+              <div class="inline-flex gap-2 pb-medium">
+                <button
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                >
+                  48
+                </button>
+                <button
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                >
+                  49
+                </button>
+                <button
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                >
+                  50
+                </button>
+                <button
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                >
+                  51
+                </button>
+                <button
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                >
+                  52
+                </button>
+                <button
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                >
+                  53
+                </button>
+              </div>
+            </div>
+
+            <div class="inline-flex gap-10">
+              <div class="pb-medium">
+                <p class="pb-small text-body_semibold">Vælg materiale</p>
+                <select
+                  class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                  name="Default"
+                  id="DefaultDropdown"
+                  x-model="Default"
+                  form="Default"
+                  x-on:change="$nextTick(() => {Default()});"
+                >
+                  <option selected>Materiale</option>
+                  <option value="1">8kt guld</option>
+                  <option value="2">14kt guld</option>
+                  <option value="3">18kt guld</option>
+                  <option value="4">Guldbelagt</option>
+                  <option value="5">Sølv</option>
+                </select>
+              </div>
+              <div class="pb-medium">
+                <p class="pb-small text-body_semibold">Vælg sten</p>
+                <select
+                  class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                  name="Default"
+                  id="DefaultDropdown"
+                  x-model="Default"
+                  form="Default"
+                  x-on:change="$nextTick(() => {Default()});"
+                >
+                  <option selected>Sten</option>
+                  <option value="1">3mm - 0.10ct</option>
+                  <option value="2">4mm - 0.25ct</option>
+                  <option value="3">5mm - 0.50ct</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="pb-small text-body_semibold">Vælg farve</p>
+            <div class="ml-auto inline-flex gap-2 pb-medium">
+              <img
+                class="before h-5 w-5"
+                src="/svg/pink.svg"
+                alt="Lile ikon der viser at smykket fås med en stenfarve i pink"
+              />
+              <img
+                class="before h-5 w-5"
+                src="/svg/orange.svg"
+                alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
+              />
+              <img
+                class="before h-5 w-5"
+                src="/svg/green.svg"
+                alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
+              />
+            </div>
+            <div class="inline-flex gap-2">
+              <img
+                class="before h-5 w-5"
+                src="/svg/green.svg"
+                alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
+              />
+              <p class="text-body_xs text-check-green">3stk tilbage på lager</p>
+            </div>
+            <div>
+              <h2
+                class="pb-medium text-H2_mobile text-sienna-500 lg:text-H2_desktop"
+              >
+                DKK 4.400,00
+              </h2>
+              <button
+                class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+              >
+                Tilføj til kurv
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-xLarge">
+        <h3 class="pb-medium text-H3_mobile lg:text-H3_desktop">
+          Andre så også
+        </h3>
+        <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
           <img
-            class="rounded-billederRadius"
-            src="/img/roundMilkywayRing.webp"
+            class="rounded-billederRadius drop-shadow-billederShadow"
+            src="/img/pinkMorganiteCocktailRing.webp"
             alt=""
           />
-          <div class="grid grid-cols-3 lg:grid-cols-1">
-            <img
-              class="h-36 w-40 rounded-billederRadius"
-              src="/img/roundMilkywayRing.webp"
-              alt=""
-            />
-            <img
-              class="h-36 w-40 rounded-billederRadius"
-              src="/img/roundMilkywayRing.webp"
-              alt=""
-            />
-            <img
-              class="h-36 w-40 rounded-billederRadius"
-              src="/img/roundMilkywayRing.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <div>
-          <p class="pb-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-
-          <p class="pb-small text-body_semibold">Vælg størrelse</p>
-          <div class="inline-flex gap-2 pb-medium">
-            <button
-              class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
-            >
-              48
-            </button>
-            <button
-              class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
-            >
-              49
-            </button>
-            <button
-              class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
-            >
-              50
-            </button>
-            <button
-              class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
-            >
-              51
-            </button>
-            <button
-              class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
-            >
-              52
-            </button>
-            <button
-              class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
-            >
-              53
-            </button>
-          </div>
-
-          <div class="inline-flex gap-10">
-            <div class="pb-medium">
-              <p class="pb-small text-body_semibold">Vælg materiale</p>
-              <select
-                class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-                name="Default"
-                id="DefaultDropdown"
-                x-model="Default"
-                form="Default"
-                x-on:change="$nextTick(() => {Default()});"
-              >
-                <option selected>Materiale</option>
-                <option value="1">8kt guld</option>
-                <option value="2">14kt guld</option>
-                <option value="3">18kt guld</option>
-                <option value="4">Guldbelagt</option>
-                <option value="5">Sølv</option>
-              </select>
-            </div>
-            <div class="pb-medium">
-              <p class="pb-small text-body_semibold">Vælg sten</p>
-              <select
-                class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-                name="Default"
-                id="DefaultDropdown"
-                x-model="Default"
-                form="Default"
-                x-on:change="$nextTick(() => {Default()});"
-              >
-                <option selected>Sten</option>
-                <option value="1">3mm - 0.10ct</option>
-                <option value="2">4mm - 0.25ct</option>
-                <option value="3">5mm - 0.50ct</option>
-              </select>
-            </div>
-          </div>
-
-          <p class="pb-small text-body_semibold">Vælg farve</p>
-          <div class="ml-auto inline-flex gap-2">
-            <img
-              class="before h-5 w-5"
-              src="/svg/pink.svg"
-              alt="Lile ikon der viser at smykket fås med en stenfarve i pink"
-            />
-            <img
-              class="before h-5 w-5"
-              src="/svg/orange.svg"
-              alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
-            />
-            <img
-              class="before h-5 w-5"
-              src="/svg/green.svg"
-              alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
-            />
-          </div>
-        </div>
-        <div class="inline-flex">
           <img
-            class="before h-5 w-5"
-            src="/svg/green.svg"
-            alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
+            class="rounded-billederRadius drop-shadow-billederShadow"
+            src="/img/planetRing5.webp"
+            alt=""
           />
-          <p class="text-body_xs ">3stk tilbage på lager</p>
+          <img
+            class="rounded-billederRadius drop-shadow-billederShadow"
+            src="/img/amuletBracelet.webp"
+            alt=""
+          />
+          <img
+            class="rounded-billederRadius drop-shadow-billederShadow"
+            src="/img/planetMiniBracelet.webp"
+            alt=""
+          />
         </div>
       </section>
     </main>
