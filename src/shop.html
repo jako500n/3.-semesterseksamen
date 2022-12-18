@@ -198,8 +198,9 @@
             x-transition:enter.duration.800ms
           >
             <a href="single_view.html">
+              <img class="absolute top-10 z-50" src="/img/nyhed.png" alt="" />
               <img
-                class="rounded-t-billederRadius"
+                class="z-0 rounded-t-billederRadius"
                 src="/img/roundMilkywayRing.webp"
                 alt="Billede af produktet round milkyway ring"
               />
@@ -246,6 +247,8 @@
             :class="{'hidden': !(['allematerialer', '14ktguld', '8ktguld', 'solv'].includes(materiale) && ['allesten', 'none'].includes(sten) && ['allekategorier', 'bracelet'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
+            <!-- Nyhedsikon -->
+            <img class="absolute top-10 z-50" src="/img/nyhed.png" alt="" />
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
@@ -295,6 +298,8 @@
             :class="{'hidden': !(['allematerialer', 'solv', '8ktguld', 'guldbelagt'].includes(materiale) && ['allesten', 'diamanter'].includes(sten) && ['allekategorier', 'necklace'].includes(kategori) ) }"
             x-transition:enter.duration.800ms
           >
+            <!-- Nyhedsikon -->
+            <img class="absolute top-10 z-50" src="/img/nyhed.png" alt="" />
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
