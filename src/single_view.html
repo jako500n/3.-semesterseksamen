@@ -116,11 +116,17 @@
 
     <main class="">
       <section class="pb-large">
-        <h1
-          class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
-        >
+        <div class="inline-flex gap-5 pb-medium pt-large text-body_xs">
+          <a href="shop.html">Shop</a>
+          <p>»</p>
+          <a href="shop.html">Filtrering</a>
+          <p>»</p>
+          <a href="single_view.html">Produkt</a>
+        </div>
+        <h1 class="pb-medium text-H1_mobile text-sienna-500 lg:text-H1_desktop">
           Round milkyway ring
         </h1>
+
         <div class="grid-cols-2 lg:grid lg:gap-20">
           <div class="grid grid-cols-3 xl:grid-cols-9 xl:grid-rows-4">
             <img
@@ -145,7 +151,7 @@
               alt="Billede af round milkyway ring"
             />
           </div>
-          <div>
+          <div class="grid grid-cols-1">
             <p class="pb-medium pt-medium lg:pt-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -156,32 +162,32 @@
               <p class="pb-small text-body_semibold">Vælg størrelse</p>
               <div class="inline-flex gap-2 pb-medium">
                 <button
-                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder focus:bg-pink-900 focus:text-white-100"
                 >
                   48
                 </button>
                 <button
-                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder focus:bg-pink-900 focus:text-white-100"
                 >
                   49
                 </button>
                 <button
-                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder focus:bg-pink-900 focus:text-white-100"
                 >
                   50
                 </button>
                 <button
-                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder focus:bg-pink-900 focus:text-white-100"
                 >
                   51
                 </button>
                 <button
-                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder focus:bg-pink-900 focus:text-white-100"
                 >
                   52
                 </button>
                 <button
-                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder"
+                  class="rounded-knapperRadius bg-primaryButton px-2 py-1 hover:bg-primaryButtonBorder focus:bg-pink-900 focus:text-white-100"
                 >
                   53
                 </button>
@@ -226,28 +232,40 @@
             </div>
 
             <p class="pb-small text-body_semibold">Vælg farve</p>
-            <div class="ml-auto inline-flex gap-2 pb-medium">
-              <img
-                class="before h-5 w-5"
-                src="/svg/pink.svg"
-                alt="Lile ikon der viser at smykket fås med en stenfarve i pink"
-              />
-              <img
-                class="before h-5 w-5"
-                src="/svg/orange.svg"
-                alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
-              />
-              <img
-                class="before h-5 w-5"
-                src="/svg/green.svg"
-                alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
-              />
+            <div class="inline-flex gap-2 pb-medium">
+              <button
+                class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+              >
+                <img
+                  class="h-5 w-5"
+                  src="/svg/pink.svg"
+                  alt="Lile ikon der viser at smykket fås med en stenfarve i pink"
+                />
+              </button>
+              <button
+                class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+              >
+                <img
+                  class="h-5 w-5"
+                  src="/svg/orange.svg"
+                  alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
+                />
+              </button>
+              <button
+                class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+              >
+                <img
+                  class="h-5 w-5"
+                  src="/svg/green.svg"
+                  alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
+                />
+              </button>
             </div>
             <div class="inline-flex gap-2">
               <img
-                class="before h-5 w-5"
-                src="/svg/green.svg"
-                alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
+                class="h-5 w-5"
+                src="/img/lagerbeholdning.png"
+                alt="Lile ikon der viser at lagerstatus"
               />
               <p class="text-body_xs text-check-green">3stk tilbage på lager</p>
             </div>
@@ -379,6 +397,7 @@
       </div>
     </footer>
     <!-- Footer slut -->
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
