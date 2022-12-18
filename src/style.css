@@ -23,6 +23,10 @@
 }
 
 /* Alt har Bitter som font, indtil andet er defineret */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Bitter", serif;
 }
