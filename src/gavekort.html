@@ -115,7 +115,7 @@
     </header>
     <!-- Header slut -->
 
-    <main>
+    <main class="main">
       <section>
         <h1
           class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
@@ -142,17 +142,16 @@
               tilføjer det til kurven.
             </p>
 
-            <form>
-              <div class="pb-medium">
-                <label for="Default">Beløb* </label>
-                <input
-                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
-                  id="Default"
-                  type="number"
-                  placeholder="Indtast beløb..."
-                />
-                <p class="text-body_xs">OBS. minimum DKK 100</p>
-              </div>
+            <form class="pb-medium">
+              <label class="text-body_xs" for="amount">Beløb * </label>
+              <input
+                class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                id="amount"
+                type="number"
+                placeholder="Indtast beløb..."
+                required
+              />
+              <p class="text-body_xs">OBS. minimum DKK 100</p>
             </form>
 
             <button

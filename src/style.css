@@ -36,7 +36,7 @@ p {
 }
 
 .footer_div,
-main {
+.main {
   width: 88%;
   margin: 0 auto;
 }
@@ -106,7 +106,7 @@ nav .a_underline:hover::before {
   transform: scaleX(1);
 }
 
-/* Den valgte html-side har respektivt a-element med denne class for fast underline */
+/* Den valgte html-side har respektivt a-element med denne class for fast underline i menuen */
 nav .a_chosen::before {
   content: "";
   position: absolute;
@@ -143,3 +143,15 @@ article:hover .after {
 .zoom_on:hover {
   transform: scale(1.1);
 }
+
+/* Til at fjerne pilene i forms ved number-type */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crasher Chrome ved hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Der er åbenbart stadigvæk lidt margin, selv om det er hidden */
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+/* --------------------------^------------------------------ */

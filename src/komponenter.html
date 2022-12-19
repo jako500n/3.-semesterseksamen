@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
     <title>Komponenter</title>
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
@@ -117,7 +118,7 @@
     <!--  -->
     <!--  -->
 
-    <main>
+    <main class="main">
       <h1 class="text-H1_desktop">Komponenter</h1>
       <!-- Knapper-->
       <div class="mb-10">
@@ -190,16 +191,18 @@
           <h3>Form text</h3>
           <!-- Form til tekst -->
           <form>
-            <div class="">
-              <label class="" for="Default"> Default </label>
-              <input
-                class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
-                id="Default"
-                type="text"
-                placeholder="Default"
-              />
-              <p class="text-body_xs">*Default</p>
-            </div>
+            <label class="text-body_xs" for="Default"> Default </label>
+            <input
+              class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+              id="Default"
+              type="text"
+              placeholder="Default"
+              name="Default"
+              autocomplete="Default"
+              required
+            />
+            <!-- Valgfrit -->
+            <p class="text-body_xs">*Default</p>
           </form>
         </div>
 

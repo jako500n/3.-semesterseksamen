@@ -115,7 +115,7 @@
     </header>
     <!-- Header slut -->
 
-    <main>
+    <main class="main">
       <section>
         <h1
           class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
@@ -143,46 +143,41 @@
 
             <p class="pb-medium text-body_semibold">Indtast dine oplysninger</p>
 
-            <form>
-              <div class="pb-medium">
-                <label class="" for="Default"> Fulde navn* </label>
-                <input
-                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
-                  id="Default"
-                  type="text"
-                  placeholder="Sisse Falcke"
-                />
-                <p class="text-body_xs"></p>
-              </div>
-            </form>
-
-            <form>
-              <div class="pb-medium">
-                <label class="" for="Default"> E-mail* </label>
-                <input
-                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
-                  id="Default"
-                  type="text"
-                  placeholder="Sisse-falcke@gmail.com"
-                />
-                <p class="text-body_xs"></p>
-              </div>
+            <form class="pb-medium">
+              <label class="text-body_xs" for="fullname"> Fulde navn * </label>
+              <input
+                class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                id="fullname"
+                type="text"
+                placeholder="Sisse Falcke"
+                required
+              />
             </form>
 
             <form class="pb-medium">
-              <div class="">
-                <label class="" for="Default"> Besked* </label>
-                <input
-                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor pb-96 text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder md:pb-60"
-                  id="Default"
-                  type="text"
-                  placeholder="Skriv din besked her..."
-                />
-                <p class="text-body_xs">
-                  *OBS. Hvis du bestiller et speciallavet smykke, er der ikke
-                  mulighed for returnering.
-                </p>
-              </div>
+              <label class="text-body_xs" for="email"> E-mail * </label>
+              <input
+                class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                id="email"
+                type="email"
+                placeholder="Sisse-falcke@gmail.com"
+                required
+              />
+            </form>
+
+            <form class="pb-medium">
+              <label class="text-body_xs" for="message"> Besked * </label>
+              <input
+                class="block w-full rounded-formRadius border-formBorder bg-formBgColor pb-96 text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder md:pb-60"
+                id="Default"
+                type="text"
+                placeholder="Skriv din besked her..."
+                required
+              />
+              <p class="text-body_xs">
+                * OBS: Hvis du bestiller et speciallavet smykke, er der ikke
+                mulighed for returnering.
+              </p>
             </form>
 
             <button
