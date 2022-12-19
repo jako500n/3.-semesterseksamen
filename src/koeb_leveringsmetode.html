@@ -118,44 +118,47 @@
     <main class="main">
       <section class="flex py-medium">
         <div class="flex items-center gap-4">
-          <a href="indkoebskurv.html"><img src="/svg/tilbage.svg" alt="" /></a>
+          <a href="koeb_oplysninger.html"
+            ><img src="/svg/tilbage.svg" alt=""
+          /></a>
           <a
-            href="indkoebskurv.html"
+            href="koeb_oplysninger.html"
             class="hidden text-body_xs hover:underline sm:block"
-            >Tilbage til kurv</a
+            >Tilbage til oplysninger</a
           >
         </div>
         <div class="mx-auto flex gap-4">
           <div>
-            <a href="koebsproces_01.html" class="hidden text-body_base sm:block"
-              >Oplysninger</a
+            <a
+              href="koeb_oplysninger.html"
+              class="hidden cursor-pointer text-body_base sm:block"
             >
+              Oplysninger
+            </a>
             <div
               class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 sm:w-24 lg:w-32"
             ></div>
           </div>
           <div>
-            <a
-              href="koebsproces_02.html class="
-              class="hidden text-body_base sm:block"
-              >Levering</a
-            >
-            <div
-              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 sm:w-24 lg:w-32"
-            ></div>
-          </div>
-          <div>
-            <a
-              href="koebsproces_03.html class="
-              class="hidden text-body_base sm:block"
-              >Betaling</a
-            >
+            <p class="hidden cursor-default text-body_base sm:block">
+              Levering
+            </p>
             <div
               class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
             ></div>
           </div>
           <div>
-            <a class="hidden text-body_base sm:block">Bekræftelse</a>
+            <p class="hidden cursor-default text-body_base sm:block">
+              Betaling
+            </p>
+            <div
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
+            ></div>
+          </div>
+          <div>
+            <p class="hidden cursor-default text-body_base sm:block">
+              Bekræftelse
+            </p>
             <div
               class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
             ></div>
@@ -178,7 +181,7 @@
           >
             <p class="text-body_semibold">Vælg din leveringsmetode</p>
             <div class="flex flex-col gap-y-4 pt-small pb-medium">
-              <a href="koebsproces_02.html" class="group"
+              <a href="koebsproces_post_01.html" class="group"
                 ><button
                   class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
@@ -205,7 +208,7 @@
                   </div></button
               ></a>
 
-              <a href="koebsproces_02.html" class="group"
+              <a href="koebsproces_afhent_01.html" class="group"
                 ><button
                   class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
@@ -230,13 +233,11 @@
                   </div></button
               ></a>
             </div>
-            <a href="koebsproces_02.html"
-              ><button
-                class="w-full rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-              >
-                Fortsæt til leveringsmetode
-              </button></a
+            <button
+              class="w-full cursor-default rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst text-primaryButtonTextColor opacity-30 drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
             >
+              Fortsæt til betaling
+            </button>
           </div>
 
           <div class="col-span-2 max-w-2xl">
