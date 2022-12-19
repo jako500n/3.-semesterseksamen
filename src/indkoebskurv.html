@@ -4,50 +4,173 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
     <title>Indkøbskurv</title>
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
-    <main>
+    <!-- Header -->
+    <header class="sticky top-0 z-10 bg-menuBackgroundColor">
+      <nav
+        class="flex items-center justify-between border-b-2 border-sienna-500 px-6 py-4 text-menulinks_mobile text-overskriftColor"
+      >
+        <div>
+          <a href="index.html"
+            ><img
+              class="w-20"
+              src="/img/julienielsdotter_logo-8.png"
+              alt="Logo - til forsiden"
+          /></a>
+        </div>
+
+        <div class="hidden sm:block">
+          <ul class="flex flex-col gap-10 sm:flex-row">
+            <li class="py-4">
+              <a class="a_underline relative" href="index.html">Forside</a>
+            </li>
+            <li class="py-4">
+              <a class="a_chosen relative" href="shop.html">Shop</a>
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="design_selv.html"
+                >Design selv</a
+              >
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="gavekort.html">Gavekort</a>
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="om_julie.html">Om Julie</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Ikoner til søg og kurv -->
+        <div class="hidden sm:block">
+          <ul class="flex gap-5">
+            <li class="">
+              <img src="/svg/soeg.svg" alt="Søg på siden" />
+            </li>
+            <li class="">
+              <a class="" href="indkoebskurv.html"
+                ><img src="/svg/kurv.svg" alt="Til kurven"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Menu i mobil -->
+        <div
+          class="menu_punkter fixed top-0 right-0 z-10 hidden h-full w-screen bg-pink-100"
+        >
+          <!-- Ikon til luk i burger -->
+          <div class="flex justify-end pr-6 pt-10">
+            <img
+              class="menu_luk cursor-pointer"
+              src="/svg/close.svg"
+              alt="Luk menu"
+            />
+          </div>
+
+          <!-- Menupunkter mobil -->
+          <ul class="flex w-full flex-col pt-6 text-center sm:flex-row">
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="index.html">Forside</a>
+            </li>
+            <li class="w-full py-4">
+              <a class="a_chosen relative" href="shop.html">Shop</a>
+            </li>
+            <li class="py-4">
+              <a class="a_underline relative" href="design_selv.html"
+                >Design selv</a
+              >
+            </li>
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="gavekort.html">Gavekort</a>
+            </li>
+            <li class="w-full py-4">
+              <a class="a_underline relative" href="om_julie.html">Om Julie</a>
+            </li>
+            <div class="flex justify-center gap-8">
+              <li class="py-4">
+                <img src="/svg/soeg.svg" alt="Søg på siden" />
+              </li>
+              <li class="py-4">
+                <a class="" href="indkoebskurv.html"
+                  ><img src="/svg/kurv.svg" alt="Til kurven"
+                /></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- Ikon til burger menu -->
+        <div class="flex items-center gap-8 sm:hidden">
+          <img
+            class="menu_click w-8 cursor-pointer"
+            src="/svg/burger.svg"
+            alt="Ikon til menu"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- Header slut -->
+
+    <main class="main">
       <section class="pb-large">
         <h1
-          class="pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
+          class="border-b-2 border-solid border-pink-200 pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
         >
           Indkøbskurv
         </h1>
-        <div class="grid-cols-2 pb-xLarge md:grid md:gap-20">
+        <hr class="text-pink-200" />
+
+        <div
+          class="relative pb-xLarge pt-large sm:grid-cols-5 sm:gap-10 md:grid"
+        >
           <div
-            class="mb-large rounded-formRadius bg-pink-200 p-4 drop-shadow-cardShadow"
+            class="col-span-3 mb-large rounded-formRadius border-r-2 border-pink-200 bg-pink-200 p-4 drop-shadow-cardShadow"
           >
-            <div class="inline-flex gap-3">
-              <img
-                class="h-16 w-16 rounded-billederRadius drop-shadow-billederShadow"
-                src="/img/roundMilkywayRing.webp"
-                alt=""
-              />
+            <div class="grid grid-cols-3">
               <div>
                 <p class="text- text-body_semibold">Round milkyway ring</p>
-                <div class="inline-flex gap-2">
-                  <p>DKK</p>
-                  <p>4.400,00</p>
-                </div>
+              </div>
+              <div class="inline-flex gap-2">
+                <p>DKK</p>
+                <p>4.400,00</p>
+              </div>
+              <div>
+                <img
+                  class="ml-auto w-4"
+                  src="/img/kryds.png"
+                  alt="kryds produktet af listen"
+                />
               </div>
             </div>
-            <div>
-              <div class="text-body_xs">
-                <div class="grid grid-cols-2">
+
+            <div class="grid grid-cols-3">
+              <div>
+                <img
+                  class="w-40 rounded-billederRadius drop-shadow-billederShadow"
+                  src="/img/roundMilkywayRing.webp"
+                  alt="Billede af valge smykke i indkøbskurv"
+                />
+              </div>
+              <div class="grid grid-cols-1">
+                <div class="inline-flex text-body_xs">
                   <p>Størrelse:</p>
                   <p class="ml-auto">52</p>
                 </div>
-                <div class="grid grid-cols-2">
+                <div class="inline-flex text-body_xs">
                   <p>Materiale:</p>
                   <p class="ml-auto">8kt guld</p>
                 </div>
-                <div class="grid grid-cols-2">
+                <div class="inline-flex text-body_xs">
                   <p>Sten:</p>
                   <p class="ml-auto">4mm 0,25ct</p>
                 </div>
-                <div class="grid grid-cols-2">
+                <div class="inline-flex text-body_xs">
                   <p>Farve:</p>
+
                   <img
                     class="before ml-auto h-5 w-5"
                     src="/svg/orange.svg"
@@ -56,8 +179,18 @@
                 </div>
               </div>
             </div>
+            <div>
+              <img
+                class="ml-auto w-24"
+                src="/img/plus_minus.png"
+                alt="tilføj flere eller færre produkter"
+              />
+            </div>
           </div>
-          <div class="pb-large">
+          <!-- Her starter "din kurv" i højre side -->
+          <div
+            class="col-span-2 divide-y divide-pink-200 border-solid border-pink-200"
+          >
             <div class="mb-large">
               <div class="mb-medium grid grid-cols-2">
                 <p>Subtotal</p>
@@ -67,7 +200,7 @@
                 </div>
               </div>
               <div class="mb-medium grid grid-cols-2">
-                <p>Afhent/afsendt</p>
+                <p>Levering</p>
                 <div class="ml-auto inline-flex gap-2">
                   <p>DKK</p>
                   <p>...</p>
@@ -84,7 +217,9 @@
             <div class="grid grid-cols-1">
               <div class="grid grid-cols-2 pb-medium">
                 <p>Total</p>
-                <div class="ml-auto inline-flex gap-2">
+                <div
+                  class="ml-auto inline-flex gap-2 text-menulinks_mobile lg:text-menulinks_desktop"
+                >
                   <p>DKK</p>
                   <p
                     id="belob"
@@ -104,11 +239,102 @@
               </a>
             </div>
           </div>
+          <span
+            class="absolute left-[60.25%] hidden h-full w-0.5 bg-pink-200 sm:block 2xl:hidden"
+          ></span>
         </div>
       </section>
-
       <section class="grid grid-cols-1"></section>
     </main>
+
+    <!-- Footer -->
+    <footer
+      class="border-t-4 border-sienna-500 bg-footer pt-11 pb-4 text-body_xs"
+    >
+      <div class="footer_div mx-auto grid-cols-2 justify-evenly sm:grid">
+        <div class="justify-around sm:flex">
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Navigation</p>
+            <ul>
+              <li class="hover_underline">
+                <a href="index.html">Forside</a>
+              </li>
+              <li class="hover_underline"><a href="shop.html">Shop</a></li>
+              <li class="hover_underline">
+                <a href="design_selv.html">Design selv</a>
+              </li>
+              <li class="hover_underline">
+                <a href="gavekort.html">Gavekort</a>
+              </li>
+              <li class="hover_underline">
+                <a href="om_julie.html">Om os</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Information</p>
+            <ul>
+              <li class="hover_underline"><a href="#">FAQ</a></li>
+              <li class="hover_underline">
+                <a href="#">Forsendelses- og returpolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Handelsbetingelser</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Cookie- og privatlivspolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="om_julie.html  ">Kontakt</a>
+              </li>
+              <li class="hover_underline">
+                <a href="sitemap.html">Sitemap</a>
+              </li>
+              <li class="hover_underline">
+                <a href="komponenter.html">Komponenter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex justify-around">
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Butikken</p>
+            <ul>
+              <li class="hover_underline"><a href="#">Åbningstider</a></li>
+            </ul>
+          </div>
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Sociale medier</p>
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="https://www.instagram.com/julienielsdotterjewellery/"
+                  target="_blank"
+                  ><img src="/svg/instagram.svg" alt="Instagram-ikon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/julienielsdotterjewellery"
+                  target="_blank"
+                  ><img src="/svg/facebook.svg" alt="FaceBook-ikon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="justify-center pt-16 text-center sm:flex">
+        <p class="text-body_xs">Copyright © 2022 | julienielsdotter.com</p>
+        <p>| Tlf. 30 32 52 07</p>
+      </div>
+      <div class="justify-center sm:flex">
+        <p class="text-center">CVR 12 34 56 78</p>
+      </div>
+    </footer>
+    <!-- Footer slut -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>
