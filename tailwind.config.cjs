@@ -146,6 +146,7 @@ module.exports = {
       billederShadow: "2px 2px 4px rgba(13, 13, 13, 0.25)",
       cardShadow: "4px 4px 4px rgba(13, 13, 13, 0.25)",
       cardHoverShadow: "5px 5px 5px rgba(13, 13, 13, 0.25)",
+      popupShadow: "-4px -4px 4px rgba(13, 13, 13, 0.25)",
     },
 
     borderRadius: {

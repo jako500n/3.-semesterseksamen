@@ -115,7 +115,6 @@
     </header>
 
     <main class="main">
-      <a href="betalt.html">Betalt</a>
       <section class="pb-large">
         <div class="inline-flex gap-5 pb-medium pt-large text-body_xs">
           <a href="shop.html">Shop</a>
@@ -135,7 +134,11 @@
               src="/img/roundMilkywayRing.webp"
             >
               <!-- Nyhedsikon -->
-              <img class="absolute top-10 z-50" src="/img/nyhed.png" alt="Dette er et nyt produkt" />
+              <img
+                class="absolute top-10 z-50"
+                src="/img/nyhed.png"
+                alt="Dette er et nyt produkt"
+              />
               <img
                 class="col-start-1 col-end-4 mb-small h-96 w-96 rounded-billederRadius drop-shadow-billederShadow xl:col-start-1 xl:col-end-7 xl:row-start-1 xl:row-end-4"
                 src="/img/roundMilkywayRing.webp"
@@ -285,6 +288,7 @@
               </h2>
               <button
                 class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+                onclick="toggleModal()"
               >
                 Tilføj til kurv
               </button>
@@ -319,6 +323,103 @@
           />
         </div>
       </section>
+      <!-- modal popup -->
+
+      <div
+        class="fixed top-0 right-0 z-10 hidden overflow-y-auto drop-shadow-popupShadow"
+        id="modal"
+      >
+        <div class="flex items-center justify-center">
+          <div
+            class="overflow-hidden bg-pink-100"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-headline"
+          >
+            <button class="ml-auto flex p-10" onclick="toggleModal()">
+              <img
+                class="ml-auto w-8"
+                src="/svg/close.svg"
+                alt="kryds produktet af listen"
+              />
+            </button>
+
+            <article class="mx-10">
+              <p class="pb-medium">Tilføjet til indkøbskurven</p>
+              <hr class="py-medium text-pink-200" />
+              <div class="inline-flex gap-2">
+                <div>
+                  <img
+                    class="w-20 rounded-billederRadius drop-shadow-billederShadow"
+                    src="/img/roundMilkywayRing.webp"
+                    alt="Billede af valge smykke i indkøbskurv"
+                  />
+                </div>
+                <div>
+                  <p class="text-body_semibold">Round milkyway ring</p>
+                  <div class="inline-flex gap-2">
+                    <p>DKK</p>
+                    <p>4.400,00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="grid grid-cols-1">
+                  <div class="inline-flex gap-4 text-body_xs">
+                    <p>Størrelse:</p>
+                    <p class="ml-auto">52</p>
+                  </div>
+                  <div class="inline-flex gap-4 text-body_xs">
+                    <p>Materiale:</p>
+                    <p class="ml-auto">8kt guld</p>
+                  </div>
+                  <div class="inline-flex gap-4 text-body_xs">
+                    <p>Sten:</p>
+                    <p class="ml-auto">4mm 0,25ct</p>
+                  </div>
+                  <div class="inline-flex gap-4 text-body_xs">
+                    <p>Farve:</p>
+
+                    <img
+                      class="ml-auto h-5 w-5"
+                      src="/svg/orange.svg"
+                      alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="pb-medium">
+                <img
+                  class="ml-auto w-24"
+                  src="/img/plus_minus.png"
+                  alt="tilføj flere eller færre produkter"
+                />
+              </div>
+              <hr class="py-medium text-pink-200" />
+              <div class="grid grid-cols-1 pb-medium">
+                <div class="inline-flex">
+                  <p>Subtotal</p>
+                  <div class="ml-auto inline-flex gap-2">
+                    <p>DKK</p>
+                    <p>4.400,00</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="py-medium text-pink-200" />
+
+              <div class="mb-xLarge flex justify-center">
+                <a
+                  class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+                  href="indkoebskurv.html"
+                  >Gå til kassen</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -405,7 +506,11 @@
       </div>
     </footer>
     <!-- Footer slut -->
-
+    <script>
+      function toggleModal() {
+        document.getElementById("modal").classList.toggle("hidden");
+      }
+    </script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
