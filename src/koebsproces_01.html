@@ -131,7 +131,7 @@
               >Oplysninger</a
             >
             <div
-              class="w-14 rounded-knapperRadius bg-sienna-200 py-2 sm:w-24 lg:w-32"
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 sm:w-24 lg:w-32"
             ></div>
           </div>
           <div>
@@ -141,7 +141,7 @@
               >Levering</a
             >
             <div
-              class="w-14 rounded-knapperRadius bg-sienna-200 py-2 opacity-30 sm:w-24 lg:w-32"
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
             ></div>
           </div>
           <div>
@@ -151,27 +151,27 @@
               >Betaling</a
             >
             <div
-              class="w-14 rounded-knapperRadius bg-sienna-200 py-2 opacity-30 sm:w-24 lg:w-32"
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
             ></div>
           </div>
           <div>
             <a class="hidden text-body_base sm:block">Bekræftelse</a>
             <div
-              class="w-14 rounded-knapperRadius bg-sienna-200 py-2 opacity-30 sm:w-24 lg:w-32"
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
             ></div>
           </div>
         </div>
       </section>
 
-      <section class="pb-xLarge">
+      <section>
         <h1
           class="pb-medium text-center text-H1_mobile text-sienna-500 sm:text-left lg:text-H1_desktop"
         >
           <span class="text-body_base italic">01</span>Oplysninger
         </h1>
-        <hr class="text-pink-200" />
-        <div class="relative grid-cols-5 pt-medium sm:grid sm:gap-10">
-          <div class="relative col-span-3 max-w-4xl pb-xLarge">
+        <hr class="border-t-2 text-pink-200" />
+        <div class="relative grid-cols-5 pt-medium pb-xLarge sm:grid sm:gap-10">
+          <div class="relative col-span-3 max-w-4xl">
             <p class="text-body_semibold">Indtast dine oplysninger</p>
             <div class="grid-cols-5 grid-rows-2 gap-x-4 gap-y-2 sm:grid">
               <form class="col-span-2 row-span-1 pt-2">
@@ -223,7 +223,7 @@
                 />
               </form>
             </div>
-            <p class="pb-large text-body_xs">* Skal udfyldes</p>
+            <p class="pb-medium text-body_xs sm:pb-large">* Skal udfyldes</p>
             <a href="koebsproces_02.html"
               ><button
                 class="w-full rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
@@ -233,31 +233,77 @@
             >
           </div>
 
-          <div class="col-span-2 mb-large">
-            <div class="flex">
+          <div class="col-span-2 max-w-2xl">
+            <div class="flex pb-small sm:pb-medium">
               <p class="text-body_semibold">Din kurv</p>
-              <p class="text- ml-auto">Redigér kurv</p>
+              <a
+                href="indkoebskurv.html"
+                class="ml-auto cursor-pointer text-body_xs underline"
+                >Redigér kurv</a
+              >
             </div>
-            <div class="mb-medium grid grid-cols-2">
+            <div class="flex gap-2 pb-medium">
+              <img
+                class="w-1/6 rounded-billederRadius"
+                src="/img/roundMilkywayRing.webp"
+                alt=""
+              />
+              <p>
+                <span class="text-body_semibold">Round milkyway ring</span>
+                <br />
+                <span class="text-body_base">18 kt. guld</span>
+              </p>
+              <p class="ml-auto text-body_semibold">DKK 4.400,00</p>
+            </div>
+            <div class="flex items-center justify-center pb-medium">
+              <hr class="w-11/12 text-pink-200" />
+            </div>
+            <div
+              class="grid grid-cols-2 items-center gap-2 pb-medium text-body_semibold sm:gap-6"
+            >
               <p>Subtotal</p>
-              <div class="ml-auto inline-flex gap-2">
-                <p>DKK</p>
-                <p>4.400,00</p>
+              <div class="ml-auto">
+                <p>DKK 3.300,00</p>
               </div>
-            </div>
-            <div class="mb-medium grid grid-cols-2">
-              <p>Afhent/afsendt</p>
-              <div class="ml-auto inline-flex gap-2">
-                <p>DKK</p>
-                <p>...</p>
-              </div>
-            </div>
-            <div class="grid grid-cols-2">
               <p>Moms</p>
-              <div class="ml-auto inline-flex gap-2">
-                <p>DKK</p>
-                <p>200,00</p>
+              <div class="ml-auto">
+                <p>DKK 1.100,00</p>
               </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <hr class="w-11/12 text-pink-200" />
+            </div>
+            <div class="grid-cols-5 gap-x-4 pt-small pb-medium sm:grid">
+              <form class="col-span-3 row-span-1 pt-2">
+                <label class="text-body_xs" for="kampagnekode">
+                  Indtast kampagnekode</label
+                >
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                  id="kampagnekode"
+                  type="text"
+                  placeholder="0000 0000 0000"
+                />
+              </form>
+              <div class="col-span-2 mt-auto">
+                <button
+                  class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder md:px-6 md:py-2"
+                >
+                  Indløs kode
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <hr class="w-11/12 text-pink-200" />
+            </div>
+            <div class="flex pt-medium">
+              <p class="text-body_semibold">Total</p>
+              <p class="ml-auto">
+                DKK
+                <span class="text-menulinks_mobile sm:text-menulinks_desktop"
+                  >4.400,00</span
+                >
+              </p>
             </div>
           </div>
           <span
