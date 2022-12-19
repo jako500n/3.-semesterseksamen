@@ -122,58 +122,70 @@
         >
           Indkøbskurv
         </h1>
-        
-        <div class="grid-cols-5 pb-xLarge md:grid md:gap-20">
+
+        <div class="pb-xLarge md:grid md:grid-cols-5 md:gap-20">
           <div
             class="col-span-3 mb-large rounded-formRadius bg-pink-200 p-4 drop-shadow-cardShadow"
           >
-            
-             
-              <div class="grid grid-cols-3">
-                <div>
-                <p class="text- text-body_semibold">Round milkyway ring</p>
-                 </div>
-                <div class="inline-flex gap-2">
-                  <p>DKK</p>
-                  <p>4.400,00</p>
-                </div>
-              <div>
-                <img class="w-4 ml-auto" src="/img/kryds.png" alt="kryds produktet af listen">
-              </div>
-            </div>
-          
             <div class="grid grid-cols-3">
               <div>
-                <img class="w-40 rounded-billederRadius drop-shadow-billederShadow" src="/img/roundMilkywayRing.webp" alt="Billede af valge smykke i indkøbskurv">
+                <p class="text- text-body_semibold">Round milkyway ring</p>
               </div>
-              
-                <div class="text-body_xs">
+              <div class="inline-flex gap-2">
+                <p>DKK</p>
+                <p>4.400,00</p>
+              </div>
+              <div>
+                <img
+                  class="ml-auto w-4"
+                  src="/img/kryds.png"
+                  alt="kryds produktet af listen"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3">
+              <div>
+                <img
+                  class="w-40 rounded-billederRadius drop-shadow-billederShadow"
+                  src="/img/roundMilkywayRing.webp"
+                  alt="Billede af valge smykke i indkøbskurv"
+                />
+              </div>
+              <div class="grid grid-cols-1">
+                <div class="inline-flex text-body_xs">
                   <p>Størrelse:</p>
+                  <p class="ml-auto">52</p>
+                </div>
+                <div class="inline-flex text-body_xs">
                   <p>Materiale:</p>
+                  <p class="ml-auto">8kt guld</p>
                 </div>
-                <div class="text-body_xs">
-                  <p>52</p>
-                  <p>8kt guld</p>
-                </div>
-                <div class="text-body_xs">
+                <div class="inline-flex text-body_xs">
                   <p>Sten:</p>
-                  <p>Farve:</p>
+                  <p class="ml-auto">4mm 0,25ct</p>
                 </div>
-                <div class="text-body_xs">
-                  <p>4mm 0,25ct</p>
+                <div class="inline-flex text-body_xs">
+                  <p>Farve:</p>
+
                   <img
-                    class="before h-5 w-5"
+                    class="before ml-auto h-5 w-5"
                     src="/svg/orange.svg"
                     alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
                   />
                 </div>
+              </div>
             </div>
             <div>
-              <img class="w-24 ml-auto" src="/img/plus_minus.png" alt="tilføj flere eller færre produkter">
+              <img
+                class="ml-auto w-24"
+                src="/img/plus_minus.png"
+                alt="tilføj flere eller færre produkter"
+              />
             </div>
           </div>
-        <!-- Her starter "din kurv" i højre side -->
-          <div class="col-span-2 pb-large">
+          <!-- Her starter "din kurv" i højre side -->
+          <div class="col-span-2">
             <div class="mb-large">
               <div class="mb-medium grid grid-cols-2">
                 <p>Subtotal</p>
@@ -200,7 +212,9 @@
             <div class="grid grid-cols-1">
               <div class="grid grid-cols-2 pb-medium">
                 <p>Total</p>
-                <div class="ml-auto inline-flex gap-2 text-menulinks_mobile lg:text-menulinks_desktop">
+                <div
+                  class="ml-auto inline-flex gap-2 text-menulinks_mobile lg:text-menulinks_desktop"
+                >
                   <p>DKK</p>
                   <p
                     id="belob"
@@ -225,94 +239,94 @@
       <section class="grid grid-cols-1"></section>
     </main>
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer
-    class="border-t-4 border-sienna-500 bg-footer pt-11 pb-4 text-body_xs"
-  >
-    <div class="footer_div mx-auto grid-cols-2 justify-evenly sm:grid">
-      <div class="justify-around sm:flex">
-        <div class="basis-full pb-10 sm:pb-0">
-          <p class="cursor-default text-body_semibold">Navigation</p>
-          <ul>
-            <li class="hover_underline">
-              <a href="index.html">Forside</a>
-            </li>
-            <li class="hover_underline"><a href="shop.html">Shop</a></li>
-            <li class="hover_underline">
-              <a href="design_selv.html">Design selv</a>
-            </li>
-            <li class="hover_underline">
-              <a href="gavekort.html">Gavekort</a>
-            </li>
-            <li class="hover_underline">
-              <a href="om_julie.html">Om os</a>
-            </li>
-          </ul>
+      class="border-t-4 border-sienna-500 bg-footer pt-11 pb-4 text-body_xs"
+    >
+      <div class="footer_div mx-auto grid-cols-2 justify-evenly sm:grid">
+        <div class="justify-around sm:flex">
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Navigation</p>
+            <ul>
+              <li class="hover_underline">
+                <a href="index.html">Forside</a>
+              </li>
+              <li class="hover_underline"><a href="shop.html">Shop</a></li>
+              <li class="hover_underline">
+                <a href="design_selv.html">Design selv</a>
+              </li>
+              <li class="hover_underline">
+                <a href="gavekort.html">Gavekort</a>
+              </li>
+              <li class="hover_underline">
+                <a href="om_julie.html">Om os</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="basis-full pb-10 sm:pb-0">
+            <p class="cursor-default text-body_semibold">Information</p>
+            <ul>
+              <li class="hover_underline"><a href="#">FAQ</a></li>
+              <li class="hover_underline">
+                <a href="#">Forsendelses- og returpolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Handelsbetingelser</a>
+              </li>
+              <li class="hover_underline">
+                <a href="#">Cookie- og privatlivspolitik</a>
+              </li>
+              <li class="hover_underline">
+                <a href="om_julie.html  ">Kontakt</a>
+              </li>
+              <li class="hover_underline">
+                <a href="sitemap.html">Sitemap</a>
+              </li>
+              <li class="hover_underline">
+                <a href="komponenter.html">Komponenter</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="basis-full pb-10 sm:pb-0">
-          <p class="cursor-default text-body_semibold">Information</p>
-          <ul>
-            <li class="hover_underline"><a href="#">FAQ</a></li>
-            <li class="hover_underline">
-              <a href="#">Forsendelses- og returpolitik</a>
-            </li>
-            <li class="hover_underline">
-              <a href="#">Handelsbetingelser</a>
-            </li>
-            <li class="hover_underline">
-              <a href="#">Cookie- og privatlivspolitik</a>
-            </li>
-            <li class="hover_underline">
-              <a href="om_julie.html  ">Kontakt</a>
-            </li>
-            <li class="hover_underline">
-              <a href="sitemap.html">Sitemap</a>
-            </li>
-            <li class="hover_underline">
-              <a href="komponenter.html">Komponenter</a>
-            </li>
-          </ul>
+        <div class="flex justify-around">
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Butikken</p>
+            <ul>
+              <li class="hover_underline"><a href="#">Åbningstider</a></li>
+            </ul>
+          </div>
+          <div class="basis-full">
+            <p class="cursor-default text-body_semibold">Sociale medier</p>
+            <ul class="flex gap-4">
+              <li>
+                <a
+                  href="https://www.instagram.com/julienielsdotterjewellery/"
+                  target="_blank"
+                  ><img src="/svg/instagram.svg" alt="Instagram-ikon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/julienielsdotterjewellery"
+                  target="_blank"
+                  ><img src="/svg/facebook.svg" alt="FaceBook-ikon"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div class="flex justify-around">
-        <div class="basis-full">
-          <p class="cursor-default text-body_semibold">Butikken</p>
-          <ul>
-            <li class="hover_underline"><a href="#">Åbningstider</a></li>
-          </ul>
-        </div>
-        <div class="basis-full">
-          <p class="cursor-default text-body_semibold">Sociale medier</p>
-          <ul class="flex gap-4">
-            <li>
-              <a
-                href="https://www.instagram.com/julienielsdotterjewellery/"
-                target="_blank"
-                ><img src="/svg/instagram.svg" alt="Instagram-ikon"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/julienielsdotterjewellery"
-                target="_blank"
-                ><img src="/svg/facebook.svg" alt="FaceBook-ikon"
-              /></a>
-            </li>
-          </ul>
-        </div>
+      <div class="justify-center pt-16 text-center sm:flex">
+        <p class="text-body_xs">Copyright © 2022 | julienielsdotter.com</p>
+        <p>| Tlf. 30 32 52 07</p>
       </div>
-    </div>
-    <div class="justify-center pt-16 text-center sm:flex">
-      <p class="text-body_xs">Copyright © 2022 | julienielsdotter.com</p>
-      <p>| Tlf. 30 32 52 07</p>
-    </div>
-    <div class="justify-center sm:flex">
-      <p class="text-center">CVR 12 34 56 78</p>
-    </div>
-  </footer>
-  <!-- Footer slut -->
+      <div class="justify-center sm:flex">
+        <p class="text-center">CVR 12 34 56 78</p>
+      </div>
+    </footer>
+    <!-- Footer slut -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>
