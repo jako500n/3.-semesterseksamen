@@ -153,6 +153,7 @@ module.exports = {
       cardsRadius: "5px",
       knapperRadius: "12px",
       formRadius: "10px",
+      nyhedRadius: "100px",
     },
 
     extend: {
