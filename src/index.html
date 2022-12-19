@@ -8,6 +8,35 @@
     <title>Forside</title>
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
+    <!-- cookieboks -->
+    <div class="bottom-auto grid bg-pink-200 p-medium" id="cookieboks">
+      <div class="grid place-items-center">
+        <p class="place pb-small text-body_semibold">Vi anvender Cookies</p>
+        <p>
+          julienielsdotter.com anvender cookies for at kunne give dig den bedste
+          brugeroplevelse på vores hjemmeside, samt til markedsførings- og
+          analytiske formål. Ved at klikke “Accepter” bekræfter du, at du har
+          læst vores cookie politik og accepterer vores brug af cookies. Ønsker
+          du ikke at acceptere, eller vil du læse mere, kan du finde vores
+          politik for brug af
+          <a class="text-blue-900 underline" href="#">cookies</a>.
+        </p>
+      </div>
+
+      <div class="flex flex-row justify-center gap-3 p-small" id="accepter">
+        <button
+          class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder md:px-6 md:py-2"
+        >
+          Accepter
+        </button>
+        <button
+          class="rounded-knapperRadius bg-secondaryButton px-7 py-1 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder md:px-10 md:py-2"
+          id="afvis"
+        >
+          Afvis
+        </button>
+      </div>
+    </div>
     <!-- Header -->
     <header class="sticky top-0 z-10 bg-menuBackgroundColor">
       <nav
