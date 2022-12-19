@@ -29,6 +29,7 @@ html {
 
 body {
   font-family: "Bitter", serif;
+  font-weight: 300;
 }
 
 p {
@@ -84,6 +85,18 @@ nav a {
   font-weight: 300;
   font-style: normal;
 }
+
+/* Til knapper under købsprocessen, hvor der ikke skal være futura bold */
+#semibold_bitter {
+  font-family: "Bitter", serif;
+  font-weight: 600;
+}
+
+#normal_bitter {
+  font-family: "Bitter", serif;
+  font-weight: 300;
+}
+/* --------------------------^------------------------------ */
 /* --------------------------^------------------------------ */
 
 /* Animation til hover på menulinks */
@@ -105,6 +118,7 @@ nav .a_underline:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+/* --------------------------^------------------------------ */
 
 /* Den valgte html-side har respektivt a-element med denne class for fast underline i menuen */
 nav .a_chosen::before {

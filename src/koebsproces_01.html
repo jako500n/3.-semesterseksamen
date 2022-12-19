@@ -170,8 +170,12 @@
           <span class="text-body_base italic">01</span>Oplysninger
         </h1>
         <hr class="border-t-2 text-pink-200" />
-        <div class="relative grid-cols-5 pt-medium pb-xLarge sm:grid sm:gap-10">
-          <div class="relative col-span-3 max-w-4xl">
+        <div
+          class="relative pt-medium pb-xLarge sm:grid sm:grid-cols-4 sm:gap-10 lg:grid-cols-5"
+        >
+          <div
+            class="relative max-w-4xl pb-large sm:col-span-2 sm:pb-0 lg:col-span-3"
+          >
             <p class="text-body_semibold">Indtast dine oplysninger</p>
             <div class="grid-cols-5 grid-rows-2 gap-x-4 gap-y-2 sm:grid">
               <form class="col-span-2 row-span-1 pt-2">
@@ -226,7 +230,7 @@
             <p class="pb-medium text-body_xs sm:pb-large">* Skal udfyldes</p>
             <a href="koebsproces_02.html"
               ><button
-                class="w-full rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+                class="w-full rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
               >
                 Fortsæt til leveringsmetode
               </button></a
@@ -249,7 +253,7 @@
                 alt=""
               />
               <p>
-                <span class="text-body_semibold">Round milkyway ring</span>
+                <span class="text-body_semibold">Milkyway ring</span>
                 <br />
                 <span class="text-body_base">18 kt. guld</span>
               </p>
@@ -273,8 +277,10 @@
             <div class="flex items-center justify-center">
               <hr class="w-11/12 text-pink-200" />
             </div>
-            <div class="grid-cols-5 gap-x-4 pt-small pb-medium sm:grid">
-              <form class="col-span-3 row-span-1 pt-2">
+            <div
+              class="flex grid-cols-5 flex-col gap-y-2 gap-x-4 pt-small pb-medium xl:grid"
+            >
+              <form class="col-span-3 pt-2">
                 <label class="text-body_xs" for="kampagnekode">
                   Indtast kampagnekode</label
                 >
@@ -287,7 +293,7 @@
               </form>
               <div class="col-span-2 mt-auto">
                 <button
-                  class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder md:px-6 md:py-2"
+                  class="w-full rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
                 >
                   Indløs kode
                 </button>
@@ -307,7 +313,7 @@
             </div>
           </div>
           <span
-            class="absolute left-[60.25%] hidden h-full w-0.5 bg-pink-200 sm:block 2xl:hidden"
+            class="absolute hidden h-full w-0.5 bg-pink-200 md:left-[50%] md:block lg:left-[60.25%] 2xl:hidden"
           ></span>
         </div>
       </section>
