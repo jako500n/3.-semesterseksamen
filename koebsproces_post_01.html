@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
-    <title>Indkøbskurv</title>
+    <title>Personlige oplysninger</title>
     <script type="module" crossorigin src="./assets/main.d1ff2995.js"></script>
     <link rel="stylesheet" href="./assets/main.e2f1c28b.css">
   </head>
@@ -118,78 +118,183 @@
     <!-- Header slut -->
 
     <main class="main">
+      <section class="flex py-medium">
+        <div class="flex items-center gap-4">
+          <a href="koeb_oplysninger.html"
+            ><img src="./svg/tilbage.svg" alt=""
+          /></a>
+          <a
+            href="koeb_oplysninger.html"
+            class="hidden text-body_xs hover:underline sm:block"
+            >Tilbage til oplysninger</a
+          >
+        </div>
+        <div class="mx-auto flex gap-4">
+          <div>
+            <a
+              href="koeb_oplysninger.html"
+              class="hidden cursor-pointer text-body_base sm:block"
+            >
+              Oplysninger
+            </a>
+            <div
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 sm:w-24 lg:w-32"
+            ></div>
+          </div>
+          <div>
+            <p class="hidden cursor-default text-body_base sm:block">
+              Levering
+            </p>
+            <div
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
+            ></div>
+          </div>
+          <div>
+            <p class="hidden cursor-default text-body_base sm:block">
+              Betaling
+            </p>
+            <div
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
+            ></div>
+          </div>
+          <div>
+            <p class="hidden cursor-default text-body_base sm:block">
+              Bekræftelse
+            </p>
+            <div
+              class="w-14 rounded-knapperRadius bg-sienna-200 py-0.5 opacity-30 sm:w-24 lg:w-32"
+            ></div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <h1
-          class="border-b-2 border-solid border-pink-200 pb-medium pt-large text-H1_mobile text-sienna-500 lg:text-H1_desktop"
+          class="pb-medium text-center text-H1_mobile text-sienna-500 sm:text-left lg:text-H1_desktop"
         >
-          Indkøbskurv
+          <span class="text-body_base italic">02</span>Leveringsmetode
         </h1>
-        <hr class="text-pink-200" />
-
+        <hr class="border-t-2 text-pink-200" />
         <div
-          class="relative pb-xLarge pt-large sm:grid sm:grid-cols-4 sm:gap-10 lg:grid-cols-5"
+          class="relative pt-medium pb-xLarge sm:grid sm:grid-cols-4 sm:gap-10 lg:grid-cols-5"
         >
           <div
-            class="rounded-formRadius border-r-2 border-pink-200 bg-pink-200 p-4 drop-shadow-cardShadow sm:col-span-2 sm:pb-0 lg:col-span-3"
+            class="relative max-w-4xl pb-large sm:col-span-2 sm:pb-0 lg:col-span-3"
           >
-            <div class="grid grid-cols-3">
-              <div>
-                <p class="text-body_semibold">Round milkyway ring</p>
-              </div>
-              <div class="inline-flex gap-2">
-                <p>DKK</p>
-                <p>4.400,00</p>
-              </div>
-              <div>
-                <img
-                  class="ml-auto w-4"
-                  src="./svg/close.svg"
-                  alt="kryds produktet af listen"
+            <p class="text-body_semibold">Vælg din leveringsmetode</p>
+            <div class="flex flex-col gap-y-4 pt-small pb-large">
+              <button
+                class="w-full max-w-sm cursor-default rounded-knapperRadius border-4 border-black-500 bg-pink-500 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
+              >
+                <div class="flex items-center justify-center gap-3">
+                  <img src="./svg/postnord.svg" alt="" />
+                  <div class="flex flex-col items-start justify-center">
+                    <p class="text-body_base" id="semibold_bitter">
+                      Post Nord, hjem
+                    </p>
+                    <p class="text-body_xs" id="normal_bitter">3-5 hverdage</p>
+                  </div>
+                  <div class="ml-auto flex items-center justify-center gap-3">
+                    <p id="normal_bitter">DKK 80,00</p>
+                    <div>
+                      <img src="./svg/valgt.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </button>
+
+              <a href="koebsproces_afhent_01.html" class="group"
+                ><button
+                  class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
+                >
+                  <div class="flex items-center justify-center gap-3">
+                    <img src="./svg/hjemmelevering.svg" alt="" />
+                    <div class="flex flex-col items-start justify-center">
+                      <p class="text-body_base" id="semibold_bitter">
+                        Afhentning
+                      </p>
+                      <p class="text-body_xs" id="normal_bitter">Fra i dag</p>
+                    </div>
+                    <div class="ml-auto flex items-center justify-center gap-3">
+                      <p id="normal_bitter">Gratis</p>
+                      <div class="relative">
+                        <img src="./svg/ikke_valgt.svg" alt="" /><img
+                          class="billedskift absolute top-0 left-0 opacity-0 transition group-hover:opacity-100"
+                          src="./svg/valgt.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div></button
+              ></a>
+            </div>
+            <p class="text-body_semibold">Indtast leveringsadresse</p>
+            <div class="grid-cols-5 grid-rows-2 gap-x-4 gap-y-2 sm:grid">
+              <form class="col-span-5 row-span-1 pt-2">
+                <label class="text-body_xs" for="street-address">
+                  Adresse *</label
+                >
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                  id="street-address"
+                  type="text"
+                  placeholder="Vejnavn"
+                  autocomplete="street-address"
+                  required
                 />
+              </form>
+              <form class="col-span-1 row-span-2 pt-2">
+                <label class="text-body_xs" for="zip-code"> Postnummer *</label>
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                  id="zip-code"
+                  type="number"
+                  placeholder="0000"
+                  autocomplete="postal-code"
+                  required
+                />
+              </form>
+              <form class="col-span-2 row-span-2 pt-2">
+                <label class="text-body_xs" for="city"> By * </label>
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                  id="city"
+                  type="text"
+                  placeholder="Bynavn"
+                  autocomplete="address-level1"
+                  required
+                />
+              </form>
+              <form class="col-span-2 row-span-2 pt-2">
+                <label class="text-body_xs" for="country"> Land * </label>
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                  id="country"
+                  type="text"
+                  placeholder="Denmark"
+                  autocomplete="country-name"
+                  required
+                />
+              </form>
+              <p class="text-body_xs">* Skal udfyldes</p>
+
+              <div
+                class="col-span-5 flex w-full cursor-pointer gap-2 pb-medium"
+              >
+                <img class="w-5" src="./svg/plus.svg" alt="" />
+                <p class="text-body_xs">Tilføj en anden faktureringsadresse</p>
               </div>
             </div>
 
-            <div class="grid grid-cols-3">
-              <div>
-                <img
-                  class="w-40 rounded-billederRadius drop-shadow-billederShadow"
-                  src="./img/roundMilkywayRing.webp"
-                  alt="Billede af valge smykke i indkøbskurv"
-                />
-              </div>
-              <div class="grid grid-cols-1">
-                <div class="inline-flex text-body_xs">
-                  <p>Størrelse:</p>
-                  <p class="ml-auto">52</p>
-                </div>
-                <div class="inline-flex text-body_xs">
-                  <p>Materiale:</p>
-                  <p class="ml-auto">8kt guld</p>
-                </div>
-                <div class="inline-flex text-body_xs">
-                  <p>Sten:</p>
-                  <p class="ml-auto">4mm 0,25ct</p>
-                </div>
-                <div class="inline-flex text-body_xs">
-                  <p>Farve:</p>
-
-                  <img
-                    class="before ml-auto h-5 w-5"
-                    src="./svg/orange.svg"
-                    alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                class="ml-auto w-24"
-                src="./img/plus_minus.png"
-                alt="tilføj flere eller færre produkter"
-              />
-            </div>
+            <a href="koebsproces_post_02.html"
+              ><button
+                class="w-full rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+              >
+                Fortsæt til betaling
+              </button></a
+            >
           </div>
-          <!-- Her starter "din kurv" i højre side -->
+
           <div class="col-span-2 max-w-2xl">
             <div class="flex pb-small sm:pb-medium">
               <p class="text-body_semibold">Din kurv</p>
@@ -230,6 +335,28 @@
             <div class="flex items-center justify-center">
               <hr class="w-11/12 text-pink-200" />
             </div>
+            <div
+              class="flex grid-cols-5 flex-col gap-y-2 gap-x-4 pt-small pb-medium xl:grid"
+            >
+              <form class="col-span-3 pt-2">
+                <label class="text-body_xs" for="kampagnekode">
+                  Indtast kampagnekode</label
+                >
+                <input
+                  class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+                  id="kampagnekode"
+                  type="text"
+                  placeholder="0000 0000 0000"
+                />
+              </form>
+              <div class="col-span-2 mt-auto">
+                <button
+                  class="w-full rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                >
+                  Indløs kode
+                </button>
+              </div>
+            </div>
             <div class="flex items-center justify-center">
               <hr class="w-11/12 text-pink-200" />
             </div>
@@ -241,15 +368,6 @@
                   >4.400,00</span
                 >
               </p>
-            </div>
-            <div class="pt-medium">
-              <a href="koeb_oplysninger.html">
-                <button
-                  class="w-full rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-                >
-                  Gå til betaling
-                </button>
-              </a>
             </div>
           </div>
           <span
@@ -268,9 +386,7 @@
           <div class="basis-full pb-10 sm:pb-0">
             <p class="cursor-default text-body_semibold">Navigation</p>
             <ul>
-              <li class="hover_underline">
-                <a href="index.html">Forside</a>
-              </li>
+              <li class="hover_underline"><a href="index.html">Forside</a></li>
               <li class="hover_underline"><a href="shop.html">Shop</a></li>
               <li class="hover_underline">
                 <a href="design_selv.html">Design selv</a>
@@ -278,9 +394,7 @@
               <li class="hover_underline">
                 <a href="gavekort.html">Gavekort</a>
               </li>
-              <li class="hover_underline">
-                <a href="om_julie.html">Om os</a>
-              </li>
+              <li class="hover_underline"><a href="om_julie.html">Om os</a></li>
             </ul>
           </div>
 

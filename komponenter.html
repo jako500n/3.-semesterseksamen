@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="module" crossorigin src="./assets/main.169b1247.js"></script>
-    <link rel="stylesheet" href="./assets/main.83644f65.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
+    <title>Komponenter</title>
+    <script type="module" crossorigin src="./assets/main.d1ff2995.js"></script>
+    <link rel="stylesheet" href="./assets/main.e2f1c28b.css">
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
     <!-- Header -->
@@ -115,108 +116,41 @@
       </nav>
     </header>
     <!-- Header slut -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
-    <main>
+    <main class="main">
       <h1 class="text-H1_desktop">Komponenter</h1>
-
-      <h2 class="text-H2_desktop">Knapper Mobil</h2>
+      <!-- Knapper-->
       <div class="mb-10">
-        <!-- Almindelige knapper mobil -->
-        <h3>Almindelige knapper mobil</h3>
+        <!-- Almindelige knapper-->
+        <h3>Almindelige responsive knapper</h3>
         <div class="mb-10">
-          <!-- Primary button mobil -->
+          <!-- Primary button-->
           <p>Primary knapper</p>
           <button
-            class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+            class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
           >
             Default
           </button>
           <!--  -->
-          <!-- Secondary button mobil -->
+          <!-- Secondary button-->
           <p>Secondary knapper</p>
           <button
-            class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            class="max-w-xs rounded-knapperRadius bg-secondaryButton px-3 py-1 text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder md:px-6 md:py-2"
           >
             Default
           </button>
-          <!--  -->
-          <!--  -->
-          <!--  -->
         </div>
-
-        <h3>Dropdown knapper mobil</h3>
-        <!-- Dropdown knapper mobil -->
+        <!-- Dropdown knapper-->
+        <h3>Dropdown knapper</h3>
         <div class="mb-10">
           <!-- Primary dropdown -->
           <p>Primary dropdown</p>
           <!-- <label for="DefaultDropdown" class=""></label> -->
           <select
-            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst_mobile text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-            name="Default"
-            id="DefaultDropdown"
-            x-model="Default"
-            form="Default"
-            x-on:change="$nextTick(() => {Default()});"
-          >
-            <option selected>Default/Kategori</option>
-            <option value="1">Default</option>
-            <option value="2">Default</option>
-            <option value="3">Default</option>
-            <option value="4">Default</option>
-          </select>
-
-          <!--  -->
-          <!-- Secondary dropdown -->
-          <p>Secondary dropdown</p>
-          <!-- <label for="DefaultDropdown" class=""></label> -->
-          <select
-            class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst_mobile text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-            name="Default"
-            id="DefaultDropdown"
-            x-model="Default"
-            form="Default"
-            x-on:change="$nextTick(() => {Default()});"
-          >
-            <option selected>Default/Kategori</option>
-            <option value="1">Default</option>
-            <option value="2">Default</option>
-            <option value="3">Default</option>
-            <option value="4">Default</option>
-          </select>
-        </div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <h2>Knapper Web</h2>
-        <!-- Almindelige knapper Web -->
-        <h3>Almindelige knapper Web</h3>
-        <div class="mb-10">
-          <!-- Primary button mobil -->
-          <p>Primary knapper</p>
-          <button
-            class="max-w-xs rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst_desktop text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-          >
-            Default
-          </button>
-          <!--  -->
-          <!-- Secondary button mobil -->
-          <p>Secondary knapper</p>
-          <button
-            class="max-w-xs rounded-knapperRadius bg-secondaryButton px-6 py-2 text-knaptekst_desktop text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-          >
-            Default
-          </button>
-        </div>
-        <!-- Dropdown knapper mobil -->
-        <h3>Dropdown knapper web</h3>
-        <!-- Dropdown knapper mobil -->
-        <div class="mb-10">
-          <!-- Primary dropdown -->
-          <p>Primary dropdown</p>
-          <!-- <label for="DefaultDropdown" class=""></label> -->
-          <select
-            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst_desktop text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
             name="Default"
             id="DefaultDropdown"
             x-model="Default"
@@ -234,7 +168,7 @@
           <p>Secondary dropdown</p>
           <!-- <label for="DefaultDropdown" class=""></label> -->
           <select
-            class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst_desktop text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+            class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
             name="Default"
             id="DefaultDropdown"
             x-model="Default"
@@ -249,7 +183,9 @@
           </select>
         </div>
       </div>
-
+      <!--  -->
+      <!--  -->
+      <!--  -->
       <!-- Forms -->
       <h2 class="text-H2_desktop">Forms</h2>
       <div>
@@ -257,16 +193,18 @@
           <h3>Form text</h3>
           <!-- Form til tekst -->
           <form>
-            <div class="">
-              <label class="" for="Default"> Default </label>
-              <input
-                class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring focus:ring-formFocusBorder"
-                id="Default"
-                type="text"
-                placeholder="Default"
-              />
-              <p class="text-body_xs">*Default</p>
-            </div>
+            <label class="text-body_xs" for="Default"> Default </label>
+            <input
+              class="block w-full rounded-formRadius border-formBorder bg-formBgColor text-fromPlaceholderTextColor transition ease-in focus:border-formFocusBorder focus:outline-none focus:ring-2 focus:ring-formFocusBorder"
+              id="Default"
+              type="text"
+              placeholder="Default"
+              name="Default"
+              autocomplete="Default"
+              required
+            />
+            <!-- Valgfrit -->
+            <p class="text-body_xs">*Default</p>
           </form>
         </div>
 
@@ -303,7 +241,10 @@
           </form>
         </div>
       </div>
-
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- Cards -->
       <h2 class="text-H2_desktop">Cards</h2>
       <div class="mb-10">
         <div class="mb-10 flex flex-row gap-10">
@@ -313,6 +254,9 @@
           <article
             class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
           >
+            <!-- Nyhedsikon -->
+            <img class="absolute top-10 z-50" src="./img/nyhed.png" alt="" />
+            <!--  -->
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
@@ -442,7 +386,9 @@
         </div>
       </div>
     </main>
-
+    <!--  -->
+    <!--  -->
+    <!--  -->
     <!-- Footer -->
     <footer
       class="border-t-4 border-sienna-500 bg-footer pt-11 pb-4 text-body_xs"
@@ -480,7 +426,12 @@
               <li class="hover_underline">
                 <a href="om_julie.html  ">Kontakt</a>
               </li>
-              <li class="hover_underline"><a href="#">Sitemap</a></li>
+              <li class="hover_underline">
+                <a href="sitemap.html">Sitemap</a>
+              </li>
+              <li class="hover_underline">
+                <a href="komponenter.html">Komponenter</a>
+              </li>
             </ul>
           </div>
         </div>
