@@ -114,52 +114,50 @@
     <main class="main">
       <section class="pb-large">
         <div class="inline-flex gap-5 pb-medium pt-large text-body_xs">
-          <a href="shop.html">Shop</a>
+          <a class="hover:underline" href="shop.html">Shop</a>
           <p>»</p>
-          <a href="shop.html">Filtrering</a>
+          <a class="hover:underline" href="shop.html">Filtrering</a>
           <p>»</p>
-          <a href="single_view.html">Produkt</a>
+          <a class="hover:underline" href="single_view.html">Produkt</a>
         </div>
         <h1 class="pb-medium text-H1_mobile text-sienna-500 lg:text-H1_desktop">
           Round milkyway ring
         </h1>
 
-        <div class="grid-cols-2 lg:grid lg:gap-20">
-          <div class="grid grid-cols-3 xl:grid-cols-9 xl:grid-rows-4">
+        <div class="grid-cols-2 md:grid">
+          <!-- --------------------------TEST--------------------------- -->
+          <div class="mx-auto grid max-w-2xl grid-cols-3 gap-x-2">
             <div
-              class="col-start-1 col-end-4 mb-small h-96 w-96 rounded-billederRadius drop-shadow-billederShadow xl:col-start-1 xl:col-end-7 xl:row-start-1 xl:row-end-4"
-              src="/img/roundMilkywayRing.webp"
+              class="relative col-span-3 h-56 w-56 rounded-billederRadius bg-[url('/img/roundMilkywayRing.webp')] bg-contain bg-no-repeat drop-shadow-billederShadow md:col-span-2 md:h-full md:w-full"
             >
-              <!-- Nyhedsikon -->
+              <div
+                class="absolute top-10 z-50 rounded-r-nyhedRadius bg-pink-900 py-2 pl-2 pr-4 text-pink-100"
+              >
+                <p>Nyhed</p>
+              </div>
+            </div>
+
+            <div class="flex w-full flex-row gap-2 md:flex-col">
               <img
-                class="absolute top-10 z-50"
-                src="/img/nyhed.png"
-                alt="Dette er et nyt produkt"
+                class="w-3/5 rounded-billederRadius drop-shadow-billederShadow"
+                src="/img/roundMilkywayRing.webp"
+                alt="Billede af round milkyway ring"
               />
               <img
-                class="col-start-1 col-end-4 mb-small h-96 w-96 rounded-billederRadius drop-shadow-billederShadow xl:col-start-1 xl:col-end-7 xl:row-start-1 xl:row-end-4"
+                class="w-3/5 rounded-billederRadius drop-shadow-billederShadow"
+                src="/img/roundMilkywayRing.webp"
+                alt="Billede af round milkyway ring"
+              />
+              <img
+                class="w-3/5 rounded-billederRadius drop-shadow-billederShadow"
                 src="/img/roundMilkywayRing.webp"
                 alt="Billede af round milkyway ring"
               />
             </div>
-
-            <img
-              class="max-h-30 col-start-1 col-end-2 w-32 rounded-billederRadius drop-shadow-billederShadow xl:col-start-7 xl:col-end-9 xl:row-start-1 xl:row-end-2"
-              src="/img/roundMilkywayRing.webp"
-              alt="Billede af round milkyway ring"
-            />
-            <img
-              class="max-h-30 col-span-1 col-start-2 col-end-3 w-32 rounded-billederRadius drop-shadow-billederShadow xl:col-start-7 xl:col-end-9 xl:row-start-2 xl:row-end-3"
-              src="/img/roundMilkywayRing.webp"
-              alt="Billede af round milkyway ring"
-            />
-            <img
-              class="max-h-30 col-span-1 col-start-3 col-end-4 w-32 rounded-billederRadius drop-shadow-billederShadow xl:col-start-7 xl:col-end-9 xl:row-start-3 xl:row-end-4"
-              src="/img/roundMilkywayRing.webp"
-              alt="Billede af round milkyway ring"
-            />
           </div>
-          <div class="grid grid-cols-1">
+
+          <!-- ----------------------------------------------------- -->
+          <div>
             <p class="pb-medium pt-medium lg:pt-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -336,7 +334,7 @@
           >
             <button class="ml-auto flex p-10" onclick="toggleModal()">
               <img
-                class="ml-auto w-8"
+                class="ml-auto w-4"
                 src="/svg/close.svg"
                 alt="kryds produktet af listen"
               />
@@ -344,7 +342,7 @@
 
             <article class="mx-10">
               <p class="pb-medium">Tilføjet til indkøbskurven</p>
-              <hr class="py-medium text-pink-200" />
+              <hr class="pb-medium text-pink-200" />
               <div class="inline-flex gap-2">
                 <div>
                   <img
@@ -362,39 +360,32 @@
                 </div>
               </div>
 
-              <div class="grid grid-cols-2">
-                <div class="grid grid-cols-1">
-                  <div class="inline-flex gap-4 text-body_xs">
-                    <p>Størrelse:</p>
-                    <p class="ml-auto">52</p>
-                  </div>
-                  <div class="inline-flex gap-4 text-body_xs">
-                    <p>Materiale:</p>
-                    <p class="ml-auto">8kt guld</p>
-                  </div>
-                  <div class="inline-flex gap-4 text-body_xs">
-                    <p>Sten:</p>
-                    <p class="ml-auto">4mm 0,25ct</p>
-                  </div>
-                  <div class="inline-flex gap-4 text-body_xs">
-                    <p>Farve:</p>
+              <div>
+                <div class="flex gap-4 text-body_xs">
+                  <p>Størrelse:</p>
+                  <p class="ml-auto">52</p>
+                </div>
+                <div class="flex gap-4 text-body_xs">
+                  <p>Materiale:</p>
+                  <p class="ml-auto">8kt guld</p>
+                </div>
+                <div class="flex gap-4 text-body_xs">
+                  <p>Sten:</p>
+                  <p class="ml-auto">4mm 0,25ct</p>
+                </div>
+                <div class="flex gap-4 text-body_xs">
+                  <p>Farve:</p>
 
-                    <img
-                      class="ml-auto h-5 w-5"
-                      src="/svg/orange.svg"
-                      alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
-                    />
-                  </div>
+                  <img
+                    class="ml-auto h-5 w-5"
+                    src="/svg/orange.svg"
+                    alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
+                  />
                 </div>
               </div>
-              <div class="pb-medium">
-                <img
-                  class="ml-auto w-24"
-                  src="/img/plus_minus.png"
-                  alt="tilføj flere eller færre produkter"
-                />
-              </div>
-              <hr class="py-medium text-pink-200" />
+
+              <div class="pb-medium"></div>
+              <hr class="pb-medium text-pink-200" />
               <div class="grid grid-cols-1 pb-medium">
                 <div class="inline-flex">
                   <p>Subtotal</p>
@@ -405,9 +396,9 @@
                 </div>
               </div>
 
-              <hr class="py-medium text-pink-200" />
+              <hr class="pb-medium text-pink-200" />
 
-              <div class="mb-xLarge flex justify-center">
+              <div class="flex justify-center pb-xLarge">
                 <a
                   class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
                   href="indkoebskurv.html"
