@@ -93,7 +93,22 @@ nav a {
 }
 
 /* Til knapper under købsprocessen, hvor der ikke skal være futura bold */
-#semibold_bitter {
+#semibold_bitter_01,
+#semibold_bitter_02,
+#semibold_bitter_03,
+#semibold_bitter_04,
+#semibold_bitter_05,
+#semibold_bitter_06,
+#semibold_bitter_07,
+#semibold_bitter_08,
+#semibold_bitter_09,
+#semibold_bitter_10,
+#semibold_bitter_11,
+#semibold_bitter_12,
+#semibold_bitter_13,
+#semibold_bitter_14,
+#semibold_bitter_15,
+#semibold_bitter_16 {
   font-family: "Bitter", serif;
   font-weight: 600;
 }
