@@ -77,19 +77,17 @@
         <!-- Ikoner til søg og kurv -->
         <div class="hidden sm:block">
           <ul class="flex gap-5">
-            <li class="">
+            <li>
               <img
                 src="./svg/soeg.svg"
                 alt="Søg på siden"
                 title="Søg på produkter"
+                class="cursor-pointer"
               />
             </li>
-            <li class="">
-              <a class="" href="indkoebskurv.html"
-                ><img
-                  src="./svg/kurv.svg"
-                  alt="Til kurven"
-                  title="Gå til kurven"
+            <li>
+              <a title="Gå til kurven" href="indkoebskurv.html"
+                ><img src="./svg/kurv.svg" alt="Til kurven"
               /></a>
             </li>
           </ul>
@@ -105,6 +103,7 @@
               class="menu_luk cursor-pointer"
               src="./svg/close.svg"
               alt="Luk menu"
+              title="Luk menu"
             />
           </div>
 
@@ -127,16 +126,21 @@
             <li class="w-full py-4">
               <a class="a_underline relative" href="om_julie.html">Om Julie</a>
             </li>
-            <div class="flex justify-center gap-8">
-              <li class="py-4">
-                <img src="./svg/soeg.svg" alt="Søg på siden" />
-              </li>
-              <li class="py-4">
-                <a class="" href="indkoebskurv.html"
-                  ><img src="./svg/kurv.svg" alt="Til kurven"
-                /></a>
-              </li>
-            </div>
+          </ul>
+          <ul class="flex justify-center gap-8">
+            <li class="py-4">
+              <img
+                src="./svg/soeg.svg"
+                alt="Søg på siden"
+                title="Søg på produkter"
+                class="cursor-pointer"
+              />
+            </li>
+            <li class="py-4">
+              <a title="Gå til kurven" href="indkoebskurv.html"
+                ><img src="./svg/kurv.svg" alt="Til kurven"
+              /></a>
+            </li>
           </ul>
         </div>
 
@@ -146,6 +150,7 @@
             class="menu_click w-8 cursor-pointer"
             src="./svg/burger.svg"
             alt="burger menu"
+            title="Åbn menu"
           />
         </div>
       </nav>
@@ -180,13 +185,13 @@
             Gå på opdagelse i smykkeuniverset og lad dig inspirere.
           </p>
           <div class="items-center justify-center sm:flex">
-            <a href="shop.html">
+            <form action="shop.html" method="get">
               <button
                 class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
               >
                 Shop smykkerne
               </button>
-            </a>
+            </form>
           </div>
         </div>
       </section>
@@ -418,14 +423,20 @@
                 <a
                   href="https://www.instagram.com/julienielsdotterjewellery/"
                   target="_blank"
-                  ><img src="./svg/instagram.svg" alt="Instagram-ikon"
+                  ><img
+                    src="./svg/instagram.svg"
+                    alt="Instagram-ikon"
+                    title="Åbn Instagram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/julienielsdotterjewellery"
                   target="_blank"
-                  ><img src="./svg/facebook.svg" alt="FaceBook-ikon"
+                  ><img
+                    src="./svg/facebook.svg"
+                    alt="FaceBook-ikon"
+                    title="Åbn Facebook"
                 /></a>
               </li>
             </ul>
