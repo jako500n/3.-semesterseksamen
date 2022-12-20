@@ -14,6 +14,21 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, "src/index.html"),
+        betaling_afhent_01: resolve(__dirname, "src/betaling_afhent_01.html"),
+        betaling_afhent_debit: resolve(
+          __dirname,
+          "src/betaling_afhent_debit.html"
+        ),
+        betaling_afhent_kredit: resolve(
+          __dirname,
+          "src/betaling_afhent_kredit.html"
+        ),
+        betaling_post_01: resolve(__dirname, "src/betaling_post_01.html"),
+        betaling_post_debit: resolve(__dirname, "src/betaling_post_debit.html"),
+        betaling_post_kredit: resolve(
+          __dirname,
+          "src/betaling_post_kredit.html"
+        ),
         betalt: resolve(__dirname, "src/betalt.html"),
         design_selv: resolve(__dirname, "src/design_selv.html"),
         gavekort: resolve(__dirname, "src/gavekort.html"),
