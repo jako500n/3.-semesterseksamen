@@ -143,77 +143,56 @@
           <form id="filtre" class="col grid-col grid gap-4 sm:flex sm:gap-10">
             <div class="grid grid-cols-1">
               <label for="kategori">Kategori</label>
-              <div class="relative">
-                <select
-                  class="max-w-xs rounded-knapperRadius border-none bg-primaryButton bg-none text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-                  name="kategori"
-                  id="kategori"
-                  x-model="kategori"
-                  form="filtre"
-                  x-on:change="$nextTick(() => { ingenkategorier() });"
-                >
-                  <option value="allekategorier">Alle</option>
-                  <option value="bracelet">Armbånd</option>
-                  <option value="necklace">Halskæder</option>
-                  <option value="ring">Ringe</option>
-                  <option value="earring">Øreringe</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute top-[38%] left-[7.2rem] flex items-center justify-center"
-                >
-                  <img class="w-6" src="/svg/dropdown_pink.svg" alt="" />
-                </div>
-              </div>
+              <select
+                class="rounded-knapperRadius border-none bg-primaryButton py-1 pl-3 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder sm:py-2"
+                name="kategori"
+                id="kategori"
+                x-model="kategori"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenkategorier() });"
+              >
+                <option value="allekategorier">Alle</option>
+                <option value="bracelet">Armbånd</option>
+                <option value="necklace">Halskæder</option>
+                <option value="ring">Ringe</option>
+                <option value="earring">Øreringe</option>
+              </select>
             </div>
             <div class="grid grid-cols-1">
               <label for="materiale">Materiale</label>
-              <div class="relative">
-                <select
-                  class="max-w-xs rounded-knapperRadius border-none bg-primaryButton bg-none text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-                  name="materiale"
-                  id="materiale"
-                  x-model="materiale"
-                  form="filtre"
-                  x-on:change="$nextTick(() => { ingenkategorier() });"
-                >
-                  <option value="allematerialer">Alle materialer</option>
-                  <option value="8ktguld">8 kt guld</option>
-                  <option value="14ktguld">14 kt guld</option>
-                  <option value="18ktguld">18 kt guld</option>
-                  <option value="solv">Sølv</option>
-                  <option value="guldbelagt">Guldbelagt</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute top-[38%] left-[9.5rem] flex items-center justify-center"
-                >
-                  <img class="w-6" src="/svg/dropdown_pink.svg" alt="" />
-                </div>
-              </div>
+              <select
+                class="rounded-knapperRadius border-none bg-primaryButton py-1 pl-3 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder sm:py-2"
+                name="materiale"
+                id="materiale"
+                x-model="materiale"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenkategorier() });"
+              >
+                <option value="allematerialer">Alle materialer</option>
+                <option value="8ktguld">8 kt guld</option>
+                <option value="14ktguld">14 kt guld</option>
+                <option value="18ktguld">18 kt guld</option>
+                <option value="solv">Sølv</option>
+                <option value="guldbelagt">Guldbelagt</option>
+              </select>
             </div>
 
             <div class="grid grid-cols-1">
               <label for="sten">Sten</label>
-              <div class="relative">
-                <select
-                  class="max-w-xs rounded-knapperRadius border-none bg-primaryButton bg-none text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-                  name="sten"
-                  id="sten"
-                  x-model="sten"
-                  form="filtre"
-                  x-on:change="$nextTick(() => { ingenkategorier() });"
-                >
-                  <option value="allesten">Alle sten</option>
-                  <option value="diamanter">Diamanter</option>
-                  <option value="safir">Safir</option>
-                  <option value="perler">Perler</option>
-                  <option value="none">Ingen sten</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute top-[38%] left-[7rem] flex items-center justify-center"
-                >
-                  <img class="w-6" src="/svg/dropdown_pink.svg" alt="" />
-                </div>
-              </div>
+              <select
+                class="rounded-knapperRadius border-none bg-primaryButton py-1 pl-3 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder sm:py-2"
+                name="sten"
+                id="sten"
+                x-model="sten"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenkategorier() });"
+              >
+                <option value="allesten">Alle sten</option>
+                <option value="diamanter">Diamanter</option>
+                <option value="safir">Safir</option>
+                <option value="perler">Perler</option>
+                <option value="none">Ingen sten</option>
+              </select>
             </div>
           </form>
         </div>
