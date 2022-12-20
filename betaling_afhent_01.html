@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
-    <title>Personlige oplysninger</title>
+    <title>Betaling</title>
     <script type="module" crossorigin src="./assets/main.d1ff2995.js"></script>
     <link rel="stylesheet" href="./assets/main.a4f11ba3.css">
   </head>
@@ -21,6 +21,7 @@
               class="w-20"
               src="./img/julienielsdotter_logo-8.png"
               alt="Logo - til forsiden"
+              title="Gå til forsiden"
           /></a>
         </div>
 
@@ -46,11 +47,16 @@
         <!-- Ikoner til søg og kurv -->
         <div class="hidden sm:block">
           <ul class="flex gap-5">
-            <li class="">
-              <img src="./svg/soeg.svg" alt="Søg på siden" />
+            <li>
+              <img
+                src="./svg/soeg.svg"
+                alt="Søg på siden"
+                title="Søg på produkter"
+                class="cursor-pointer"
+              />
             </li>
-            <li class="">
-              <a class="" href="indkoebskurv.html"
+            <li>
+              <a title="Gå til kurven" href="indkoebskurv.html"
                 ><img src="./svg/kurv.svg" alt="Til kurven"
               /></a>
             </li>
@@ -67,6 +73,7 @@
               class="menu_luk cursor-pointer"
               src="./svg/close.svg"
               alt="Luk menu"
+              title="Luk menu"
             />
           </div>
 
@@ -91,10 +98,15 @@
             </li>
             <div class="flex justify-center gap-8">
               <li class="py-4">
-                <img src="./svg/soeg.svg" alt="Søg på siden" />
+                <img
+                  src="./svg/soeg.svg"
+                  alt="Søg på siden"
+                  title="Søg på produkter"
+                  class="cursor-pointer"
+                />
               </li>
               <li class="py-4">
-                <a class="" href="indkoebskurv.html"
+                <a title="Gå til kurven" href="indkoebskurv.html"
                   ><img src="./svg/kurv.svg" alt="Til kurven"
                 /></a>
               </li>
@@ -107,7 +119,8 @@
           <img
             class="menu_click w-8 cursor-pointer"
             src="./svg/burger.svg"
-            alt="Burger menu"
+            alt="burger menu"
+            title="Åbn menu"
           />
         </div>
       </nav>
@@ -184,7 +197,11 @@
               Vælg korttype og indtast kortoplysninger
             </p>
             <div class="flex flex-col gap-y-4 pt-small pb-medium">
-              <a class="group" href="betaling_afhent_kredit.html">
+              <form
+                class="group"
+                action="betaling_afhent_kredit.html"
+                method="get"
+              >
                 <button
                   class="w-full max-w-sm cursor-pointer rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-6 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
@@ -204,10 +221,14 @@
                     </div>
                   </div>
                 </button>
-              </a>
+              </form>
 
-              <a href="betaling_afhent_debit.html" class="group"
-                ><button
+              <form
+                class="group"
+                action="betaling_afhent_debit.html"
+                method="get"
+              >
+                <button
                   class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-6 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
                   <div class="flex items-center justify-center gap-3">
@@ -224,8 +245,9 @@
                         />
                       </div>
                     </div>
-                  </div></button
-              ></a>
+                  </div>
+                </button>
+              </form>
             </div>
             <img src="./img/kort.png" alt="kreditkort" />
             <div class="grid-cols-5 gap-x-4 gap-y-2 sm:grid">
@@ -436,14 +458,20 @@
                 <a
                   href="https://www.instagram.com/julienielsdotterjewellery/"
                   target="_blank"
-                  ><img src="./svg/instagram.svg" alt="Instagram-ikon"
+                  ><img
+                    src="./svg/instagram.svg"
+                    alt="Instagram-ikon"
+                    title="Åbn Instagram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/julienielsdotterjewellery"
                   target="_blank"
-                  ><img src="./svg/facebook.svg" alt="FaceBook-ikon"
+                  ><img
+                    src="./svg/facebook.svg"
+                    alt="FaceBook-ikon"
+                    title="Åbn Facebook"
                 /></a>
               </li>
             </ul>

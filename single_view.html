@@ -21,6 +21,7 @@
               class="w-20"
               src="./img/julienielsdotter_logo-8.png"
               alt="Logo - til forsiden"
+              title="Gå til forsiden"
           /></a>
         </div>
 
@@ -46,11 +47,16 @@
         <!-- Ikoner til søg og kurv -->
         <div class="hidden sm:block">
           <ul class="flex gap-5">
-            <li class="">
-              <img src="./svg/soeg.svg" alt="Søg på siden" />
+            <li>
+              <img
+                src="./svg/soeg.svg"
+                alt="Søg på siden"
+                title="Søg på produkter"
+                class="cursor-pointer"
+              />
             </li>
-            <li class="">
-              <a class="" href="indkoebskurv.html"
+            <li>
+              <a title="Gå til kurven" href="indkoebskurv.html"
                 ><img src="./svg/kurv.svg" alt="Til kurven"
               /></a>
             </li>
@@ -67,6 +73,7 @@
               class="menu_luk cursor-pointer"
               src="./svg/close.svg"
               alt="Luk menu"
+              title="Luk menu"
             />
           </div>
 
@@ -91,10 +98,15 @@
             </li>
             <div class="flex justify-center gap-8">
               <li class="py-4">
-                <img src="./svg/soeg.svg" alt="Søg på siden" />
+                <img
+                  src="./svg/soeg.svg"
+                  alt="Søg på siden"
+                  title="Søg på produkter"
+                  class="cursor-pointer"
+                />
               </li>
               <li class="py-4">
-                <a class="" href="indkoebskurv.html"
+                <a title="Gå til kurven" href="indkoebskurv.html"
                   ><img src="./svg/kurv.svg" alt="Til kurven"
                 /></a>
               </li>
@@ -108,6 +120,7 @@
             class="menu_click w-8 cursor-pointer"
             src="./svg/burger.svg"
             alt="burger menu"
+            title="Åbn menu"
           />
         </div>
       </nav>
@@ -346,13 +359,12 @@
         <div class="flex items-center justify-center">
           <div class="overflow-hidden bg-pink-100">
             <button class="ml-auto flex p-10" onclick="toggleModal()">
-              <a title="Luk">
-                <img
-                  class="ml-auto w-4"
-                  src="./svg/close.svg"
-                  alt="kryds produktet af listen"
-                />
-              </a>
+              <img
+                class="ml-auto w-4"
+                src="./svg/close.svg"
+                alt="kryds produktet af listen"
+                title="Luk"
+              />
             </button>
 
             <article class="mx-10">
@@ -416,11 +428,13 @@
               <hr class="pb-medium text-pink-200" />
 
               <div class="flex justify-center pb-xLarge">
-                <a
-                  class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
-                  href="indkoebskurv.html"
-                  ><button>Gå til kassen</button>
-                </a>
+                <form action="indkoebskurv.html" method="get">
+                  <button
+                    class="max-w-xs rounded-knapperRadius bg-primaryButton px-3 py-1 text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder md:px-6 md:py-2"
+                  >
+                    Gå til kassen
+                  </button>
+                </form>
               </div>
             </article>
           </div>
@@ -489,14 +503,20 @@
                 <a
                   href="https://www.instagram.com/julienielsdotterjewellery/"
                   target="_blank"
-                  ><img src="./svg/instagram.svg" alt="Instagram-ikon"
+                  ><img
+                    src="./svg/instagram.svg"
+                    alt="Instagram-ikon"
+                    title="Åbn Instagram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/julienielsdotterjewellery"
                   target="_blank"
-                  ><img src="./svg/facebook.svg" alt="FaceBook-ikon"
+                  ><img
+                    src="./svg/facebook.svg"
+                    alt="FaceBook-ikon"
+                    title="Åbn Facebook"
                 /></a>
               </li>
             </ul>

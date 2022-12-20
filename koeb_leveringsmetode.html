@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
-    <title>Personlige oplysninger</title>
+    <title>Leveringsmetode</title>
     <script type="module" crossorigin src="./assets/main.d1ff2995.js"></script>
     <link rel="stylesheet" href="./assets/main.a4f11ba3.css">
   </head>
@@ -21,6 +21,7 @@
               class="w-20"
               src="./img/julienielsdotter_logo-8.png"
               alt="Logo - til forsiden"
+              title="Gå til forsiden"
           /></a>
         </div>
 
@@ -46,11 +47,16 @@
         <!-- Ikoner til søg og kurv -->
         <div class="hidden sm:block">
           <ul class="flex gap-5">
-            <li class="">
-              <img src="./svg/soeg.svg" alt="Søg på siden" />
+            <li>
+              <img
+                src="./svg/soeg.svg"
+                alt="Søg på siden"
+                title="Søg på produkter"
+                class="cursor-pointer"
+              />
             </li>
-            <li class="">
-              <a class="" href="indkoebskurv.html"
+            <li>
+              <a title="Gå til kurven" href="indkoebskurv.html"
                 ><img src="./svg/kurv.svg" alt="Til kurven"
               /></a>
             </li>
@@ -67,6 +73,7 @@
               class="menu_luk cursor-pointer"
               src="./svg/close.svg"
               alt="Luk menu"
+              title="Luk menu"
             />
           </div>
 
@@ -91,10 +98,15 @@
             </li>
             <div class="flex justify-center gap-8">
               <li class="py-4">
-                <img src="./svg/soeg.svg" alt="Søg på siden" />
+                <img
+                  src="./svg/soeg.svg"
+                  alt="Søg på siden"
+                  title="Søg på produkter"
+                  class="cursor-pointer"
+                />
               </li>
               <li class="py-4">
-                <a class="" href="indkoebskurv.html"
+                <a title="Gå til kurven" href="indkoebskurv.html"
                   ><img src="./svg/kurv.svg" alt="Til kurven"
                 /></a>
               </li>
@@ -107,7 +119,8 @@
           <img
             class="menu_click w-8 cursor-pointer"
             src="./svg/burger.svg"
-            alt="Ikon til menu"
+            alt="burger menu"
+            title="Åbn menu"
           />
         </div>
       </nav>
@@ -180,8 +193,12 @@
           >
             <p class="text-body_semibold">Vælg din leveringsmetode</p>
             <div class="flex flex-col gap-y-4 pt-small pb-medium">
-              <a href="koebsproces_post_01.html" class="group"
-                ><button
+              <form
+                class="group"
+                action="koebsproces_post_01.html"
+                method="get"
+              >
+                <button
                   class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
                   <div class="flex items-center justify-center gap-3">
@@ -204,15 +221,23 @@
                         />
                       </div>
                     </div>
-                  </div></button
-              ></a>
+                  </div>
+                </button>
+              </form>
 
-              <a href="koebsproces_afhent_01.html" class="group"
-                ><button
+              <form
+                class="group"
+                action="koebsproces_afhent_01.html"
+                method="get"
+              >
+                <button
                   class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
                   <div class="flex items-center justify-center gap-3">
-                    <img src="./svg/hjemmelevering.svg" alt="hjemmelevering ikon" />
+                    <img
+                      src="./svg/hjemmelevering.svg"
+                      alt="hjemmelevering ikon"
+                    />
                     <div class="flex flex-col items-start justify-center">
                       <p class="text-body_base" id="semibold_bitter">
                         Afhentning
@@ -229,8 +254,9 @@
                         />
                       </div>
                     </div>
-                  </div></button
-              ></a>
+                  </div>
+                </button>
+              </form>
             </div>
             <button
               class="w-full cursor-not-allowed rounded-knapperRadius bg-primaryButton px-6 py-2 text-knaptekst text-primaryButtonTextColor opacity-30 drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
@@ -383,14 +409,20 @@
                 <a
                   href="https://www.instagram.com/julienielsdotterjewellery/"
                   target="_blank"
-                  ><img src="./svg/instagram.svg" alt="Instagram-ikon"
+                  ><img
+                    src="./svg/instagram.svg"
+                    alt="Instagram-ikon"
+                    title="Åbn Instagram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/julienielsdotterjewellery"
                   target="_blank"
-                  ><img src="./svg/facebook.svg" alt="FaceBook-ikon"
+                  ><img
+                    src="./svg/facebook.svg"
+                    alt="FaceBook-ikon"
+                    title="Åbn Facebook"
                 /></a>
               </li>
             </ul>
