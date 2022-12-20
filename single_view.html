@@ -7,7 +7,7 @@
     <title>Round milkyway ring</title>
     <link rel="stylesheet" href="https://use.typekit.net/kae7xyj.css" />
     <script type="module" crossorigin src="./assets/main.d1ff2995.js"></script>
-    <link rel="stylesheet" href="./assets/main.1db59c6c.css">
+    <link rel="stylesheet" href="./assets/main.1dba7a28.css">
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
     <!-- Header -->
@@ -107,7 +107,7 @@
           <img
             class="menu_click w-8 cursor-pointer"
             src="./svg/burger.svg"
-            alt="Ikon til menu"
+            alt="burger menu"
           />
         </div>
       </nav>
@@ -205,37 +205,51 @@
             <div class="inline-flex gap-10">
               <div class="pb-medium">
                 <p class="pb-small text-body_semibold">Vælg materiale</p>
-                <select
-                  class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-                  name="Default"
-                  id="DefaultDropdown"
-                  x-model="Default"
-                  form="Default"
-                  x-on:change="$nextTick(() => {Default()});"
-                >
-                  <option selected>Materiale</option>
-                  <option value="1">8kt guld</option>
-                  <option value="2">14kt guld</option>
-                  <option value="3">18kt guld</option>
-                  <option value="4">Guldbelagt</option>
-                  <option value="5">Sølv</option>
-                </select>
+                <div class="relative">
+                  <select
+                    class="rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                    name="Default"
+                    id="DefaultDropdown"
+                    x-model="Default"
+                    form="Default"
+                    x-on:change="$nextTick(() => {Default()});"
+                  >
+                    <option selected>Materiale</option>
+                    <option value="1">8kt guld</option>
+                    <option value="2">14kt guld</option>
+                    <option value="3">18kt guld</option>
+                    <option value="4">Guldbelagt</option>
+                    <option value="5">Sølv</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute top-[38%] left-[7.4rem] flex items-center justify-center"
+                  >
+                    <img class="w-6" src="./svg/dropdown_sienna.svg" alt="" />
+                  </div>
+                </div>
               </div>
               <div class="pb-medium">
                 <p class="pb-small text-body_semibold">Vælg sten</p>
-                <select
-                  class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-                  name="Default"
-                  id="DefaultDropdown"
-                  x-model="Default"
-                  form="Default"
-                  x-on:change="$nextTick(() => {Default()});"
-                >
-                  <option selected>Sten</option>
-                  <option value="1">3mm - 0.10ct</option>
-                  <option value="2">4mm - 0.25ct</option>
-                  <option value="3">5mm - 0.50ct</option>
-                </select>
+                <div class="relative">
+                  <select
+                    class="rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                    name="Default"
+                    id="DefaultDropdown"
+                    x-model="Default"
+                    form="Default"
+                    x-on:change="$nextTick(() => {Default()});"
+                  >
+                    <option selected>Sten</option>
+                    <option value="1">3mm - 0.10ct</option>
+                    <option value="2">4mm - 0.25ct</option>
+                    <option value="3">5mm - 0.50ct</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute top-[38%] left-[8.3rem] flex items-center justify-center"
+                  >
+                    <img class="w-6" src="./svg/dropdown_sienna.svg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
 

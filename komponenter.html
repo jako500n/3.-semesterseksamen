@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/bju1jkc.css" />
     <title>Komponenter</title>
     <script type="module" crossorigin src="./assets/main.d1ff2995.js"></script>
-    <link rel="stylesheet" href="./assets/main.1db59c6c.css">
+    <link rel="stylesheet" href="./assets/main.1dba7a28.css">
   </head>
   <body class="bg-pink-100 text-body_base text-copyColor">
     <!-- Header -->
@@ -107,7 +107,7 @@
           <img
             class="menu_click w-8 cursor-pointer"
             src="./svg/burger.svg"
-            alt="Ikon til menu"
+            alt="burger menu"
           />
         </div>
       </nav>
@@ -146,38 +146,55 @@
           <!-- Primary dropdown -->
           <p>Primary dropdown</p>
           <!-- <label for="DefaultDropdown" class=""></label> -->
-          <select
-            class="max-w-xs rounded-knapperRadius border-none bg-primaryButton text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-            name="Default"
-            id="DefaultDropdown"
-            x-model="Default"
-            form="Default"
-            x-on:change="$nextTick(() => {Default()});"
-          >
-            <option selected>Default/Kategori</option>
-            <option value="1">Default</option>
-            <option value="2">Default</option>
-            <option value="3">Default</option>
-            <option value="4">Default</option>
-          </select>
+
+          <div class="relative">
+            <select
+              class="max-w-xs rounded-knapperRadius border-none bg-primaryButton bg-none text-knaptekst text-primaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-primaryButtonHover hover:text-primaryButtonHoverTextColor hover:drop-shadow-knapHoverShadow focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+              name="Default"
+              id="DefaultDropdown"
+              x-model="Default"
+              form="Default"
+              x-on:change="$nextTick(() => {Default()});"
+            >
+              <option selected>Default/Kategori</option>
+              <option value="1">Default</option>
+              <option value="2">Default</option>
+              <option value="3">Default</option>
+              <option value="4">Default</option>
+            </select>
+            <div
+              class="pointer-events-none absolute top-[38%] left-[10.8rem] flex items-center justify-center"
+            >
+              <img class="w-6" src="./svg/dropdown_pink.svg" alt="" />
+            </div>
+          </div>
+
           <!--  -->
           <!-- Secondary dropdown -->
           <p>Secondary dropdown</p>
           <!-- <label for="DefaultDropdown" class=""></label> -->
-          <select
-            class="rounded-knapperRadius border-none bg-secondaryButton text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
-            name="Default"
-            id="DefaultDropdown"
-            x-model="Default"
-            form="Default"
-            x-on:change="$nextTick(() => {Default()});"
-          >
-            <option selected>Default/Kategori</option>
-            <option value="1">Default</option>
-            <option value="2">Default</option>
-            <option value="3">Default</option>
-            <option value="4">Default</option>
-          </select>
+
+          <div class="relative">
+            <select
+              class="rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+              name="Default"
+              id="DefaultDropdown"
+              x-model="Default"
+              form="Default"
+              x-on:change="$nextTick(() => {Default()});"
+            >
+              <option selected>Default/Kategori</option>
+              <option value="1">Default</option>
+              <option value="2">Default</option>
+              <option value="3">Default</option>
+              <option value="4">Default</option>
+            </select>
+            <div
+              class="pointer-events-none absolute top-[38%] left-[10.8rem] flex items-center justify-center"
+            >
+              <img class="w-6" src="./svg/dropdown_sienna.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
       <!--  -->
@@ -252,13 +269,13 @@
             class="basis-full cursor-pointer rounded-cardsRadius bg-cardsBgColor drop-shadow-cardShadow transition ease-in hover:drop-shadow-cardHoverShadow"
           >
             <!-- Nyhedsikon -->
-            <img class="absolute top-10 z-50" src="./img/nyhed.png" alt="" />
+            <img class="absolute top-10 z-50" src="./img/nyhed.png" alt="dette er en nyhed" />
             <!--  -->
             <a href="single_view.html">
               <img
                 class="rounded-t-billederRadius"
                 src="./img/7-PearlHoop.webp"
-                alt=""
+                alt="pearl hoop"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
@@ -302,7 +319,7 @@
               <img
                 class="rounded-t-billederRadius"
                 src="./img/7-PearlHoop.webp"
-                alt=""
+                alt="pearl hoop"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
@@ -346,7 +363,7 @@
               <img
                 class="rounded-t-billederRadius"
                 src="./img/7-PearlHoop.webp"
-                alt=""
+                alt="pearl hoop"
               />
               <div class="p-6">
                 <p class="text-body_semibold">
