@@ -113,7 +113,10 @@ nav a {
   font-weight: 600;
 }
 
-#normal_bitter {
+#normal_bitter_01,
+#normal_bitter_02,
+#normal_bitter_03,
+#normal_bitter_04 {
   font-family: "Bitter", serif;
   font-weight: 300;
 }
