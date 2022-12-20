@@ -195,11 +195,7 @@
               Vælg korttype og indtast kortoplysninger
             </p>
             <div class="flex flex-col gap-y-4 pt-small pb-medium">
-              <form
-                class="group"
-                action="betaling_post_kredit.html"
-                method="get"
-              >
+              <a class="group" href="betaling_post_kredit.html">
                 <div
                   class="w-full max-w-sm cursor-pointer rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-6 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
@@ -211,25 +207,21 @@
                       </p>
                     </div>
                     <div class="ml-auto flex items-center justify-center gap-3">
-                      <button class="relative">
+                      <div class="relative">
                         <img src="/svg/ikke_valgt.svg" alt="ikke valgt" /><img
                           class="billedskift absolute top-0 left-0 opacity-0 transition group-hover:opacity-100"
                           src="/svg/valgt.svg"
                           alt="valgt"
                         />
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </form>
+              </a>
 
-              <form
-                class="group"
-                action="betaling_post_debit.html"
-                method="get"
-              >
+              <a class="group" href="betaling_post_debit.html">
                 <div
-                  class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-6 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
+                  class="w-full max-w-sm cursor-pointer rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-6 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
                   <div class="flex items-center justify-center gap-3">
                     <img src="/svg/debit.svg" alt="debitkort" />
@@ -239,17 +231,17 @@
                       </p>
                     </div>
                     <div class="ml-auto flex items-center justify-center gap-3">
-                      <button class="relative">
+                      <div class="relative">
                         <img src="/svg/ikke_valgt.svg" alt="ikke valgt" /><img
                           class="billedskift absolute top-0 left-0 opacity-0 transition group-hover:opacity-100"
                           src="/svg/valgt.svg"
                           alt="valgt"
                         />
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </form>
+              </a>
             </div>
             <img src="/img/kort.png" alt="kort" />
             <div class="grid-cols-5 gap-x-4 gap-y-2 sm:grid">

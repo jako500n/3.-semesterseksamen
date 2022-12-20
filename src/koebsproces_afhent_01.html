@@ -191,13 +191,9 @@
           >
             <p class="text-body_semibold">Vælg din leveringsmetode</p>
             <div class="flex flex-col gap-y-4 pt-small pb-large">
-              <form
-                class="group"
-                action="koebsproces_post_01.html"
-                method="get"
-              >
+              <a class="group" href="koebsproces_post_01.html">
                 <div
-                  class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
+                  class="w-full max-w-sm cursor-pointer rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
                   <div class="flex items-center justify-center gap-3">
                     <img src="/svg/postnord.svg" alt="postnord logo" />
@@ -211,48 +207,40 @@
                     </div>
                     <div class="ml-auto flex items-center justify-center gap-3">
                       <p id="normal_bitter_06">DKK 80,00</p>
-                      <button class="relative">
+                      <div class="relative">
                         <img src="/svg/ikke_valgt.svg" alt="ikke valgt" /><img
                           class="billedskift absolute top-0 left-0 opacity-0 transition group-hover:opacity-100"
                           src="/svg/valgt.svg"
                           alt="valgt"
                         />
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </form>
+              </a>
 
-              <form
-                class="group"
-                action="koebsproces_afhent_01.html"
-                method="get"
+              <div
+                class="w-full max-w-sm cursor-default rounded-knapperRadius border-4 border-black-500 bg-pink-500 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
               >
-                <div
-                  class="w-full max-w-sm rounded-knapperRadius border-4 border-black-500 bg-pink-500 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
-                >
-                  <div class="flex items-center justify-center gap-3">
-                    <img
-                      src="/svg/hjemmelevering.svg"
-                      alt="hjemmelevering ikon"
-                    />
-                    <div class="flex flex-col items-start justify-center">
-                      <p class="text-body_base" id="semibold_bitter_14">
-                        Afhentning
-                      </p>
-                      <p class="text-body_xs" id="normal_bitter_07">
-                        Fra i dag
-                      </p>
-                    </div>
-                    <div class="ml-auto flex items-center justify-center gap-3">
-                      <p id="normal_bitter_08">Gratis</p>
-                      <button>
-                        <img src="/svg/valgt.svg" alt="valgt" />
-                      </button>
+                <div class="flex items-center justify-center gap-3">
+                  <img
+                    src="/svg/hjemmelevering.svg"
+                    alt="hjemmelevering ikon"
+                  />
+                  <div class="flex flex-col items-start justify-center">
+                    <p class="text-body_base" id="semibold_bitter_14">
+                      Afhentning
+                    </p>
+                    <p class="text-body_xs" id="normal_bitter_07">Fra i dag</p>
+                  </div>
+                  <div class="ml-auto flex items-center justify-center gap-3">
+                    <p id="normal_bitter_08">Gratis</p>
+                    <div>
+                      <img src="/svg/valgt.svg" alt="valgt" />
                     </div>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
             <p class="pb-small text-body_semibold">Afhentningsadresse</p>
             <div class="pb-large">

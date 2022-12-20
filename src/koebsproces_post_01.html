@@ -192,7 +192,7 @@
             <p class="text-body_semibold">Vælg din leveringsmetode</p>
             <div class="flex flex-col gap-y-4 pt-small pb-large">
               <div
-                class="w-full max-w-sm cursor-pointer rounded-knapperRadius border-4 border-black-500 bg-pink-500 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
+                class="w-full max-w-sm cursor-default rounded-knapperRadius border-4 border-black-500 bg-pink-500 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
               >
                 <div class="flex items-center justify-center gap-3">
                   <img src="/svg/postnord.svg" alt="postnord logo" />
@@ -206,18 +206,14 @@
                   </div>
                   <div class="ml-auto flex items-center justify-center gap-3">
                     <p id="normal_bitter_10">DKK 80,00</p>
-                    <button>
+                    <div>
                       <img src="/svg/valgt.svg" alt="valgt" />
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <form
-                class="group"
-                action="koebsproces_afhent_01.html"
-                method="get"
-              >
+              <a class="group" href="koebsproces_afhent_01.html">
                 <div
                   class="w-full max-w-sm rounded-knapperRadius border border-sienna-700 bg-pink-100 px-4 py-4 drop-shadow-knapShadow transition ease-in hover:drop-shadow-knapHoverShadow focus:border-black-500 focus:ring-4 focus:ring-black-500"
                 >
@@ -236,17 +232,17 @@
                     </div>
                     <div class="ml-auto flex items-center justify-center gap-3">
                       <p id="normal_bitter_12">Gratis</p>
-                      <button class="relative">
+                      <div class="relative">
                         <img src="/svg/ikke_valgt.svg" alt="ikke valgt" /><img
                           class="billedskift absolute top-0 left-0 opacity-0 transition group-hover:opacity-100"
                           src="/svg/valgt.svg"
                           alt="valgt"
                         />
-                      </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </form>
+              </a>
             </div>
             <p class="text-body_semibold">Indtast leveringsadresse</p>
             <div class="grid-cols-5 grid-rows-2 gap-x-4 gap-y-2 sm:grid">

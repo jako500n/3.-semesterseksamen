@@ -141,7 +141,7 @@
           <!-- --------------------------TEST--------------------------- -->
           <div class="mx-auto grid max-w-2xl grid-cols-3 gap-x-2">
             <div
-              class="relative col-span-3 h-56 w-56 rounded-billederRadius bg-[url('/img/roundMilkywayRing.webp')] bg-contain bg-no-repeat drop-shadow-billederShadow md:col-span-2 md:h-full md:w-full"
+              class="relative col-span-3 h-80 w-80 rounded-billederRadius bg-[url('/img/roundMilkywayRing.webp')] bg-contain bg-no-repeat drop-shadow-billederShadow sm:h-56 sm:w-56 md:col-span-2 md:h-full md:w-full"
             >
               <div
                 class="absolute top-10 z-50 rounded-r-nyhedRadius bg-pink-900 py-2 pl-2 pr-4 text-pink-100"
@@ -170,7 +170,7 @@
           </div>
 
           <!-- ----------------------------------------------------- -->
-          <div>
+          <div class="mx-auto max-w-lg">
             <p class="pb-medium pt-medium lg:pt-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -215,7 +215,7 @@
               </div>
             </div>
 
-            <div class="inline-flex gap-10">
+            <div class="grid grid-cols-2 gap-10">
               <div class="pb-medium">
                 <div class="relative">
                   <label class="text-body_semibold" for="materiale"
@@ -223,7 +223,7 @@
                   >
                   <select
                     id="materiale"
-                    class="rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                    class="mt-small rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
                   >
                     <option selected>Materiale</option>
                     <option value="1">8kt guld</option>
@@ -233,7 +233,7 @@
                     <option value="5">Sølv</option>
                   </select>
                   <div
-                    class="pointer-events-none absolute top-[62%] left-[7.4rem] flex items-center justify-center xl:left-[15.5rem] xl:top-[38%]"
+                    class="pointer-events-none absolute top-[62%] left-[7.4rem] flex items-center justify-center"
                   >
                     <img class="w-6" src="/svg/dropdown_sienna.svg" alt="" />
                   </div>
@@ -244,7 +244,7 @@
                   <label class="text-body_semibold" for="sten">Vælg sten</label>
                   <select
                     id="sten"
-                    class="rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
+                    class="mt-small rounded-knapperRadius border-none bg-secondaryButton bg-none text-knaptekst text-secondaryButtonTextColor drop-shadow-knapShadow transition ease-in hover:bg-secondaryButtonHover hover:drop-shadow-knapHoverShadow focus:border-secondaryButtonBorder focus:ring-4 focus:ring-secondaryButtonBorder"
                   >
                     <option selected>Sten</option>
                     <option value="1">3mm - 0.10ct</option>
@@ -252,7 +252,7 @@
                     <option value="3">5mm - 0.50ct</option>
                   </select>
                   <div
-                    class="pointer-events-none absolute top-[62%] left-[8.3rem] flex items-center justify-center xl:left-[13.6rem] xl:top-[38%]"
+                    class="pointer-events-none absolute top-[62%] left-[8.3rem] flex items-center justify-center"
                   >
                     <img class="w-6" src="/svg/dropdown_sienna.svg" alt="" />
                   </div>
@@ -261,42 +261,46 @@
             </div>
 
             <p class="pb-small text-body_semibold">Vælg farve</p>
-            <div class="inline-flex gap-2 pb-medium">
-              <button
-                class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-              >
+            <div class="flex flex-col">
+              <div class="flex gap-2 pb-medium">
+                <button
+                  class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+                >
+                  <img
+                    class="h-5 w-5"
+                    src="/svg/pink.svg"
+                    alt="Lile ikon der viser at smykket fås med en stenfarve i pink"
+                  />
+                </button>
+                <button
+                  class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+                >
+                  <img
+                    class="h-5 w-5"
+                    src="/svg/orange.svg"
+                    alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
+                  />
+                </button>
+                <button
+                  class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
+                >
+                  <img
+                    class="h-5 w-5"
+                    src="/svg/green.svg"
+                    alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
+                  />
+                </button>
+              </div>
+              <div class="flex gap-2 pb-small">
                 <img
                   class="h-5 w-5"
-                  src="/svg/pink.svg"
-                  alt="Lile ikon der viser at smykket fås med en stenfarve i pink"
+                  src="/svg/check.svg"
+                  alt="Lile ikon der viser at lagerstatus"
                 />
-              </button>
-              <button
-                class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-              >
-                <img
-                  class="h-5 w-5"
-                  src="/svg/orange.svg"
-                  alt="Lile ikon der viser at smykket fås med en stenfarve i orange"
-                />
-              </button>
-              <button
-                class="focus:border-primaryButtonBorder focus:ring-4 focus:ring-primaryButtonBorder"
-              >
-                <img
-                  class="h-5 w-5"
-                  src="/svg/green.svg"
-                  alt="Lile ikon der viser at smykket fås med en stenfarve i grøn"
-                />
-              </button>
-            </div>
-            <div class="inline-flex gap-2">
-              <img
-                class="h-5 w-5"
-                src="/img/lagerbeholdning.png"
-                alt="Lile ikon der viser at lagerstatus"
-              />
-              <p class="text-body_xs text-check-green">3stk tilbage på lager</p>
+                <p class="text-body_xs text-check-green">
+                  3 stk tilbage på lager
+                </p>
+              </div>
             </div>
             <div>
               <h2
